@@ -7,18 +7,142 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F405582A1E16703B00055955 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40558291E16703B00055955 /* DetailVC.swift */; };
+		F405582E1E1673C900055955 /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405582D1E1673C900055955 /* CalculatorVC.swift */; };
+		F41443ED1E2BB711004F5139 /* Cir1ViewFilling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41443EC1E2BB711004F5139 /* Cir1ViewFilling.swift */; };
+		F41443F01E2BBBAB004F5139 /* Cir1ViewCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41443EF1E2BBBAB004F5139 /* Cir1ViewCircle.swift */; };
+		F41443F21E2BBC8E004F5139 /* Cir1ViewLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41443F11E2BBC8E004F5139 /* Cir1ViewLine.swift */; };
+		F41443F41E2BBFC2004F5139 /* Cir2ViewArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41443F31E2BBFC2004F5139 /* Cir2ViewArc.swift */; };
+		F41802111E17D8F700E70714 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41802101E17D8F700E70714 /* DetailCell.swift */; };
+		F41802151E17FC2F00E70714 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41802141E17FC2F00E70714 /* DetailModel.swift */; };
+		F419DB271E181E0900C46A49 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F419DB261E181E0900C46A49 /* Data.swift */; };
+		F41B41291E32718400EAFF19 /* Cyl1ViewFilling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B41281E32718400EAFF19 /* Cyl1ViewFilling.swift */; };
+		F41B412B1E32734C00EAFF19 /* Cyl1ViewRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B412A1E32734C00EAFF19 /* Cyl1ViewRadius.swift */; };
+		F41B412D1E3277FA00EAFF19 /* Cyl1ViewHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B412C1E3277FA00EAFF19 /* Cyl1ViewHeight.swift */; };
+		F41B41301E327A9B00EAFF19 /* Ell1ViewFilling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B412F1E327A9B00EAFF19 /* Ell1ViewFilling.swift */; };
+		F41B41321E327BF600EAFF19 /* Ell1ViewPerimeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B41311E327BF600EAFF19 /* Ell1ViewPerimeter.swift */; };
+		F41B41341E327CC300EAFF19 /* Ell1ViewRadius1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B41331E327CC300EAFF19 /* Ell1ViewRadius1.swift */; };
+		F41B41361E327CD000EAFF19 /* Ell1ViewRadius2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B41351E327CD000EAFF19 /* Ell1ViewRadius2.swift */; };
+		F41B41381E327E5C00EAFF19 /* Ell3ViewFilling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B41371E327E5C00EAFF19 /* Ell3ViewFilling.swift */; };
+		F41B413A1E32814400EAFF19 /* Ell3ViewPerimeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B41391E32814400EAFF19 /* Ell3ViewPerimeter.swift */; };
+		F41B413C1E3281AC00EAFF19 /* Ell3ViewRadius1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B413B1E3281AC00EAFF19 /* Ell3ViewRadius1.swift */; };
+		F41B413E1E3281BB00EAFF19 /* Ell3ViewRadius2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B413D1E3281BB00EAFF19 /* Ell3ViewRadius2.swift */; };
+		F41B41401E3281CC00EAFF19 /* Ell3ViewRadius3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B413F1E3281CC00EAFF19 /* Ell3ViewRadius3.swift */; };
+		F42F2B911E2D272200538DC0 /* Tra1ViewFilling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F2B901E2D272200538DC0 /* Tra1ViewFilling.swift */; };
+		F42F2B931E2D397C00538DC0 /* Tra1ViewTrapezium.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F2B921E2D397C00538DC0 /* Tra1ViewTrapezium.swift */; };
+		F42F2B951E2D3BD600538DC0 /* Tra1ViewLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F2B941E2D3BD600538DC0 /* Tra1ViewLine.swift */; };
+		F42F2B981E2D3DA900538DC0 /* Rho1ViewFilling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F2B971E2D3DA900538DC0 /* Rho1ViewFilling.swift */; };
+		F42F2B9A1E2D3F9100538DC0 /* Rho1ViewRhombus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F2B991E2D3F9100538DC0 /* Rho1ViewRhombus.swift */; };
+		F42F2B9C1E2D416D00538DC0 /* Rho1ViewLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F2B9B1E2D416D00538DC0 /* Rho1ViewLine.swift */; };
+		F4369F541E2D42F800E6A04A /* Rho2ViewLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4369F531E2D42F800E6A04A /* Rho2ViewLine.swift */; };
+		F4369F561E2D43E700E6A04A /* Rho3ViewLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4369F551E2D43E700E6A04A /* Rho3ViewLine.swift */; };
+		F4369F591E2D484500E6A04A /* Con1ViewFilling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4369F581E2D484500E6A04A /* Con1ViewFilling.swift */; };
+		F437FBF61E2FDC6900FF7E94 /* Con1ViewSlantHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F437FBF51E2FDC6900FF7E94 /* Con1ViewSlantHeight.swift */; };
+		F437FBF81E2FDE9300FF7E94 /* Con1ViewRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = F437FBF71E2FDE9300FF7E94 /* Con1ViewRadius.swift */; };
+		F437FBFA1E2FE67500FF7E94 /* Con1ViewHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F437FBF91E2FE67500FF7E94 /* Con1ViewHeight.swift */; };
+		F446D5C21E291B4A00C6FEDD /* Par3ViewLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446D5C11E291B4A00C6FEDD /* Par3ViewLine.swift */; };
+		F446D5C41E2920A100C6FEDD /* Par3ViewFilling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446D5C31E2920A100C6FEDD /* Par3ViewFilling.swift */; };
+		F446D5C61E29370100C6FEDD /* Par1ViewFilling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446D5C51E29370100C6FEDD /* Par1ViewFilling.swift */; };
+		F446D5C81E2938A000C6FEDD /* Par2ViewFilling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446D5C71E2938A000C6FEDD /* Par2ViewFilling.swift */; };
+		F446D5CA1E293BC800C6FEDD /* Par8ViewCube1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446D5C91E293BC800C6FEDD /* Par8ViewCube1.swift */; };
+		F44B51071E2A767500F7A589 /* Tri1ViewFilling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B51061E2A767500F7A589 /* Tri1ViewFilling.swift */; };
+		F4540CF21E2D0E5B003941A3 /* Cir3ViewSphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4540CF11E2D0E5B003941A3 /* Cir3ViewSphere.swift */; };
+		F477A6261E34BFB1002B9D7A /* Ana1ViewCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F477A6251E34BFB1002B9D7A /* Ana1ViewCoordinates.swift */; };
+		F477A6281E34C9FE002B9D7A /* Ana1ViewPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F477A6271E34C9FE002B9D7A /* Ana1ViewPoints.swift */; };
+		F477A62A1E34CA0B002B9D7A /* Ana1ViewLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F477A6291E34CA0B002B9D7A /* Ana1ViewLine.swift */; };
+		F477A62C1E34FD80002B9D7A /* Ana2ViewCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F477A62B1E34FD80002B9D7A /* Ana2ViewCoordinates.swift */; };
+		F477A62E1E34FDFC002B9D7A /* Ana2ViewPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F477A62D1E34FDFC002B9D7A /* Ana2ViewPoints.swift */; };
+		F477A6301E34FF9E002B9D7A /* Ana3ViewCoordinates_X.swift in Sources */ = {isa = PBXBuildFile; fileRef = F477A62F1E34FF9E002B9D7A /* Ana3ViewCoordinates_X.swift */; };
+		F477A6321E34FFBA002B9D7A /* Ana3ViewCoordinates_Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = F477A6311E34FFBA002B9D7A /* Ana3ViewCoordinates_Y.swift */; };
+		F477A6341E34FFCB002B9D7A /* Ana3ViewCoordinates_Z.swift in Sources */ = {isa = PBXBuildFile; fileRef = F477A6331E34FFCB002B9D7A /* Ana3ViewCoordinates_Z.swift */; };
+		F477A6361E3506D3002B9D7A /* Ana3ViewPoint1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F477A6351E3506D3002B9D7A /* Ana3ViewPoint1.swift */; };
+		F477A6381E3506E0002B9D7A /* Ana3ViewPoint2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F477A6371E3506E0002B9D7A /* Ana3ViewPoint2.swift */; };
+		F477A63A1E3506FF002B9D7A /* Ana3ViewLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F477A6391E3506FF002B9D7A /* Ana3ViewLine.swift */; };
+		F49E8A251E2A7A7F00CD34E3 /* Tri1ViewTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49E8A241E2A7A7F00CD34E3 /* Tri1ViewTriangle.swift */; };
+		F49E8A271E2A7DBE00CD34E3 /* Tri1ViewLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49E8A261E2A7DBE00CD34E3 /* Tri1ViewLine.swift */; };
+		F4C1A4E71E166CB000BDF328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C1A4E61E166CB000BDF328 /* Main.storyboard */; };
+		F4C1A4E91E166D0E00BDF328 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1A4E81E166D0E00BDF328 /* MainVC.swift */; };
+		F4ECD7C91E290A4E00A059A5 /* Par1ViewLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECD7C81E290A4E00A059A5 /* Par1ViewLine.swift */; };
+		F4ECD7CB1E290D2000A059A5 /* Par2ViewSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECD7CA1E290D2000A059A5 /* Par2ViewSquare.swift */; };
+		F4ECD7CD1E290E4F00A059A5 /* Par2ViewLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECD7CC1E290E4F00A059A5 /* Par2ViewLine.swift */; };
+		F4ECD7CF1E2910CC00A059A5 /* Par3ViewParallelogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECD7CE1E2910CC00A059A5 /* Par3ViewParallelogram.swift */; };
+		F4F2C5CA1E2D1B07006DD05B /* Pol1ViewFilling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2C5C91E2D1B07006DD05B /* Pol1ViewFilling.swift */; };
+		F4F2C5CC1E2D1DAB006DD05B /* Pol1ViewPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2C5CB1E2D1DAB006DD05B /* Pol1ViewPolygon.swift */; };
+		F4F2C5CE1E2D1E3C006DD05B /* Pol1ViewLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2C5CD1E2D1E3C006DD05B /* Pol1ViewLine.swift */; };
+		F4F2C5D01E2D2357006DD05B /* Pol1ViewRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2C5CF1E2D2357006DD05B /* Pol1ViewRadius.swift */; };
+		F4F2F69A1E26BE6900566861 /* Par1ViewRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2F6991E26BE6900566861 /* Par1ViewRectangle.swift */; };
 		F4FE5E2A1E158E8C009F24A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE5E291E158E8C009F24A6 /* AppDelegate.swift */; };
-		F4FE5E2C1E158E8C009F24A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE5E2B1E158E8C009F24A6 /* ViewController.swift */; };
-		F4FE5E2F1E158E8C009F24A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4FE5E2D1E158E8C009F24A6 /* Main.storyboard */; };
 		F4FE5E311E158E8C009F24A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4FE5E301E158E8C009F24A6 /* Assets.xcassets */; };
 		F4FE5E341E158E8C009F24A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4FE5E321E158E8C009F24A6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F40558291E16703B00055955 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		F405582D1E1673C900055955 /* CalculatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorVC.swift; sourceTree = "<group>"; };
+		F41443EC1E2BB711004F5139 /* Cir1ViewFilling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cir1ViewFilling.swift; sourceTree = "<group>"; };
+		F41443EF1E2BBBAB004F5139 /* Cir1ViewCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cir1ViewCircle.swift; sourceTree = "<group>"; };
+		F41443F11E2BBC8E004F5139 /* Cir1ViewLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cir1ViewLine.swift; sourceTree = "<group>"; };
+		F41443F31E2BBFC2004F5139 /* Cir2ViewArc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cir2ViewArc.swift; sourceTree = "<group>"; };
+		F41802101E17D8F700E70714 /* DetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		F41802141E17FC2F00E70714 /* DetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		F419DB261E181E0900C46A49 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F41B41281E32718400EAFF19 /* Cyl1ViewFilling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cyl1ViewFilling.swift; sourceTree = "<group>"; };
+		F41B412A1E32734C00EAFF19 /* Cyl1ViewRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cyl1ViewRadius.swift; sourceTree = "<group>"; };
+		F41B412C1E3277FA00EAFF19 /* Cyl1ViewHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cyl1ViewHeight.swift; sourceTree = "<group>"; };
+		F41B412F1E327A9B00EAFF19 /* Ell1ViewFilling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ell1ViewFilling.swift; sourceTree = "<group>"; };
+		F41B41311E327BF600EAFF19 /* Ell1ViewPerimeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ell1ViewPerimeter.swift; sourceTree = "<group>"; };
+		F41B41331E327CC300EAFF19 /* Ell1ViewRadius1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ell1ViewRadius1.swift; sourceTree = "<group>"; };
+		F41B41351E327CD000EAFF19 /* Ell1ViewRadius2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ell1ViewRadius2.swift; sourceTree = "<group>"; };
+		F41B41371E327E5C00EAFF19 /* Ell3ViewFilling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ell3ViewFilling.swift; sourceTree = "<group>"; };
+		F41B41391E32814400EAFF19 /* Ell3ViewPerimeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ell3ViewPerimeter.swift; sourceTree = "<group>"; };
+		F41B413B1E3281AC00EAFF19 /* Ell3ViewRadius1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ell3ViewRadius1.swift; sourceTree = "<group>"; };
+		F41B413D1E3281BB00EAFF19 /* Ell3ViewRadius2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ell3ViewRadius2.swift; sourceTree = "<group>"; };
+		F41B413F1E3281CC00EAFF19 /* Ell3ViewRadius3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ell3ViewRadius3.swift; sourceTree = "<group>"; };
+		F42F2B901E2D272200538DC0 /* Tra1ViewFilling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tra1ViewFilling.swift; sourceTree = "<group>"; };
+		F42F2B921E2D397C00538DC0 /* Tra1ViewTrapezium.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tra1ViewTrapezium.swift; sourceTree = "<group>"; };
+		F42F2B941E2D3BD600538DC0 /* Tra1ViewLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tra1ViewLine.swift; sourceTree = "<group>"; };
+		F42F2B971E2D3DA900538DC0 /* Rho1ViewFilling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rho1ViewFilling.swift; sourceTree = "<group>"; };
+		F42F2B991E2D3F9100538DC0 /* Rho1ViewRhombus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rho1ViewRhombus.swift; sourceTree = "<group>"; };
+		F42F2B9B1E2D416D00538DC0 /* Rho1ViewLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rho1ViewLine.swift; sourceTree = "<group>"; };
+		F4369F531E2D42F800E6A04A /* Rho2ViewLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rho2ViewLine.swift; sourceTree = "<group>"; };
+		F4369F551E2D43E700E6A04A /* Rho3ViewLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rho3ViewLine.swift; sourceTree = "<group>"; };
+		F4369F581E2D484500E6A04A /* Con1ViewFilling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Con1ViewFilling.swift; sourceTree = "<group>"; };
+		F437FBF51E2FDC6900FF7E94 /* Con1ViewSlantHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Con1ViewSlantHeight.swift; sourceTree = "<group>"; };
+		F437FBF71E2FDE9300FF7E94 /* Con1ViewRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Con1ViewRadius.swift; sourceTree = "<group>"; };
+		F437FBF91E2FE67500FF7E94 /* Con1ViewHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Con1ViewHeight.swift; sourceTree = "<group>"; };
+		F446D5C11E291B4A00C6FEDD /* Par3ViewLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Par3ViewLine.swift; sourceTree = "<group>"; };
+		F446D5C31E2920A100C6FEDD /* Par3ViewFilling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Par3ViewFilling.swift; sourceTree = "<group>"; };
+		F446D5C51E29370100C6FEDD /* Par1ViewFilling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Par1ViewFilling.swift; sourceTree = "<group>"; };
+		F446D5C71E2938A000C6FEDD /* Par2ViewFilling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Par2ViewFilling.swift; sourceTree = "<group>"; };
+		F446D5C91E293BC800C6FEDD /* Par8ViewCube1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Par8ViewCube1.swift; sourceTree = "<group>"; };
+		F44B51061E2A767500F7A589 /* Tri1ViewFilling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tri1ViewFilling.swift; sourceTree = "<group>"; };
+		F4540CF11E2D0E5B003941A3 /* Cir3ViewSphere.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cir3ViewSphere.swift; sourceTree = "<group>"; };
+		F477A6251E34BFB1002B9D7A /* Ana1ViewCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ana1ViewCoordinates.swift; sourceTree = "<group>"; };
+		F477A6271E34C9FE002B9D7A /* Ana1ViewPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ana1ViewPoints.swift; sourceTree = "<group>"; };
+		F477A6291E34CA0B002B9D7A /* Ana1ViewLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ana1ViewLine.swift; sourceTree = "<group>"; };
+		F477A62B1E34FD80002B9D7A /* Ana2ViewCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ana2ViewCoordinates.swift; sourceTree = "<group>"; };
+		F477A62D1E34FDFC002B9D7A /* Ana2ViewPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ana2ViewPoints.swift; sourceTree = "<group>"; };
+		F477A62F1E34FF9E002B9D7A /* Ana3ViewCoordinates_X.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ana3ViewCoordinates_X.swift; sourceTree = "<group>"; };
+		F477A6311E34FFBA002B9D7A /* Ana3ViewCoordinates_Y.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ana3ViewCoordinates_Y.swift; sourceTree = "<group>"; };
+		F477A6331E34FFCB002B9D7A /* Ana3ViewCoordinates_Z.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ana3ViewCoordinates_Z.swift; sourceTree = "<group>"; };
+		F477A6351E3506D3002B9D7A /* Ana3ViewPoint1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ana3ViewPoint1.swift; sourceTree = "<group>"; };
+		F477A6371E3506E0002B9D7A /* Ana3ViewPoint2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ana3ViewPoint2.swift; sourceTree = "<group>"; };
+		F477A6391E3506FF002B9D7A /* Ana3ViewLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ana3ViewLine.swift; sourceTree = "<group>"; };
+		F49E8A241E2A7A7F00CD34E3 /* Tri1ViewTriangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tri1ViewTriangle.swift; sourceTree = "<group>"; };
+		F49E8A261E2A7DBE00CD34E3 /* Tri1ViewLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tri1ViewLine.swift; sourceTree = "<group>"; };
+		F4C1A4E61E166CB000BDF328 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F4C1A4E81E166D0E00BDF328 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		F4ECD7C81E290A4E00A059A5 /* Par1ViewLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Par1ViewLine.swift; sourceTree = "<group>"; };
+		F4ECD7CA1E290D2000A059A5 /* Par2ViewSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Par2ViewSquare.swift; sourceTree = "<group>"; };
+		F4ECD7CC1E290E4F00A059A5 /* Par2ViewLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Par2ViewLine.swift; sourceTree = "<group>"; };
+		F4ECD7CE1E2910CC00A059A5 /* Par3ViewParallelogram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Par3ViewParallelogram.swift; sourceTree = "<group>"; };
+		F4F2C5C91E2D1B07006DD05B /* Pol1ViewFilling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pol1ViewFilling.swift; sourceTree = "<group>"; };
+		F4F2C5CB1E2D1DAB006DD05B /* Pol1ViewPolygon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pol1ViewPolygon.swift; sourceTree = "<group>"; };
+		F4F2C5CD1E2D1E3C006DD05B /* Pol1ViewLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pol1ViewLine.swift; sourceTree = "<group>"; };
+		F4F2C5CF1E2D2357006DD05B /* Pol1ViewRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pol1ViewRadius.swift; sourceTree = "<group>"; };
+		F4F2F6991E26BE6900566861 /* Par1ViewRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Par1ViewRectangle.swift; sourceTree = "<group>"; };
 		F4FE5E261E158E8C009F24A6 /* Core Geometry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Geometry.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FE5E291E158E8C009F24A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4FE5E2B1E158E8C009F24A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F4FE5E2E1E158E8C009F24A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4FE5E301E158E8C009F24A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4FE5E331E158E8C009F24A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4FE5E351E158E8C009F24A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +159,177 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F41443EE1E2BB851004F5139 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				F41443EC1E2BB711004F5139 /* Cir1ViewFilling.swift */,
+				F41443EF1E2BBBAB004F5139 /* Cir1ViewCircle.swift */,
+				F41443F11E2BBC8E004F5139 /* Cir1ViewLine.swift */,
+				F41443F31E2BBFC2004F5139 /* Cir2ViewArc.swift */,
+				F4540CF11E2D0E5B003941A3 /* Cir3ViewSphere.swift */,
+			);
+			name = Circle;
+			sourceTree = "<group>";
+		};
+		F41802161E17FC4500E70714 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				F419DB261E181E0900C46A49 /* Data.swift */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
+		F41802171E17FC5000E70714 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F41802141E17FC2F00E70714 /* DetailModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F41802181E17FC5800E70714 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F41802101E17D8F700E70714 /* DetailCell.swift */,
+				F44B51041E2A763400F7A589 /* Parallelograms */,
+				F44B51051E2A764E00F7A589 /* Triangle */,
+				F41443EE1E2BB851004F5139 /* Circle */,
+				F4F2C5C81E2D1AE2006DD05B /* Polygon */,
+				F42F2B8F1E2D270700538DC0 /* Trapezium */,
+				F42F2B961E2D3D7E00538DC0 /* Rhombus */,
+				F4369F571E2D482700E6A04A /* Cone */,
+				F41B41271E32715100EAFF19 /* Cylinder */,
+				F41B412E1E327A4B00EAFF19 /* Ellipse */,
+				F477A6241E34BF40002B9D7A /* Analytical */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F41802191E17FC6200E70714 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4C1A4E81E166D0E00BDF328 /* MainVC.swift */,
+				F40558291E16703B00055955 /* DetailVC.swift */,
+				F405582D1E1673C900055955 /* CalculatorVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F41B41271E32715100EAFF19 /* Cylinder */ = {
+			isa = PBXGroup;
+			children = (
+				F41B41281E32718400EAFF19 /* Cyl1ViewFilling.swift */,
+				F41B412A1E32734C00EAFF19 /* Cyl1ViewRadius.swift */,
+				F41B412C1E3277FA00EAFF19 /* Cyl1ViewHeight.swift */,
+			);
+			name = Cylinder;
+			sourceTree = "<group>";
+		};
+		F41B412E1E327A4B00EAFF19 /* Ellipse */ = {
+			isa = PBXGroup;
+			children = (
+				F41B412F1E327A9B00EAFF19 /* Ell1ViewFilling.swift */,
+				F41B41311E327BF600EAFF19 /* Ell1ViewPerimeter.swift */,
+				F41B41331E327CC300EAFF19 /* Ell1ViewRadius1.swift */,
+				F41B41351E327CD000EAFF19 /* Ell1ViewRadius2.swift */,
+				F41B41371E327E5C00EAFF19 /* Ell3ViewFilling.swift */,
+				F41B41391E32814400EAFF19 /* Ell3ViewPerimeter.swift */,
+				F41B413B1E3281AC00EAFF19 /* Ell3ViewRadius1.swift */,
+				F41B413D1E3281BB00EAFF19 /* Ell3ViewRadius2.swift */,
+				F41B413F1E3281CC00EAFF19 /* Ell3ViewRadius3.swift */,
+			);
+			name = Ellipse;
+			sourceTree = "<group>";
+		};
+		F42F2B8F1E2D270700538DC0 /* Trapezium */ = {
+			isa = PBXGroup;
+			children = (
+				F42F2B901E2D272200538DC0 /* Tra1ViewFilling.swift */,
+				F42F2B921E2D397C00538DC0 /* Tra1ViewTrapezium.swift */,
+				F42F2B941E2D3BD600538DC0 /* Tra1ViewLine.swift */,
+			);
+			name = Trapezium;
+			sourceTree = "<group>";
+		};
+		F42F2B961E2D3D7E00538DC0 /* Rhombus */ = {
+			isa = PBXGroup;
+			children = (
+				F42F2B971E2D3DA900538DC0 /* Rho1ViewFilling.swift */,
+				F42F2B991E2D3F9100538DC0 /* Rho1ViewRhombus.swift */,
+				F42F2B9B1E2D416D00538DC0 /* Rho1ViewLine.swift */,
+				F4369F531E2D42F800E6A04A /* Rho2ViewLine.swift */,
+				F4369F551E2D43E700E6A04A /* Rho3ViewLine.swift */,
+			);
+			name = Rhombus;
+			sourceTree = "<group>";
+		};
+		F4369F571E2D482700E6A04A /* Cone */ = {
+			isa = PBXGroup;
+			children = (
+				F4369F581E2D484500E6A04A /* Con1ViewFilling.swift */,
+				F437FBF51E2FDC6900FF7E94 /* Con1ViewSlantHeight.swift */,
+				F437FBF71E2FDE9300FF7E94 /* Con1ViewRadius.swift */,
+				F437FBF91E2FE67500FF7E94 /* Con1ViewHeight.swift */,
+			);
+			name = Cone;
+			sourceTree = "<group>";
+		};
+		F44B51041E2A763400F7A589 /* Parallelograms */ = {
+			isa = PBXGroup;
+			children = (
+				F446D5C51E29370100C6FEDD /* Par1ViewFilling.swift */,
+				F4F2F6991E26BE6900566861 /* Par1ViewRectangle.swift */,
+				F4ECD7C81E290A4E00A059A5 /* Par1ViewLine.swift */,
+				F4ECD7CA1E290D2000A059A5 /* Par2ViewSquare.swift */,
+				F446D5C71E2938A000C6FEDD /* Par2ViewFilling.swift */,
+				F4ECD7CC1E290E4F00A059A5 /* Par2ViewLine.swift */,
+				F4ECD7CE1E2910CC00A059A5 /* Par3ViewParallelogram.swift */,
+				F446D5C11E291B4A00C6FEDD /* Par3ViewLine.swift */,
+				F446D5C31E2920A100C6FEDD /* Par3ViewFilling.swift */,
+				F446D5C91E293BC800C6FEDD /* Par8ViewCube1.swift */,
+			);
+			name = Parallelograms;
+			sourceTree = "<group>";
+		};
+		F44B51051E2A764E00F7A589 /* Triangle */ = {
+			isa = PBXGroup;
+			children = (
+				F44B51061E2A767500F7A589 /* Tri1ViewFilling.swift */,
+				F49E8A241E2A7A7F00CD34E3 /* Tri1ViewTriangle.swift */,
+				F49E8A261E2A7DBE00CD34E3 /* Tri1ViewLine.swift */,
+			);
+			name = Triangle;
+			sourceTree = "<group>";
+		};
+		F477A6241E34BF40002B9D7A /* Analytical */ = {
+			isa = PBXGroup;
+			children = (
+				F477A6251E34BFB1002B9D7A /* Ana1ViewCoordinates.swift */,
+				F477A62B1E34FD80002B9D7A /* Ana2ViewCoordinates.swift */,
+				F477A6271E34C9FE002B9D7A /* Ana1ViewPoints.swift */,
+				F477A62D1E34FDFC002B9D7A /* Ana2ViewPoints.swift */,
+				F477A6291E34CA0B002B9D7A /* Ana1ViewLine.swift */,
+				F477A62F1E34FF9E002B9D7A /* Ana3ViewCoordinates_X.swift */,
+				F477A6311E34FFBA002B9D7A /* Ana3ViewCoordinates_Y.swift */,
+				F477A6331E34FFCB002B9D7A /* Ana3ViewCoordinates_Z.swift */,
+				F477A6351E3506D3002B9D7A /* Ana3ViewPoint1.swift */,
+				F477A6371E3506E0002B9D7A /* Ana3ViewPoint2.swift */,
+				F477A6391E3506FF002B9D7A /* Ana3ViewLine.swift */,
+			);
+			name = Analytical;
+			sourceTree = "<group>";
+		};
+		F4F2C5C81E2D1AE2006DD05B /* Polygon */ = {
+			isa = PBXGroup;
+			children = (
+				F4F2C5C91E2D1B07006DD05B /* Pol1ViewFilling.swift */,
+				F4F2C5CB1E2D1DAB006DD05B /* Pol1ViewPolygon.swift */,
+				F4F2C5CD1E2D1E3C006DD05B /* Pol1ViewLine.swift */,
+				F4F2C5CF1E2D2357006DD05B /* Pol1ViewRadius.swift */,
+			);
+			name = Polygon;
+			sourceTree = "<group>";
+		};
 		F4FE5E1D1E158E8C009F24A6 = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +350,13 @@
 			isa = PBXGroup;
 			children = (
 				F4FE5E291E158E8C009F24A6 /* AppDelegate.swift */,
-				F4FE5E2B1E158E8C009F24A6 /* ViewController.swift */,
-				F4FE5E2D1E158E8C009F24A6 /* Main.storyboard */,
-				F4FE5E301E158E8C009F24A6 /* Assets.xcassets */,
+				F41802161E17FC4500E70714 /* Files */,
+				F41802171E17FC5000E70714 /* Models */,
+				F41802181E17FC5800E70714 /* Views */,
+				F41802191E17FC6200E70714 /* Controllers */,
+				F4C1A4E61E166CB000BDF328 /* Main.storyboard */,
 				F4FE5E321E158E8C009F24A6 /* LaunchScreen.storyboard */,
+				F4FE5E301E158E8C009F24A6 /* Assets.xcassets */,
 				F4FE5E351E158E8C009F24A6 /* Info.plist */,
 			);
 			path = "Core Geometry";
@@ -124,9 +422,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C1A4E71E166CB000BDF328 /* Main.storyboard in Resources */,
 				F4FE5E341E158E8C009F24A6 /* LaunchScreen.storyboard in Resources */,
 				F4FE5E311E158E8C009F24A6 /* Assets.xcassets in Resources */,
-				F4FE5E2F1E158E8C009F24A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,22 +435,76 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4FE5E2C1E158E8C009F24A6 /* ViewController.swift in Sources */,
+				F41B412D1E3277FA00EAFF19 /* Cyl1ViewHeight.swift in Sources */,
+				F44B51071E2A767500F7A589 /* Tri1ViewFilling.swift in Sources */,
+				F42F2B9A1E2D3F9100538DC0 /* Rho1ViewRhombus.swift in Sources */,
+				F437FBFA1E2FE67500FF7E94 /* Con1ViewHeight.swift in Sources */,
+				F41B41291E32718400EAFF19 /* Cyl1ViewFilling.swift in Sources */,
+				F477A6381E3506E0002B9D7A /* Ana3ViewPoint2.swift in Sources */,
+				F42F2B931E2D397C00538DC0 /* Tra1ViewTrapezium.swift in Sources */,
+				F4ECD7C91E290A4E00A059A5 /* Par1ViewLine.swift in Sources */,
+				F446D5C61E29370100C6FEDD /* Par1ViewFilling.swift in Sources */,
+				F477A6361E3506D3002B9D7A /* Ana3ViewPoint1.swift in Sources */,
+				F419DB271E181E0900C46A49 /* Data.swift in Sources */,
+				F49E8A271E2A7DBE00CD34E3 /* Tri1ViewLine.swift in Sources */,
+				F41443F21E2BBC8E004F5139 /* Cir1ViewLine.swift in Sources */,
+				F4ECD7CB1E290D2000A059A5 /* Par2ViewSquare.swift in Sources */,
+				F42F2B951E2D3BD600538DC0 /* Tra1ViewLine.swift in Sources */,
+				F41B412B1E32734C00EAFF19 /* Cyl1ViewRadius.swift in Sources */,
+				F42F2B9C1E2D416D00538DC0 /* Rho1ViewLine.swift in Sources */,
+				F477A6281E34C9FE002B9D7A /* Ana1ViewPoints.swift in Sources */,
+				F477A62C1E34FD80002B9D7A /* Ana2ViewCoordinates.swift in Sources */,
+				F477A63A1E3506FF002B9D7A /* Ana3ViewLine.swift in Sources */,
+				F4F2F69A1E26BE6900566861 /* Par1ViewRectangle.swift in Sources */,
+				F42F2B911E2D272200538DC0 /* Tra1ViewFilling.swift in Sources */,
+				F41B413E1E3281BB00EAFF19 /* Ell3ViewRadius2.swift in Sources */,
+				F446D5C81E2938A000C6FEDD /* Par2ViewFilling.swift in Sources */,
+				F42F2B981E2D3DA900538DC0 /* Rho1ViewFilling.swift in Sources */,
+				F41B41361E327CD000EAFF19 /* Ell1ViewRadius2.swift in Sources */,
+				F4ECD7CD1E290E4F00A059A5 /* Par2ViewLine.swift in Sources */,
+				F4F2C5D01E2D2357006DD05B /* Pol1ViewRadius.swift in Sources */,
+				F4F2C5CA1E2D1B07006DD05B /* Pol1ViewFilling.swift in Sources */,
+				F41B41321E327BF600EAFF19 /* Ell1ViewPerimeter.swift in Sources */,
+				F477A6261E34BFB1002B9D7A /* Ana1ViewCoordinates.swift in Sources */,
+				F41802111E17D8F700E70714 /* DetailCell.swift in Sources */,
+				F41B41401E3281CC00EAFF19 /* Ell3ViewRadius3.swift in Sources */,
+				F437FBF81E2FDE9300FF7E94 /* Con1ViewRadius.swift in Sources */,
+				F477A6321E34FFBA002B9D7A /* Ana3ViewCoordinates_Y.swift in Sources */,
+				F446D5CA1E293BC800C6FEDD /* Par8ViewCube1.swift in Sources */,
+				F41B413C1E3281AC00EAFF19 /* Ell3ViewRadius1.swift in Sources */,
+				F4369F561E2D43E700E6A04A /* Rho3ViewLine.swift in Sources */,
+				F477A62A1E34CA0B002B9D7A /* Ana1ViewLine.swift in Sources */,
+				F49E8A251E2A7A7F00CD34E3 /* Tri1ViewTriangle.swift in Sources */,
+				F41443F41E2BBFC2004F5139 /* Cir2ViewArc.swift in Sources */,
+				F41443ED1E2BB711004F5139 /* Cir1ViewFilling.swift in Sources */,
+				F41B41301E327A9B00EAFF19 /* Ell1ViewFilling.swift in Sources */,
+				F477A6341E34FFCB002B9D7A /* Ana3ViewCoordinates_Z.swift in Sources */,
+				F4F2C5CE1E2D1E3C006DD05B /* Pol1ViewLine.swift in Sources */,
+				F446D5C41E2920A100C6FEDD /* Par3ViewFilling.swift in Sources */,
+				F405582E1E1673C900055955 /* CalculatorVC.swift in Sources */,
+				F446D5C21E291B4A00C6FEDD /* Par3ViewLine.swift in Sources */,
 				F4FE5E2A1E158E8C009F24A6 /* AppDelegate.swift in Sources */,
+				F4369F591E2D484500E6A04A /* Con1ViewFilling.swift in Sources */,
+				F4540CF21E2D0E5B003941A3 /* Cir3ViewSphere.swift in Sources */,
+				F4F2C5CC1E2D1DAB006DD05B /* Pol1ViewPolygon.swift in Sources */,
+				F41802151E17FC2F00E70714 /* DetailModel.swift in Sources */,
+				F437FBF61E2FDC6900FF7E94 /* Con1ViewSlantHeight.swift in Sources */,
+				F41B413A1E32814400EAFF19 /* Ell3ViewPerimeter.swift in Sources */,
+				F4C1A4E91E166D0E00BDF328 /* MainVC.swift in Sources */,
+				F4ECD7CF1E2910CC00A059A5 /* Par3ViewParallelogram.swift in Sources */,
+				F477A6301E34FF9E002B9D7A /* Ana3ViewCoordinates_X.swift in Sources */,
+				F405582A1E16703B00055955 /* DetailVC.swift in Sources */,
+				F41443F01E2BBBAB004F5139 /* Cir1ViewCircle.swift in Sources */,
+				F4369F541E2D42F800E6A04A /* Rho2ViewLine.swift in Sources */,
+				F41B41381E327E5C00EAFF19 /* Ell3ViewFilling.swift in Sources */,
+				F41B41341E327CC300EAFF19 /* Ell1ViewRadius1.swift in Sources */,
+				F477A62E1E34FDFC002B9D7A /* Ana2ViewPoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F4FE5E2D1E158E8C009F24A6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4FE5E2E1E158E8C009F24A6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F4FE5E321E158E8C009F24A6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -263,8 +615,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KUPZ8W8CSU;
 				INFOPLIST_FILE = "Core Geometry/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fotiostragopoulos.myds.me.Core-Geometry";
+				PRODUCT_BUNDLE_IDENTIFIER = fotiostragopoulos.myds.me.CoreGeometry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -276,8 +629,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KUPZ8W8CSU;
 				INFOPLIST_FILE = "Core Geometry/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fotiostragopoulos.myds.me.Core-Geometry";
+				PRODUCT_BUNDLE_IDENTIFIER = fotiostragopoulos.myds.me.CoreGeometry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -302,6 +656,7 @@
 				F4FE5E3A1E158E8C009F24A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

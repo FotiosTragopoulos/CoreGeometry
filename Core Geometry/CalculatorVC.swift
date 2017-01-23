@@ -971,7 +971,7 @@ class CalculatorVC: UIViewController {
         
         //Create and add the GitHub link
         let gitImage = UIImage(named: "githubsrc")
-        let link = "https://github.com/FotiosTragopoulos/Calculator3D"
+        let link = "https://github.com/FotiosTragopoulos/Core-Geometry"
         let gitLink = UIAlertAction(title: "GitHub Project", style: .default) { action -> Void in
             UIApplication.shared.openURL(NSURL(string: link)! as URL)
             print("something here... button click or action logging")
@@ -980,7 +980,7 @@ class CalculatorVC: UIViewController {
         
         //Create and add the Portfolio link
         let portImage = UIImage(named: "web")
-        let linkPortfolio = "http://fotiostragopoulos.myds.me"
+        let linkPortfolio = "http://fotiostragopoulos.myds.me/iGeometry.html"
         let portLink = UIAlertAction(title: "Portfolio Website", style: .default) { action -> Void in
             UIApplication.shared.openURL(NSURL(string: linkPortfolio)! as URL)
             print("something here... button click or action logging")
@@ -1001,12 +1001,12 @@ class CalculatorVC: UIViewController {
     }
     
     @IBAction func gitAction(_ sender: UIButton) {
-        if let url = NSURL(string: "https://github.com/FotiosTragopoulos/Calculator3D") {
+        if let url = NSURL(string: "https://github.com/FotiosTragopoulos/Core-Geometry") {
             UIApplication.shared.openURL(url as URL) }
     }
     
     @IBAction func portfollioAction(_ sender: UIButton) {
-        if let url = NSURL(string: "http://fotiostragopoulos.myds.me") {
+        if let url = NSURL(string: "http://fotiostragopoulos.myds.me/iGeometry.html") {
             UIApplication.shared.openURL(url as URL)}
     }
 

@@ -1280,6 +1280,64 @@ class CalculatorVC: UIViewController {
         }
     }
     
+    @IBAction func thirdField(_ sender: UITextField) {
+            //Triangle
+        if cellLabel == 9 {
+            animate(a: Tri1ViewTriangle)
+        } else if cellLabel == 10 {
+            animate(a: Tri1ViewTriangle)
+
+            //Trapezium
+        } else if cellLabel == 21 {
+            animate(a: Tra1ViewLine)
+        } else if cellLabel == 22 {
+            animate(a: Tra1ViewTrapezium)
+            
+            //Ellipse
+        } else if cellLabel == 38 {
+            animate(a: Ell3ViewRadius3)
+            
+            //Analytical
+        } else if cellLabel == 39 {
+            animate(a: Ana1ViewPoints)
+            animate(a: Ana1ViewCoordiantes)
+        } else if cellLabel == 40 {
+            animate(a: Ana3ViewPoint1)
+            animate(a: Ana3ViewCoordinates_X)
+        } else if cellLabel == 41 {
+            animate(a: Ana1ViewPoints)
+            animate(a: Ana1ViewCoordiantes)
+        }
+    }
+    
+    @IBAction func fourthField(_ sender: UITextField) {
+            //Trapezium
+        if cellLabel == 22 {
+            animate(a: Tra1ViewTrapezium)
+
+            //Analytical
+        } else if cellLabel == 39 {
+            animate(a: Ana2ViewPoints)
+            animate(a: Ana1ViewCoordiantes)
+        } else if cellLabel == 40 {
+            animate(a: Ana3ViewPoint2)
+            animate(a: Ana3ViewCoordinates_X)
+        } else if cellLabel == 41 {
+            animate(a: Ana2ViewPoints)
+            animate(a: Ana1ViewCoordiantes)
+        }
+    }
+    
+    @IBAction func fifthField(_ sender: UITextField) {
+        animate(a: Ana3ViewPoint1)
+        animate(a: Ana3ViewCoordinates_Z)
+    }
+    
+    @IBAction func sixthField(_ sender: UITextField) {
+        animate(a: Ana3ViewPoint2)
+        animate(a: Ana3ViewCoordinates_Z)
+    }
+    
     //Calculate button action
     @IBAction func calculateAction(_ sender: Any) {
         if cellLabel == 0 {

@@ -771,6 +771,9 @@
                                         <include reference="kOr-v1-AmP"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="thirdField:" destination="XSO-cR-8G7" eventType="editingDidBegin" id="vsa-6b-85r"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g24-A1-z2j">
                                 <rect key="frame" x="63" y="164" width="288" height="30"/>
@@ -823,6 +826,9 @@
                                         <include reference="qse-uZ-0oO"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="fourthField:" destination="XSO-cR-8G7" eventType="editingDidBegin" id="34q-cd-38m"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rlg-yB-4Cg">
                                 <rect key="frame" x="63" y="202" width="288" height="30"/>
@@ -875,6 +881,9 @@
                                         <include reference="a3X-qi-RCy"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="fifthField:" destination="XSO-cR-8G7" eventType="editingDidBegin" id="0H3-TU-Ent"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pY0-6s-jKM">
                                 <rect key="frame" x="63" y="240" width="288" height="30"/>
@@ -927,6 +936,9 @@
                                         <include reference="txJ-FO-l7b"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="sixthField:" destination="XSO-cR-8G7" eventType="editingDidBegin" id="uhr-YM-OoI"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uS7-rc-xFY">
                                 <rect key="frame" x="63" y="278" width="288" height="30"/>

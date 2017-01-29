@@ -1340,20 +1340,564 @@ class CalculatorVC: UIViewController {
     
     //Calculate button action
     @IBAction func calculateAction(_ sender: Any) {
+        let a = format(a: firstTextField)
+        let b = format(a: secondTextField)
+        let c = format(a: thirdTextField)
+        let d = format(a: fourthTextField)
+        let e = format(a: fifthTextField)
+        let f = format(a: sixthTextField)
+        let g = format(a: seventhTextField)
+        
+        //Parallelogram
         if cellLabel == 0 {
-            
-            if (firstTextField.text != "" && secondTextField.text != "") {
-                let a = format(a: firstTextField)
-                let b = format(a: secondTextField)
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
                 let c = round(10000*(sqrt((a * a)+(b * b))))/10000
                 firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "Side B = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Diagonal = \(forTrailingZero(temp: c)) m"
-                
+                animate(a: Par1ViewLine)
+            } else if thirdTextField.text != "" {
+                animate(a: Par1ViewLine)
             } else {
                 showAlert()
             }
-            self.view.endEditing(true)
+        } else if cellLabel == 1 {
+            if firstTextField.text != "" && secondTextField.text == "" {
+                let b = round(10000*(sqrt(2) * a))/10000
+                firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Diagonal = \(forTrailingZero(temp: b)) m"
+                animate(a: Par2ViewLine)
+            } else if secondTextField.text != "" {
+                animate(a: Par2ViewLine)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 2 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000*(a * b))/10000
+                firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Height = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
+                animate(a: Par3ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Par3ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 3 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000*(a * b))/10000
+                firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Side B = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
+                animate(a: Par1ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Par1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 4 {
+            if firstTextField.text != "" && secondTextField.text == "" {
+                let b = round(10000*(a * a))/10000
+                firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Surface Area = \(forTrailingZero(temp: b)) m²"
+                animate(a: Par2ViewFilling)
+            } else if secondTextField.text != "" {
+                animate(a: Par2ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 5 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000*(2 * (a + b)))/10000
+                firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Side B = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Perimeter = \(forTrailingZero(temp: c)) m"
+                animate(a: Par3ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Par3ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 6 {
+            if firstTextField.text != "" && secondTextField.text == "" {
+                let b = round(10000*(4 * a))/10000
+                firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Perimeter = \(forTrailingZero(temp: b)) m"
+                animate(a: Par2ViewSquare)
+            } else if secondTextField.text != "" {
+                animate(a: Par2ViewSquare)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 7 {
+            if firstTextField.text != "" && secondTextField.text == "" {
+                let b = round(10000*(a * a * a))/10000
+                firstTextField.text = "Edge = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Volume = \(forTrailingZero(temp: b)) m³"
+                animate(a: Par8ViewCube1)
+            } else if secondTextField.text != "" {
+                animate(a: Par8ViewCube1)
+            } else {
+                showAlert()
+            }
+            
+        //Triangle
+        } else if cellLabel == 8 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * ((a * b) / 2))/10000
+                firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Height = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
+                animate(a: Tri1ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Tri1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 9 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text != "" && fourthTextField.text == "" {
+                let d = round(10000 * (sqrt( (a+b+c) * ( (a+b+c) - a ) * ( (a+b+c) - b ) * ( (a+b+c) - c ))))/10000
+                firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Side B = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Side C = \(forTrailingZero(temp: c)) m"
+                fourthTextField.text = "Surface Area = \(forTrailingZero(temp: d)) m²"
+                animate(a: Tri1ViewFilling)
+            } else if fourthTextField.text != "" {
+                animate(a: Tri1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 10 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text != "" && fourthTextField.text == "" {
+                let d = round(10000 * (a + b + c))/10000
+                firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Side B = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Side C = \(forTrailingZero(temp: c)) m"
+                fourthTextField.text = "Perimeter = \(forTrailingZero(temp: d)) m"
+                animate(a: Tri1ViewTriangle)
+            } else if fourthTextField.text != "" {
+                animate(a: Tri1ViewTriangle)
+            } else {
+                showAlert()
+            }
+            
+        //Circle
+        } else if cellLabel == 11 {
+            if firstTextField.text != "" && secondTextField.text == "" {
+                let b = round(10000 * (Double.pi * (a * a)))/10000
+                firstTextField.text = "Radius = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Surface Area = \(forTrailingZero(temp: b)) m²"
+                animate(a: Cir1ViewFilling)
+            } else if secondTextField.text != "" {
+                animate(a: Cir1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 12 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * ((Double.pi * (b * b) * a)/360))/10000
+                firstTextField.text = "Arc Length = \(forTrailingZero(temp: a))˚"
+                secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Sector's Area = \(forTrailingZero(temp: c)) m²"
+                animate(a: Cir2ViewArc)
+            } else if thirdTextField.text != "" {
+                animate(a: Cir2ViewArc)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 13 {
+            if firstTextField.text != "" && secondTextField.text == "" {
+                let b = round(10000 * (4 * Double.pi * (a * a)))/10000
+                firstTextField.text = "Radius = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Surface Area = \(forTrailingZero(temp: b)) m²"
+                animate(a: Cir3ViewSphere)
+            } else if secondTextField.text != "" {
+                animate(a: Cir3ViewSphere)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 14 {
+            if firstTextField.text != "" && secondTextField.text == "" {
+                let b = round(10000 * (2 * Double.pi * a))/10000
+                firstTextField.text = "Radius = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Perimeter = \(forTrailingZero(temp: b)) m"
+                animate(a: Cir1ViewFilling)
+            } else if secondTextField.text != "" {
+                animate(a: Cir1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 15 {
+            if firstTextField.text != "" && secondTextField.text == "" {
+                let b = round(10000 * ((4 / 3) * Double.pi * (a * a * a)))/10000
+                firstTextField.text = "Radius = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Volume = \(forTrailingZero(temp: b)) m³"
+                animate(a: Cir3ViewSphere)
+            } else if secondTextField.text != "" {
+                animate(a: Cir3ViewSphere)
+            } else {
+                showAlert()
+            }
+            
+        //Polygon
+        } else if cellLabel == 16 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * ((a * b) / 2))/10000
+                firstTextField.text = "Perimeter = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Apothem = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
+                animate(a: Pol1ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Pol1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 17 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * ((b * b) * a * tan(Double.pi / a)))/10000
+                firstTextField.text = "Number of Sides = \(forTrailingZero(temp: a))"
+                secondTextField.text = "Apothem = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
+                animate(a: Pol1ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Pol1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 18 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * (((b * b) * a * sin((2 * Double.pi) / a))/2))/10000
+                firstTextField.text = "Number of Sides = \(forTrailingZero(temp: a))"
+                secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
+                animate(a: Pol1ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Pol1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 19 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * (((b * b) * a) / (4 * tan(Double.pi / a))))/10000
+                firstTextField.text = "Number of Sides = \(forTrailingZero(temp: a))"
+                secondTextField.text = "Length of Side = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
+                animate(a: Pol1ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Pol1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 20 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * (a * b))/10000
+                firstTextField.text = "Number of Sides = \(forTrailingZero(temp: a))"
+                secondTextField.text = "Length of a Side = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Perimeter = \(forTrailingZero(temp: c)) m"
+                animate(a: Pol1ViewPolygon)
+            } else if thirdTextField.text != "" {
+                animate(a: Pol1ViewPolygon)
+            } else {
+                showAlert()
+            }
+            
+        //Trapezium
+        } else if cellLabel == 21 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text != "" && fourthTextField.text == "" {
+                let d = round(10000 * (((a + b) * c))/2 )/10000
+                firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Side B = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Height = \(forTrailingZero(temp: c)) m"
+                fourthTextField.text = "Surface Area = \(forTrailingZero(temp: d)) m²"
+                animate(a: Tra1ViewFilling)
+            } else if fourthTextField.text != "" {
+                animate(a: Tra1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 22 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text != "" && fourthTextField.text != "" && fifthTextField.text == ""{
+                let e = round(10000 * (a + b + c + d))/10000
+                firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Side B = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Side C = \(forTrailingZero(temp: c)) m"
+                fourthTextField.text = "Side D = \(forTrailingZero(temp: d)) m"
+                fifthTextField.text = "Perimeter = \(forTrailingZero(temp: e)) m"
+                animate(a: Tra1ViewTrapezium)
+            } else if fifthTextField.text != "" {
+                animate(a: Tra1ViewTrapezium)
+            } else {
+                showAlert()
+            }
+            
+        //Rhombus
+        } else if cellLabel == 23 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * (a * b))/10000
+                firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Slant Height = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
+                animate(a: Rho1ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Rho1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 24 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * ((a * b)/2))/10000
+                firstTextField.text = "Diagonal A = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Diagonal B = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
+                animate(a: Rho1ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Rho1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 25 {
+            if firstTextField.text != "" && secondTextField.text == "" {
+                let b = round(10000 * ((a * a) * sin(a)))/10000
+                firstTextField.text = "Angle A = \(forTrailingZero(temp: a))˚"
+                secondTextField.text = "Surface Area = \(forTrailingZero(temp: b)) m²"
+                animate(a: Rho1ViewFilling)
+            } else if secondTextField.text != "" {
+                animate(a: Rho1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 26 {
+            if firstTextField.text != "" && secondTextField.text == "" {
+                let b = round(10000 * (4 * a))/10000
+                firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Perimeter = \(forTrailingZero(temp: b)) m"
+                animate(a: Rho1ViewRhombus)
+            } else if secondTextField.text != "" {
+                animate(a: Rho1ViewRhombus)
+            } else {
+                showAlert()
+            }
+            
+        //Cone
+        } else if cellLabel == 27 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * (sqrt((b * b) + (a * a))))/10000
+                firstTextField.text = "Height = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Slant Height = \(forTrailingZero(temp: c)) m"
+                animate(a: Con1ViewSlantHeight)
+            } else if thirdTextField.text != "" {
+                animate(a: Con1ViewSlantHeight)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 28 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * (Double.pi * b * (sqrt((b * b) + (a * a) + b))))/10000
+                firstTextField.text = "Height = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
+                animate(a: Con1ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Con1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 29 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * (Double.pi * b * (a + b)))/10000
+                firstTextField.text = "Slant Height = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
+                animate(a: Con1ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Con1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 30 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * (Double.pi * b * a))/10000
+                firstTextField.text = "Slant Height = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
+                animate(a: Con1ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Con1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 31 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * (Double.pi * b * sqrt((b * b) + (a * a))))/10000
+                firstTextField.text = "Height = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
+                animate(a: Con1ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Con1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 32 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * ((1 / 3) * Double.pi * (b * b) * a))/10000
+                firstTextField.text = "Height = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Volume = \(forTrailingZero(temp: c)) m³"
+                animate(a: Con1ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Con1ViewFilling)
+            } else {
+                showAlert()
+            }
+            
+        //Cylinder
+        } else if cellLabel == 33 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * (2 * Double.pi * b * a))/10000
+                firstTextField.text = "Height = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
+                animate(a: Cyl1ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Cyl1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 34 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * (2 * Double.pi * b * (a + b)))/10000
+                firstTextField.text = "Height = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
+                animate(a: Cyl1ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Cyl1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 35 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * (Double.pi * (b * b) * a))/10000
+                firstTextField.text = "Height = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Volume = \(forTrailingZero(temp: c)) m³"
+                animate(a: Cyl1ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Cyl1ViewFilling)
+            } else {
+                showAlert()
+            }
+            
+        //Ellipse
+        } else if cellLabel == 36 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * (Double.pi * a * b))/10000
+                firstTextField.text = "Radius A = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Radius B = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
+                animate(a: Ell1ViewFilling)
+            } else if thirdTextField.text != "" {
+                animate(a: Ell1ViewFilling)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 37 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
+                let c = round(10000 * (2 * Double.pi * (sqrt(((a * a) + (b * b))/2))))/10000
+                firstTextField.text = "Radius A = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Radius B = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Perimeter = \(forTrailingZero(temp: c)) m"
+                animate(a: Ell1ViewPerimeter)
+            } else if thirdTextField.text != "" {
+                animate(a: Ell1ViewPerimeter)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 38 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text != "" && fourthTextField.text == "" {
+                let d = round(10000 * ((4 / 3) * Double.pi * a * b * c))/10000
+                firstTextField.text = "Radius A = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "Radius B = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "Radius C = \(forTrailingZero(temp: c)) m"
+                fourthTextField.text = "Volume = \(forTrailingZero(temp: d)) m³"
+                animate(a: Ell3ViewFilling)
+            } else if fourthTextField.text != "" {
+                animate(a: Ell3ViewFilling)
+            } else {
+                showAlert()
+            }
+            
+        //Analytical
+        } else if cellLabel == 39 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text != "" && fourthTextField.text != "" && fifthTextField.text == "" {
+                let e = round(10000 * sqrt(((b - a) * (b - a)) + ((d - c) * (d - c))))/10000
+                firstTextField.text = "x₁ = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "x₂ = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "y₁ = \(forTrailingZero(temp: c)) m"
+                fourthTextField.text = "y₂ = \(forTrailingZero(temp: d)) m"
+                fifthTextField.text = "Distance = \(forTrailingZero(temp: e)) m"
+                animate(a: Ana1ViewLine)
+                animate(a: Ana1ViewPoints)
+                animate(a: Ana2ViewPoints)
+            } else if fifthTextField.text != "" {
+                animate(a: Ana1ViewLine)
+                animate(a: Ana1ViewPoints)
+                animate(a: Ana2ViewPoints)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 40 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text != "" && fourthTextField.text != "" && fifthTextField.text != "" && sixthTextField.text != "" && seventhTextField.text == "" {
+                let f = round(10000 * sqrt(((b - a) * (b - a)) + ((d - c) * (d - c)) + ((f - e) * (f - e))))/10000
+                firstTextField.text = "x₁ = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "x₂ = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "y₁ = \(forTrailingZero(temp: c)) m"
+                fourthTextField.text = "y₂ = \(forTrailingZero(temp: d)) m"
+                fifthTextField.text = "z₁ = \(forTrailingZero(temp: e)) m"
+                sixthTextField.text = "z₂ = \(forTrailingZero(temp: f)) m"
+                seventhTextField.text = "Distance = \(forTrailingZero(temp: g)) m"
+                animate(a: Ana3ViewLine)
+                animate(a: Ana3ViewPoint1)
+                animate(a: Ana3ViewPoint2)
+            } else if seventhTextField.text != "" {
+                animate(a: Ana3ViewLine)
+                animate(a: Ana3ViewPoint1)
+                animate(a: Ana3ViewPoint2)
+            } else {
+                showAlert()
+            }
+        } else if cellLabel == 41 {
+            if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text != "" && fourthTextField.text != "" && fifthTextField.text == "" {
+                let e = round(10000 * ((d - c) / (b - a)))/10000
+                firstTextField.text = "x₁ = \(forTrailingZero(temp: a)) m"
+                secondTextField.text = "x₂ = \(forTrailingZero(temp: b)) m"
+                thirdTextField.text = "y₁ = \(forTrailingZero(temp: c)) m"
+                fourthTextField.text = "y₂ = \(forTrailingZero(temp: d)) m"
+                fifthTextField.text = "Line Slope = \(forTrailingZero(temp: e))"
+                animate(a: Ana1ViewLine)
+                animate(a: Ana1ViewPoints)
+                animate(a: Ana2ViewPoints)
+            } else if fifthTextField.text != "" {
+                animate(a: Ana1ViewLine)
+                animate(a: Ana1ViewPoints)
+                animate(a: Ana2ViewPoints)
+            } else {
+                showAlert()
+            }
         }
+            self.view.endEditing(true)
+    }
+    
+    @IBAction func resetAction(_ sender: UIButton) {
+        firstTextField.text = ""
+        secondTextField.text = ""
+        thirdTextField.text = ""
+        fourthTextField.text = ""
+        fifthTextField.text = ""
+        sixthTextField.text = ""
+        seventhTextField.text = ""
     }
 }

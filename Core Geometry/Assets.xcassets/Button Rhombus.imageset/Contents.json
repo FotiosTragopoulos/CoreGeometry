@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "Button Rhombus.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Button Rhombus@3x-1.png",
+      "filename" : "Button Rhombus@2x.png",
       "scale" : "2x"
     },
     {

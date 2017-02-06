@@ -27,4 +27,14 @@ class MainVC: UIViewController {
             }
         }
     }
+    
+    @IBAction func gitAction(_ sender: UIButton) {
+        if let url = NSURL(string: "https://github.com/FotiosTragopoulos") {
+            UIApplication.shared.openURL(url as URL)}
+    }
+    
+    @IBAction func portfolioAction(_ sender: UIButton) {
+        if let url = NSURL(string: "http://fotiostragopoulos.myds.me/iGeometry.html") {
+            UIApplication.shared.openURL(url as URL)}
+    }
 }

@@ -11,6 +11,7 @@ import UIKit
 class CalculatorVC: UIViewController {
 
     @IBOutlet weak var calcViewTitle: UILabel!
+    @IBOutlet weak var outputField: UITextView!
     
     @IBOutlet weak var firstTextField: UITextField!
     @IBOutlet weak var secondTextField: UITextField!
@@ -168,7 +169,8 @@ class CalculatorVC: UIViewController {
             Par1ViewRectangle.isHidden = false
             Par1ViewFilling.isHidden = false
             Par1ViewLine.isHidden = false
-            
+
+            outputField.text = "Diagonal² = SideA² + SideB² ⇒ \nDiagonal = √(SideA² + SideB²) ⇒"
         } else if cellLabel == 1 {
             calcViewTitle.text = Par2.cellTitle
             //Creating the TextFields
@@ -187,6 +189,8 @@ class CalculatorVC: UIViewController {
             Par2ViewSquare.isHidden = false
             Par2ViewFilling.isHidden = false
             Par2ViewLine.isHidden = false
+            
+            outputField.text = "Diagonal² = SideA² + SideA² ⇒ \nDiagonal = √(SideA² + SideA²) ⇒ \nDiagonal = √(2﹒SideA²) ⇒ \nDiagonal = √2﹒SideA ⇒"
             
         } else if cellLabel == 2 {
             calcViewTitle.text = Par3.cellTitle
@@ -208,6 +212,8 @@ class CalculatorVC: UIViewController {
             Par3ViewFilling.isHidden = false
             Par3ViewLine.isHidden = false
             
+            outputField.text = "Surface Area = SideA﹒Height ⇒"
+            
         } else if cellLabel == 3 {
             calcViewTitle.text = Par4.cellTitle
             //Creating the TextFields
@@ -227,6 +233,8 @@ class CalculatorVC: UIViewController {
             Par1ViewRectangle.isHidden = false
             Par1ViewFilling.isHidden = false
             
+            outputField.text = "Surface Area = SideA﹒SideB ⇒"
+            
         } else if cellLabel == 4 {
             calcViewTitle.text = Par5.cellTitle
             //Creating the TextFields
@@ -244,6 +252,8 @@ class CalculatorVC: UIViewController {
             
             Par2ViewSquare.isHidden = false
             Par2ViewFilling.isHidden = false
+            
+            outputField.text = "Surface Area = SideA﹒SideA ⇒"
             
         } else if cellLabel == 5 {
             calcViewTitle.text = Par6.cellTitle
@@ -264,6 +274,7 @@ class CalculatorVC: UIViewController {
             Par3ViewParallelogram.isHidden = false
             Par3ViewFilling.isHidden = false
             
+            outputField.text = "Perimeter = 2·SideA + 2﹒SideB ⇒ \nPerimeter = 2(SideA + SideB) ⇒"
         } else if cellLabel == 6 {
             calcViewTitle.text = Par7.cellTitle
             //Creating the TextFields
@@ -282,6 +293,7 @@ class CalculatorVC: UIViewController {
             Par2ViewSquare.isHidden = false
             Par2ViewFilling.isHidden = false
             
+            outputField.text = "Perimeter = 2·SideA + 2﹒SideB ⇒ \nPerimeter = 2(SideA + SideB) ⇒"
         } else if cellLabel == 7 {
             calcViewTitle.text = Par8.cellTitle
             //Creating the TextFields
@@ -298,6 +310,8 @@ class CalculatorVC: UIViewController {
             seventhTextField.isHidden = true
             
             Par8ViewCube1.isHidden = false
+            
+            outputField.text = "Volume = Edge³ ⇒"
             
         } else if cellLabel == 8 {
             calcViewTitle.text = Tri1.cellTitle
@@ -319,6 +333,8 @@ class CalculatorVC: UIViewController {
             Tri1ViewTriangle.isHidden = false
             Tri1ViewLine.isHidden = false
             
+            outputField.text = "Surface Area = ½﹒SideA﹒Height ⇒"
+            
         } else if cellLabel == 9 {
             calcViewTitle.text = Tri2.cellTitle
             //Creating the TextFields
@@ -338,6 +354,8 @@ class CalculatorVC: UIViewController {
             
             Tri1ViewFilling.isHidden = false
             Tri1ViewTriangle.isHidden = false
+            
+            outputField.text = "Semiperimeter (r) = (SideA + SideB + SideC) ÷ 2 \n\nSurface Area = √(r(r - a)(r - b)(r - c)) ⇒"
             
         } else if cellLabel == 10 {
             calcViewTitle.text = Tri3.cellTitle
@@ -359,6 +377,8 @@ class CalculatorVC: UIViewController {
             Tri1ViewFilling.isHidden = false
             Tri1ViewTriangle.isHidden = false
             
+            outputField.text = "Perimeter = SideA + SideB + SideC ⇒"
+            
         } else if cellLabel == 11 {
             calcViewTitle.text = Cir1.cellTitle
             //Creating the TextFields
@@ -377,6 +397,8 @@ class CalculatorVC: UIViewController {
             Cir1ViewFilling.isHidden = false
             Cir1ViewCircle.isHidden = false
             Cir1ViewLine.isHidden = false
+            
+            outputField.text = "Surface Area = π﹒Radius² ⇒"
             
         } else if cellLabel == 12 {
             calcViewTitle.text = Cir2.cellTitle
@@ -399,6 +421,8 @@ class CalculatorVC: UIViewController {
             Cir1ViewLine.isHidden = false
             Cir2ViewArc.isHidden = false
             
+            outputField.text = "Sector's Area = (π﹒Radius²﹒Arc Length°) ÷ 360 ⇒"
+            
         } else if cellLabel == 13 {
             calcViewTitle.text = Cir3.cellTitle
             //Creating the TextFields
@@ -416,6 +440,8 @@ class CalculatorVC: UIViewController {
             
             Cir3ViewSphere.isHidden = false
             Cir1ViewLine.isHidden = false
+            
+            outputField.text = "Curved Surface Area = 4﹒π﹒Radius² ⇒"
             
         } else if cellLabel == 14 {
             calcViewTitle.text = Cir4.cellTitle
@@ -436,6 +462,8 @@ class CalculatorVC: UIViewController {
             Cir1ViewCircle.isHidden = false
             Cir1ViewLine.isHidden = false
             
+            outputField.text = "Perimeter = 2﹒π﹒Radius ⇒"
+            
         } else if cellLabel == 15 {
             calcViewTitle.text = Cir5.cellTitle
             //Creating the TextFields
@@ -453,6 +481,8 @@ class CalculatorVC: UIViewController {
         
             Cir3ViewSphere.isHidden = false
             Cir1ViewLine.isHidden = false
+            
+            outputField.text = "Volume = (4 ÷ 3)﹒π﹒Radius³ ⇒"
             
         } else if cellLabel == 16 {
             calcViewTitle.text = Pol1.cellTitle
@@ -474,10 +504,12 @@ class CalculatorVC: UIViewController {
             Pol1ViewPolygon.isHidden = false
             Pol1ViewLine.isHidden = false
             
+            outputField.text = "Surface Area = (Apothem﹒Perimeter) ÷ 2 ⇒"
+            
         } else if cellLabel == 17 {
             calcViewTitle.text = Pol2.cellTitle
             //Creating the TextFields
-            firstTextField.placeholder = "Number of Sides"
+            firstTextField.placeholder = "Number of Sides (n)"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Apothem in meters"
             secondTextField.textColor = UIColor.blue
@@ -494,10 +526,12 @@ class CalculatorVC: UIViewController {
             Pol1ViewPolygon.isHidden = false
             Pol1ViewLine.isHidden = false
             
+            outputField.text = "Surface Area = Apothem²﹒n﹒tan(π ÷ n) ⇒"
+            
         } else if cellLabel == 18 {
             calcViewTitle.text = Pol3.cellTitle
             //Creating the TextFields
-            firstTextField.placeholder = "Number of Sides"
+            firstTextField.placeholder = "Number of Sides (n)"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Radius in meters"
             secondTextField.textColor = UIColor.blue
@@ -514,12 +548,14 @@ class CalculatorVC: UIViewController {
             Pol1ViewPolygon.isHidden = false
             Pol1ViewRadius.isHidden = false
             
+            outputField.text = "Surface Area = (Radius²﹒n﹒sin((2﹒π) ÷ n)) ÷ n ⇒"
+            
         } else if cellLabel == 19 {
             calcViewTitle.text = Pol4.cellTitle
             //Creating the TextFields
-            firstTextField.placeholder = "Number of Sides"
+            firstTextField.placeholder = "Number of Sides (n)"
             firstTextField.textColor = UIColor.blue
-            secondTextField.placeholder = "Length of a Side in meters"
+            secondTextField.placeholder = "Length of a Side in meters (s)"
             secondTextField.textColor = UIColor.blue
             thirdTextField.placeholder = "Surface Area in m²"
             thirdTextField.textColor = UIColor.red
@@ -533,12 +569,14 @@ class CalculatorVC: UIViewController {
             Pol1ViewFilling.isHidden = false
             Pol1ViewPolygon.isHidden = false
             
+            outputField.text = "Surface Area = (s²﹒n) ÷ (4﹒tan(π ÷ n)) ⇒"
+            
         } else if cellLabel == 20 {
             calcViewTitle.text = Pol5.cellTitle
             //Creating the TextFields
-            firstTextField.placeholder = "Number of Sides"
+            firstTextField.placeholder = "Number of Sides (n)"
             firstTextField.textColor = UIColor.blue
-            secondTextField.placeholder = "Length of a Side in meters"
+            secondTextField.placeholder = "Length of a Side in meters (s)"
             secondTextField.textColor = UIColor.blue
             thirdTextField.placeholder = "Perimeter in meters"
             thirdTextField.textColor = UIColor.red
@@ -551,6 +589,8 @@ class CalculatorVC: UIViewController {
             
             Pol1ViewFilling.isHidden = false
             Pol1ViewPolygon.isHidden = false
+            
+            outputField.text = "Perimeter = n﹒s ⇒"
             
         } else if cellLabel == 21 {
             calcViewTitle.text = Tra1.cellTitle
@@ -573,6 +613,8 @@ class CalculatorVC: UIViewController {
             Tra1ViewTrapezium.isHidden = false
             Tra1ViewLine.isHidden = false
             
+            outputField.text = "Surface Area = ((SideA + SideB)﹒Height) ÷ 2 ⇒"
+            
         } else if cellLabel == 22 {
             calcViewTitle.text = Tra2.cellTitle
             //Creating the TextFields
@@ -594,6 +636,8 @@ class CalculatorVC: UIViewController {
             Tra1ViewFilling.isHidden = false
             Tra1ViewTrapezium.isHidden = false
             
+            outputField.text = "Perimeter = SideA + SideB + SideC + SideD ⇒"
+            
         } else if cellLabel == 23 {
             calcViewTitle.text = Rho1.cellTitle
             //Creating the TextFields
@@ -613,6 +657,8 @@ class CalculatorVC: UIViewController {
             Rho1ViewFilling.isHidden = false
             Rho1ViewRhombus.isHidden = false
             Rho1ViewLine.isHidden = false
+            
+            outputField.text = "Surface Area = SideA﹒Height ⇒"
             
         } else if cellLabel == 24 {
             calcViewTitle.text = Rho2.cellTitle
@@ -634,6 +680,8 @@ class CalculatorVC: UIViewController {
             Rho1ViewRhombus.isHidden = false
             Rho2ViewLine.isHidden = false
             
+            outputField.text = "Surface Area = (Diagonal A﹒Diagonal B) ÷ 2 ⇒"
+            
         } else if cellLabel == 25 {
             calcViewTitle.text = Rho3.cellTitle
             //Creating the TextFields
@@ -653,6 +701,8 @@ class CalculatorVC: UIViewController {
             Rho1ViewRhombus.isHidden = false
             Rho3ViewLine.isHidden = false
             
+            outputField.text = "Surface Area = â²﹒sin(â) ⇒"
+            
         } else if cellLabel == 26 {
             calcViewTitle.text = Rho4.cellTitle
             //Creating the TextFields
@@ -670,6 +720,8 @@ class CalculatorVC: UIViewController {
             
             Rho1ViewFilling.isHidden = false
             Rho1ViewRhombus.isHidden = false
+            
+            outputField.text = "Perimeter = 4﹒SideA ⇒"
             
         } else if cellLabel == 27 {
             calcViewTitle.text = Con1.cellTitle
@@ -692,6 +744,8 @@ class CalculatorVC: UIViewController {
             Con1ViewRadius.isHidden = false
             Con1ViewHeight.isHidden = false
             
+            outputField.text = "Slant Height = √(Radius² + Height²) ⇒"
+            
         } else if cellLabel == 28 {
             calcViewTitle.text = Con2.cellTitle
             //Creating the TextFields
@@ -712,10 +766,12 @@ class CalculatorVC: UIViewController {
             Con1ViewRadius.isHidden = false
             Con1ViewHeight.isHidden = false
             
+            outputField.text = "Surface Area = π﹒Radius﹒(√(Radius² + Height²) + Radius) ⇒"
+            
         } else if cellLabel == 29 {
             calcViewTitle.text = Con3.cellTitle
             //Creating the TextFields
-            firstTextField.placeholder = "Slant Height in meters"
+            firstTextField.placeholder = "Slant Height in meters (l)"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Radius in meters"
             secondTextField.textColor = UIColor.blue
@@ -732,10 +788,12 @@ class CalculatorVC: UIViewController {
             Con1ViewSlantHeight.isHidden = false
             Con1ViewRadius.isHidden = false
             
+            outputField.text = "Surface Area = π﹒Radius﹒(l + Radius) ⇒"
+            
         } else if cellLabel == 30 {
             calcViewTitle.text = Con4.cellTitle
             //Creating the TextFields
-            firstTextField.placeholder = "Slant Height in meters"
+            firstTextField.placeholder = "Slant Height in meters (l)"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Radius in meters"
             secondTextField.textColor = UIColor.blue
@@ -752,6 +810,8 @@ class CalculatorVC: UIViewController {
             Con1ViewSlantHeight.isHidden = false
             Con1ViewRadius.isHidden = false
 
+            outputField.text = "Surface Area = π﹒Radius﹒l ⇒"
+            
         } else if cellLabel == 31 {
             calcViewTitle.text = Con5.cellTitle
             //Creating the TextFields
@@ -771,6 +831,8 @@ class CalculatorVC: UIViewController {
             Con1ViewFilling.isHidden = false
             Con1ViewRadius.isHidden = false
             Con1ViewHeight.isHidden = false
+            
+            outputField.text = "Surface Area = π﹒Radius﹒√(Radius² + Height²) ⇒"
             
         } else if cellLabel == 32 {
             calcViewTitle.text = Con6.cellTitle
@@ -792,6 +854,8 @@ class CalculatorVC: UIViewController {
             Con1ViewRadius.isHidden = false
             Con1ViewHeight.isHidden = false
             
+            outputField.text = "Volume = ⅓﹒π﹒Radius²﹒Height² ⇒"
+            
         } else if cellLabel == 33 {
             calcViewTitle.text = Cyl1.cellTitle
             //Creating the TextFields
@@ -811,6 +875,8 @@ class CalculatorVC: UIViewController {
             Cyl1ViewFilling.isHidden = false
             Cyl1ViewRadius.isHidden = false
             Cyl1ViewHeight.isHidden = false
+            
+            outputField.text = "Surface Area = 2﹒π﹒Radius﹒Height ⇒"
             
         } else if cellLabel == 34 {
             calcViewTitle.text = Cyl2.cellTitle
@@ -832,6 +898,8 @@ class CalculatorVC: UIViewController {
             Cyl1ViewRadius.isHidden = false
             Cyl1ViewHeight.isHidden = false
             
+            outputField.text = "Surface Area = 2﹒π﹒Radius﹒(Height + Radius) ⇒"
+            
         } else if cellLabel == 35 {
             calcViewTitle.text = Cyl3.cellTitle
             //Creating the TextFields
@@ -851,6 +919,8 @@ class CalculatorVC: UIViewController {
             Cyl1ViewFilling.isHidden = false
             Cyl1ViewRadius.isHidden = false
             Cyl1ViewHeight.isHidden = false
+            
+            outputField.text = "Volume = π﹒Radius²﹒Height ⇒"
             
         } else if cellLabel == 36 {
             calcViewTitle.text = Ell1.cellTitle
@@ -873,6 +943,8 @@ class CalculatorVC: UIViewController {
             Ell1ViewRadius1.isHidden = false
             Ell1ViewRadius2.isHidden = false
             
+            outputField.text = "Surface Area = π﹒RadiusA﹒RadiusB ⇒"
+            
         } else if cellLabel == 37 {
             calcViewTitle.text = Ell2.cellTitle
             //Creating the TextFields
@@ -893,6 +965,8 @@ class CalculatorVC: UIViewController {
             Ell1ViewPerimeter.isHidden = false
             Ell1ViewRadius1.isHidden = false
             Ell1ViewRadius2.isHidden = false
+            
+            outputField.text = "Perimeter = 2﹒π﹒√((RadiusA² + RadiusB²) ÷ 2) ⇒"
             
         } else if cellLabel == 38 {
             calcViewTitle.text = Ell3.cellTitle
@@ -917,6 +991,8 @@ class CalculatorVC: UIViewController {
             Ell3ViewRadius2.isHidden = false
             Ell3ViewRadius3.isHidden = false
             
+            outputField.text = "Volume = (4 ÷ 3)﹒π﹒RadiusA﹒RadiusB﹒RadiusC ⇒"
+            
         } else if cellLabel == 39 {
             calcViewTitle.text = Ana1.cellTitle
             //Creating the TextFields
@@ -940,6 +1016,8 @@ class CalculatorVC: UIViewController {
             Ana1ViewPoints.isHidden = false
             Ana2ViewPoints.isHidden = false
             Ana1ViewLine.isHidden = false
+            
+            outputField.text = "Distance = √((x₂ - x₁)² + (y₂ - y₁)²) ⇒"
             
         } else if cellLabel == 40 {
             calcViewTitle.text = Ana2.cellTitle
@@ -968,6 +1046,8 @@ class CalculatorVC: UIViewController {
             Ana3ViewPoint2.isHidden = false
             Ana3ViewLine.isHidden = false
             
+            outputField.text = "Distance = √((x₂ - x₁)² + (y₂ - y₁)² + (z₂ - z₁)²) ⇒"
+            
         } else if cellLabel == 41 {
             calcViewTitle.text = Ana3.cellTitle
             //Creating the TextFields
@@ -991,6 +1071,8 @@ class CalculatorVC: UIViewController {
             Ana1ViewPoints.isHidden = false
             Ana2ViewPoints.isHidden = false
             Ana1ViewLine.isHidden = false
+            
+            outputField.text = "Slope of a Line = (y₂ - y₁) ÷ (x₂ - x₁) ⇒"
         }
     }
     
@@ -1006,48 +1088,6 @@ class CalculatorVC: UIViewController {
     //Hides the keyboard when tap in the View
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
-    }
-    
-    //Info button action
-    @IBAction func landscapeInfo(_ sender: UIButton) {
-        //Create the alert controller
-        let alertController = UIAlertController(title: "", message: "Thanks for downloading Core Geometry", preferredStyle: .actionSheet)
-        //Create and add the GitHub link
-        let gitImage = UIImage(named: "githubsrc")
-        let link = "https://github.com/FotiosTragopoulos/Core-Geometry"
-        let gitLink = UIAlertAction(title: "GitHub Project", style: .default) { action -> Void in
-            UIApplication.shared.openURL(NSURL(string: link)! as URL)
-            print("something here... button click or action logging")
-        }
-        gitLink.setValue(gitImage, forKey: "image")
-        //Create and add the Portfolio link
-        let portImage = UIImage(named: "web")
-        let linkPortfolio = "http://fotiostragopoulos.myds.me/iGeometry.html"
-        let portLink = UIAlertAction(title: "Portfolio Website", style: .default) { action -> Void in
-            UIApplication.shared.openURL(NSURL(string: linkPortfolio)! as URL)
-            print("something here... button click or action logging")
-        }
-        portLink.setValue(portImage, forKey: "image")
-        //Create and add OK action
-        let yesAction = UIAlertAction(title: "OK", style: .cancel) { action -> Void in
-        }
-        alertController.addAction(portLink)
-        alertController.addAction(gitLink)
-        alertController.addAction(yesAction)
-        //Present the AlertController
-        self.present(alertController, animated: true, completion: nil)
-    }
-    
-    //GitHub button action
-    @IBAction func gitAction(_ sender: UIButton) {
-        if let url = NSURL(string: "https://github.com/FotiosTragopoulos/Core-Geometry") {
-            UIApplication.shared.openURL(url as URL) }
-    }
-    
-    //Portfolio button action
-    @IBAction func portfollioAction(_ sender: UIButton) {
-        if let url = NSURL(string: "http://fotiostragopoulos.myds.me/iGeometry.html") {
-            UIApplication.shared.openURL(url as URL)}
     }
 
     //Deletes the trailing zeros
@@ -1340,7 +1380,8 @@ class CalculatorVC: UIViewController {
     
     //Calculate button action
     @IBAction func calculateAction(_ sender: Any) {
-        let a = format(a: firstTextField)
+        let _a = format(a: firstTextField)
+        let a = Double(forTrailingZero(temp: _a))
         let b = format(a: secondTextField)
         let c = format(a: thirdTextField)
         let d = format(a: fourthTextField)
@@ -1356,6 +1397,9 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Side B = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Diagonal = \(forTrailingZero(temp: c)) m"
                 animate(a: Par1ViewLine)
+                
+                let calculationOutput = "\n\nDiagonal = √(\(a)² + \(b)²) ⇒ \nDiagonal = √(\(a*a) + \(b*b)) ⇒ \nDiagonal = √\((a*a) + (b*b)) ⇒ \nDiagonal = \(sqrt((a * a)+(b * b))) m"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Par1ViewLine)
             } else {
@@ -1367,6 +1411,9 @@ class CalculatorVC: UIViewController {
                 firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "Diagonal = \(forTrailingZero(temp: b)) m"
                 animate(a: Par2ViewLine)
+                
+                let calculationOutput = "\n\nDiagonal = √2﹒\(a) ⇒ \nDiagonal = \(sqrt(2) * a) m"
+                outputField.text.append(calculationOutput)
             } else if secondTextField.text != "" {
                 animate(a: Par2ViewLine)
             } else {
@@ -1379,6 +1426,9 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Height = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Par3ViewFilling)
+                
+                let calculationOutput = "\n\nSurface Area = \(a)﹒\(b) ⇒ \nSurface Area = \(a*b) m²"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Par3ViewFilling)
             } else {

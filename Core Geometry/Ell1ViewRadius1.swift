@@ -19,7 +19,7 @@ class Ell1ViewRadius1: UIView {
         context?.saveGState()
         
         context?.setLineWidth(3.0)
-        context?.setStrokeColor(UIColor.red.cgColor)
+        context?.setStrokeColor(UIColor.init(red: 111.0/255.0, green: 110.0/255.0, blue: 1.0/255.0, alpha: 1.0).cgColor)
         
         let xView = viewWithTag(39)?.alignmentRect(forFrame: rect).midX
         let yView = viewWithTag(39)?.alignmentRect(forFrame: rect).midY

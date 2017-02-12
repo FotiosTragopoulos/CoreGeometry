@@ -149,10 +149,10 @@ class CalculatorVC: UIViewController {
         Ana3ViewPoint1.isHidden = true
         Ana3ViewPoint2.isHidden = true
         Ana3ViewLine.isHidden = true
-        
+
+//Parallelogram
         if cellLabel == 0 {
             calcViewTitle.text = Par1.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Side A in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Side B in meters"
@@ -165,15 +165,12 @@ class CalculatorVC: UIViewController {
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Par1ViewRectangle.isHidden = false
             Par1ViewFilling.isHidden = false
             Par1ViewLine.isHidden = false
-
             outputField.text = "Diagonal² = SideA² + SideB² \nDiagonal = √(SideA² + SideB²)"
         } else if cellLabel == 1 {
             calcViewTitle.text = Par2.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Side A in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Diagonal in meters"
@@ -185,63 +182,51 @@ class CalculatorVC: UIViewController {
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Par2ViewSquare.isHidden = false
             Par2ViewFilling.isHidden = false
             Par2ViewLine.isHidden = false
-            
             outputField.text = "Diagonal² = SideA² + SideA² \nDiagonal = √(SideA² + SideA²) \nDiagonal = √(2﹒SideA²) \nDiagonal = √2﹒SideA"
-            
         } else if cellLabel == 2 {
             calcViewTitle.text = Par3.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Side A in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Height in meters"
-            secondTextField.textColor = UIColor.blue
+            secondTextField.textColor = UIColor.red
             thirdTextField.placeholder = "Surface Area in m²"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Par3ViewParallelogram.isHidden = false
             Par3ViewFilling.isHidden = false
             Par3ViewLine.isHidden = false
-            
             outputField.text = "Surface Area = SideA﹒Height"
-            
         } else if cellLabel == 3 {
             calcViewTitle.text = Par4.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Side A in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Side B in meters"
             secondTextField.textColor = UIColor.blue
             thirdTextField.placeholder = "Surface Area in m²"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Par1ViewRectangle.isHidden = false
             Par1ViewFilling.isHidden = false
-            
             outputField.text = "Surface Area = SideA﹒SideB"
-            
         } else if cellLabel == 4 {
             calcViewTitle.text = Par5.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Side A in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Surface Area in m²"
-            secondTextField.textColor = UIColor.red
+            secondTextField.textColor = UIColor.black
             secondTextField.isUserInteractionEnabled = false
             secondTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             thirdTextField.isHidden = true
@@ -249,39 +234,32 @@ class CalculatorVC: UIViewController {
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Par2ViewSquare.isHidden = false
             Par2ViewFilling.isHidden = false
-            
             outputField.text = "Surface Area = SideA﹒SideA"
-            
         } else if cellLabel == 5 {
             calcViewTitle.text = Par6.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Side A in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Side B in meters"
             secondTextField.textColor = UIColor.blue
             thirdTextField.placeholder = "Perimeter in meters"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Par3ViewParallelogram.isHidden = false
             Par3ViewFilling.isHidden = false
-            
             outputField.text = "Perimeter = 2﹒SideA + 2﹒SideB \nPerimeter = 2(SideA + SideB)"
         } else if cellLabel == 6 {
             calcViewTitle.text = Par7.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Side A in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Perimeter in meters"
-            secondTextField.textColor = UIColor.red
+            secondTextField.textColor = UIColor.black
             secondTextField.isUserInteractionEnabled = false
             secondTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             thirdTextField.isHidden = true
@@ -289,18 +267,15 @@ class CalculatorVC: UIViewController {
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Par2ViewSquare.isHidden = false
             Par2ViewFilling.isHidden = false
-            
             outputField.text = "Perimeter = 4﹒SideA"
         } else if cellLabel == 7 {
             calcViewTitle.text = Par8.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Edge in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Volume in m³"
-            secondTextField.textColor = UIColor.red
+            secondTextField.textColor = UIColor.black
             secondTextField.isUserInteractionEnabled = false
             secondTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             thirdTextField.isHidden = true
@@ -308,36 +283,29 @@ class CalculatorVC: UIViewController {
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Par8ViewCube1.isHidden = false
-            
             outputField.text = "Volume = Edge³"
-            
+//Triangle
         } else if cellLabel == 8 {
             calcViewTitle.text = Tri1.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Side A in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Height in meters"
-            secondTextField.textColor = UIColor.blue
+            secondTextField.textColor = UIColor.red
             thirdTextField.placeholder = "Surface Area in m²"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Tri1ViewFilling.isHidden = false
             Tri1ViewTriangle.isHidden = false
             Tri1ViewLine.isHidden = false
-            
             outputField.text = "Surface Area = ½﹒SideA﹒Height"
-            
         } else if cellLabel == 9 {
             calcViewTitle.text = Tri2.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Side A in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Side B in meters"
@@ -345,21 +313,17 @@ class CalculatorVC: UIViewController {
             thirdTextField.placeholder = "Side C in meters"
             thirdTextField.textColor = UIColor.blue
             fourthTextField.placeholder = "Surface Area in m²"
-            fourthTextField.textColor = UIColor.red
+            fourthTextField.textColor = UIColor.black
             fourthTextField.isUserInteractionEnabled = false
             fourthTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Tri1ViewFilling.isHidden = false
             Tri1ViewTriangle.isHidden = false
-            
             outputField.text = "Semiperimeter (r) = (SideA + SideB + SideC) ÷ 2 \n\nSurface Area = √(r(r - a)(r - b)(r - c))"
-            
         } else if cellLabel == 10 {
             calcViewTitle.text = Tri3.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Side A in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Side B in meters"
@@ -367,25 +331,22 @@ class CalculatorVC: UIViewController {
             thirdTextField.placeholder = "Side C in meters"
             thirdTextField.textColor = UIColor.blue
             fourthTextField.placeholder = "Perimeter in meters"
-            fourthTextField.textColor = UIColor.red
+            fourthTextField.textColor = UIColor.blue
             fourthTextField.isUserInteractionEnabled = false
             fourthTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Tri1ViewFilling.isHidden = false
             Tri1ViewTriangle.isHidden = false
-            
             outputField.text = "Perimeter = SideA + SideB + SideC"
-            
+//Circle
         } else if cellLabel == 11 {
             calcViewTitle.text = Cir1.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Radius in meters"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.red
             secondTextField.placeholder = "Surface Area in m²"
-            secondTextField.textColor = UIColor.red
+            secondTextField.textColor = UIColor.black
             secondTextField.isUserInteractionEnabled = false
             secondTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             thirdTextField.isHidden = true
@@ -393,43 +354,35 @@ class CalculatorVC: UIViewController {
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Cir1ViewFilling.isHidden = false
             Cir1ViewCircle.isHidden = false
             Cir1ViewLine.isHidden = false
-            
             outputField.text = "Surface Area = π﹒Radius²"
-            
         } else if cellLabel == 12 {
             calcViewTitle.text = Cir2.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Arc Length in degrees"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.init(red: 111.0/255.0, green: 110.0/255.0, blue: 1.0/255.0, alpha: 1.0)
             secondTextField.placeholder = "Radius in meters"
-            secondTextField.textColor = UIColor.blue
+            secondTextField.textColor = UIColor.red
             thirdTextField.placeholder = "Sector's Area in m²"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.init(red: 111.0/255.0, green: 110.0/255.0, blue: 1.0/255.0, alpha: 1.0)
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Cir1ViewFilling.isHidden = false
             Cir1ViewCircle.isHidden = false
             Cir1ViewLine.isHidden = false
             Cir2ViewArc.isHidden = false
-            
             outputField.text = "Sector's Area = (π﹒Radius²﹒Arc Length°) ÷ 360"
-            
         } else if cellLabel == 13 {
             calcViewTitle.text = Cir3.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Radius in meters"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.red
             secondTextField.placeholder = "Curved Surface Area in m²"
-            secondTextField.textColor = UIColor.red
+            secondTextField.textColor = UIColor.black
             secondTextField.isUserInteractionEnabled = false
             secondTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             thirdTextField.isHidden = true
@@ -437,19 +390,15 @@ class CalculatorVC: UIViewController {
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Cir3ViewSphere.isHidden = false
             Cir1ViewLine.isHidden = false
-            
             outputField.text = "Curved Surface Area = 4﹒π﹒Radius²"
-            
         } else if cellLabel == 14 {
             calcViewTitle.text = Cir4.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Radius in meters"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.red
             secondTextField.placeholder = "Perimeter in meters"
-            secondTextField.textColor = UIColor.red
+            secondTextField.textColor = UIColor.blue
             secondTextField.isUserInteractionEnabled = false
             secondTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             thirdTextField.isHidden = true
@@ -457,20 +406,16 @@ class CalculatorVC: UIViewController {
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Cir1ViewFilling.isHidden = false
             Cir1ViewCircle.isHidden = false
             Cir1ViewLine.isHidden = false
-            
             outputField.text = "Perimeter = 2﹒π﹒Radius"
-            
         } else if cellLabel == 15 {
             calcViewTitle.text = Cir5.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Radius in meters"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.red
             secondTextField.placeholder = "Volume in m³"
-            secondTextField.textColor = UIColor.red
+            secondTextField.textColor = UIColor.black
             secondTextField.isUserInteractionEnabled = false
             secondTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             thirdTextField.isHidden = true
@@ -478,146 +423,120 @@ class CalculatorVC: UIViewController {
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-        
             Cir3ViewSphere.isHidden = false
             Cir1ViewLine.isHidden = false
-            
             outputField.text = "Volume = (4 ÷ 3)﹒π﹒Radius³"
-            
+//Polygon
         } else if cellLabel == 16 {
             calcViewTitle.text = Pol1.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Perimeter in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Apothem in meters"
-            secondTextField.textColor = UIColor.blue
+            secondTextField.textColor = UIColor.red
             thirdTextField.placeholder = "Surface Area in m²"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Pol1ViewFilling.isHidden = false
             Pol1ViewPolygon.isHidden = false
             Pol1ViewLine.isHidden = false
-            
             outputField.text = "Surface Area = (Apothem﹒Perimeter) ÷ 2"
-            
         } else if cellLabel == 17 {
             calcViewTitle.text = Pol2.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Number of Sides (n)"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Apothem in meters"
-            secondTextField.textColor = UIColor.blue
+            secondTextField.textColor = UIColor.red
             thirdTextField.placeholder = "Surface Area in m²"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Pol1ViewFilling.isHidden = false
             Pol1ViewPolygon.isHidden = false
             Pol1ViewLine.isHidden = false
-            
             outputField.text = "Surface Area = Apothem²﹒n﹒tan(π ÷ n)"
-            
         } else if cellLabel == 18 {
             calcViewTitle.text = Pol3.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Number of Sides (n)"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Radius in meters"
-            secondTextField.textColor = UIColor.blue
+            secondTextField.textColor = UIColor.red
             thirdTextField.placeholder = "Surface Area in m²"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Pol1ViewFilling.isHidden = false
             Pol1ViewPolygon.isHidden = false
             Pol1ViewRadius.isHidden = false
-            
             outputField.text = "Surface Area = (Radius²﹒n﹒sin((2﹒π) ÷ n)) ÷ 2"
-            
         } else if cellLabel == 19 {
             calcViewTitle.text = Pol4.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Number of Sides (n)"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Length of a Side in meters (s)"
             secondTextField.textColor = UIColor.blue
             thirdTextField.placeholder = "Surface Area in m²"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Pol1ViewFilling.isHidden = false
             Pol1ViewPolygon.isHidden = false
-            
             outputField.text = "Surface Area = (s²﹒n) ÷ (4﹒tan(π ÷ n))"
-            
         } else if cellLabel == 20 {
             calcViewTitle.text = Pol5.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Number of Sides (n)"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Length of a Side in meters (s)"
             secondTextField.textColor = UIColor.blue
             thirdTextField.placeholder = "Perimeter in meters"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Pol1ViewFilling.isHidden = false
             Pol1ViewPolygon.isHidden = false
-            
             outputField.text = "Perimeter = n﹒s"
-            
+//Trapezium
         } else if cellLabel == 21 {
             calcViewTitle.text = Tra1.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Side A in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Side B in meters"
             secondTextField.textColor = UIColor.blue
             thirdTextField.placeholder = "Height in meters"
-            thirdTextField.textColor = UIColor.blue
+            thirdTextField.textColor = UIColor.red
             fourthTextField.placeholder = "Surface Area in m²"
-            fourthTextField.textColor = UIColor.red
+            fourthTextField.textColor = UIColor.black
             fourthTextField.isUserInteractionEnabled = false
             fourthTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Tra1ViewFilling.isHidden = false
             Tra1ViewTrapezium.isHidden = false
             Tra1ViewLine.isHidden = false
-            
             outputField.text = "Surface Area = ((SideA + SideB)﹒Height) ÷ 2"
-            
         } else if cellLabel == 22 {
             calcViewTitle.text = Tra2.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Side A in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Side B in meters"
@@ -627,68 +546,57 @@ class CalculatorVC: UIViewController {
             fourthTextField.placeholder = "Side D in meters"
             fourthTextField.textColor = UIColor.blue
             fifthTextField.placeholder = "Perimeter in meters"
-            fifthTextField.textColor = UIColor.red
+            fifthTextField.textColor = UIColor.blue
             fifthTextField.isUserInteractionEnabled = false
             fifthTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Tra1ViewFilling.isHidden = false
             Tra1ViewTrapezium.isHidden = false
-            
             outputField.text = "Perimeter = SideA + SideB + SideC + SideD"
-            
+//Rhombus
         } else if cellLabel == 23 {
             calcViewTitle.text = Rho1.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Side A in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Slant Height in meters"
-            secondTextField.textColor = UIColor.blue
+            secondTextField.textColor = UIColor.red
             thirdTextField.placeholder = "Surface Area in m²"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Rho1ViewFilling.isHidden = false
             Rho1ViewRhombus.isHidden = false
             Rho1ViewLine.isHidden = false
-            
             outputField.text = "Surface Area = SideA﹒Height"
-            
         } else if cellLabel == 24 {
             calcViewTitle.text = Rho2.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Diagonal A in meters"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.red
             secondTextField.placeholder = "Diagonal B in meters"
-            secondTextField.textColor = UIColor.blue
+            secondTextField.textColor = UIColor.red
             thirdTextField.placeholder = "Surface Area in m²"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Rho1ViewFilling.isHidden = false
             Rho1ViewRhombus.isHidden = false
             Rho2ViewLine.isHidden = false
-            
             outputField.text = "Surface Area = (Diagonal A﹒Diagonal B) ÷ 2"
-            
         } else if cellLabel == 25 {
             calcViewTitle.text = Rho3.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Angle â in degrees"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.red
             secondTextField.placeholder = "Surface Area in m²"
-            secondTextField.textColor = UIColor.red
+            secondTextField.textColor = UIColor.black
             secondTextField.isUserInteractionEnabled = false
             secondTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             thirdTextField.isHidden = true
@@ -696,20 +604,16 @@ class CalculatorVC: UIViewController {
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Rho1ViewFilling.isHidden = false
             Rho1ViewRhombus.isHidden = false
             Rho3ViewLine.isHidden = false
-            
             outputField.text = "Surface Area = â²﹒sin(â)"
-            
         } else if cellLabel == 26 {
             calcViewTitle.text = Rho4.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Side A in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Perimeter in meters"
-            secondTextField.textColor = UIColor.red
+            secondTextField.textColor = UIColor.black
             secondTextField.isUserInteractionEnabled = false
             secondTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             thirdTextField.isHidden = true
@@ -717,17 +621,14 @@ class CalculatorVC: UIViewController {
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Rho1ViewFilling.isHidden = false
             Rho1ViewRhombus.isHidden = false
-            
             outputField.text = "Perimeter = 4﹒SideA"
-            
+//Cone
         } else if cellLabel == 27 {
             calcViewTitle.text = Con1.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Height in meters"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.init(red: 111.0/255.0, green: 110.0/255.0, blue: 1.0/255.0, alpha: 1.0)
             secondTextField.placeholder = "Radius in meters"
             secondTextField.textColor = UIColor.blue
             thirdTextField.placeholder = "Slant Height in meters"
@@ -738,340 +639,285 @@ class CalculatorVC: UIViewController {
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Con1ViewFilling.isHidden = false
             Con1ViewSlantHeight.isHidden = false
             Con1ViewRadius.isHidden = false
             Con1ViewHeight.isHidden = false
-            
             outputField.text = "Slant Height = √(Radius² + Height²)"
-            
         } else if cellLabel == 28 {
             calcViewTitle.text = Con2.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Height in meters"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.init(red: 111.0/255.0, green: 110.0/255.0, blue: 1.0/255.0, alpha: 1.0)
             secondTextField.placeholder = "Radius in meters"
             secondTextField.textColor = UIColor.blue
             thirdTextField.placeholder = "Total Surface Area in m²"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Con1ViewFilling.isHidden = false
             Con1ViewRadius.isHidden = false
             Con1ViewHeight.isHidden = false
-            
             outputField.text = "Surface Area = π﹒Radius﹒(√(Radius² + Height²) + Radius)"
-            
         } else if cellLabel == 29 {
             calcViewTitle.text = Con3.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Slant Height in meters (l)"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.red
             secondTextField.placeholder = "Radius in meters"
             secondTextField.textColor = UIColor.blue
             thirdTextField.placeholder = "Total Surface Area in m²"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Con1ViewFilling.isHidden = false
             Con1ViewSlantHeight.isHidden = false
             Con1ViewRadius.isHidden = false
-            
             outputField.text = "Surface Area = π﹒Radius﹒(l + Radius)"
-            
         } else if cellLabel == 30 {
             calcViewTitle.text = Con4.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Slant Height in meters (l)"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.red
             secondTextField.placeholder = "Radius in meters"
             secondTextField.textColor = UIColor.blue
             thirdTextField.placeholder = "Curved Surface Area in m²"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Con1ViewFilling.isHidden = false
             Con1ViewSlantHeight.isHidden = false
             Con1ViewRadius.isHidden = false
-
             outputField.text = "Surface Area = π﹒Radius﹒l"
-            
         } else if cellLabel == 31 {
             calcViewTitle.text = Con5.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Height in meters"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.init(red: 111.0/255.0, green: 110.0/255.0, blue: 1.0/255.0, alpha: 1.0)
             secondTextField.placeholder = "Radius in meters"
             secondTextField.textColor = UIColor.blue
             thirdTextField.placeholder = "Curved Surface Area in m²"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Con1ViewFilling.isHidden = false
             Con1ViewRadius.isHidden = false
             Con1ViewHeight.isHidden = false
-            
             outputField.text = "Surface Area = π﹒Radius﹒√(Radius² + Height²)"
-            
         } else if cellLabel == 32 {
             calcViewTitle.text = Con6.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Height in meters"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.init(red: 111.0/255.0, green: 110.0/255.0, blue: 1.0/255.0, alpha: 1.0)
             secondTextField.placeholder = "Radius in meters"
             secondTextField.textColor = UIColor.blue
             thirdTextField.placeholder = "Volume in m³"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Con1ViewFilling.isHidden = false
             Con1ViewRadius.isHidden = false
             Con1ViewHeight.isHidden = false
-            
             outputField.text = "Volume = ⅓﹒π﹒Radius²﹒Height"
-            
+//Cylinder
         } else if cellLabel == 33 {
             calcViewTitle.text = Cyl1.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Height in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Radius in meters"
-            secondTextField.textColor = UIColor.blue
+            secondTextField.textColor = UIColor.red
             thirdTextField.placeholder = "Curved Surface Area in m²"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Cyl1ViewFilling.isHidden = false
             Cyl1ViewRadius.isHidden = false
             Cyl1ViewHeight.isHidden = false
-            
             outputField.text = "Surface Area = 2﹒π﹒Radius﹒Height"
-            
         } else if cellLabel == 34 {
             calcViewTitle.text = Cyl2.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Height in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Radius in meters"
-            secondTextField.textColor = UIColor.blue
+            secondTextField.textColor = UIColor.red
             thirdTextField.placeholder = "Total Surface Area in m²"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Cyl1ViewFilling.isHidden = false
             Cyl1ViewRadius.isHidden = false
             Cyl1ViewHeight.isHidden = false
-            
             outputField.text = "Surface Area = 2﹒π﹒Radius﹒(Height + Radius)"
-            
         } else if cellLabel == 35 {
             calcViewTitle.text = Cyl3.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Height in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Radius in meters"
-            secondTextField.textColor = UIColor.blue
+            secondTextField.textColor = UIColor.red
             thirdTextField.placeholder = "Volume in m³"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Cyl1ViewFilling.isHidden = false
             Cyl1ViewRadius.isHidden = false
             Cyl1ViewHeight.isHidden = false
-            
             outputField.text = "Volume = π﹒Radius²﹒Height"
-            
+//Ellipse
         } else if cellLabel == 36 {
             calcViewTitle.text = Ell1.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Radius A in meters"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.init(red: 111.0/255.0, green: 110.0/255.0, blue: 1.0/255.0, alpha: 1.0)
             secondTextField.placeholder = "Radius B in meters"
-            secondTextField.textColor = UIColor.blue
+            secondTextField.textColor = UIColor.red
             thirdTextField.placeholder = "Surface Area in m²"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.black
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Ell1ViewFilling.isHidden = false
             Ell1ViewPerimeter.isHidden = false
             Ell1ViewRadius1.isHidden = false
             Ell1ViewRadius2.isHidden = false
-            
             outputField.text = "Surface Area = π﹒RadiusA﹒RadiusB"
-            
         } else if cellLabel == 37 {
             calcViewTitle.text = Ell2.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Radius A in meters"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.init(red: 111.0/255.0, green: 110.0/255.0, blue: 1.0/255.0, alpha: 1.0)
             secondTextField.placeholder = "Radius B in meters"
-            secondTextField.textColor = UIColor.blue
+            secondTextField.textColor = UIColor.red
             thirdTextField.placeholder = "Perimeter in meters"
-            thirdTextField.textColor = UIColor.red
+            thirdTextField.textColor = UIColor.blue
             thirdTextField.isUserInteractionEnabled = false
             thirdTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fourthTextField.isHidden = true
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Ell1ViewFilling.isHidden = false
             Ell1ViewPerimeter.isHidden = false
             Ell1ViewRadius1.isHidden = false
             Ell1ViewRadius2.isHidden = false
-            
             outputField.text = "Perimeter = 2﹒π﹒√((RadiusA² + RadiusB²) ÷ 2)"
-            
         } else if cellLabel == 38 {
             calcViewTitle.text = Ell3.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "Radius A in meters"
             firstTextField.textColor = UIColor.blue
             secondTextField.placeholder = "Radius B in meters"
-            secondTextField.textColor = UIColor.blue
+            secondTextField.textColor = UIColor.init(red: 111.0/255.0, green: 110.0/255.0, blue: 1.0/255.0, alpha: 1.0)
             thirdTextField.placeholder = "Radius C in meters"
-            thirdTextField.textColor = UIColor.blue
+            thirdTextField.textColor = UIColor.orange
             fourthTextField.placeholder = "Volume in m³"
-            fourthTextField.textColor = UIColor.red
+            fourthTextField.textColor = UIColor.black
             fourthTextField.isUserInteractionEnabled = false
             fourthTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             fifthTextField.isHidden = true
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Ell3ViewFilling.isHidden = false
             Ell3ViewPerimeter.isHidden = false
             Ell3ViewRadius1.isHidden = false
             Ell3ViewRadius2.isHidden = false
             Ell3ViewRadius3.isHidden = false
-            
             outputField.text = "Volume = (4 ÷ 3)﹒π﹒RadiusA﹒RadiusB﹒RadiusC"
-            
+//Analytical
         } else if cellLabel == 39 {
             calcViewTitle.text = Ana1.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "x₁ in meters"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.red
             secondTextField.placeholder = "x₂ in meters"
-            secondTextField.textColor = UIColor.blue
+            secondTextField.textColor = UIColor.red
             thirdTextField.placeholder = "y₁ in meters"
-            thirdTextField.textColor = UIColor.blue
+            thirdTextField.textColor = UIColor.red
             fourthTextField.placeholder = "y₂ in meters"
-            fourthTextField.textColor = UIColor.blue
+            fourthTextField.textColor = UIColor.red
             fifthTextField.placeholder = "Distance in meters"
-            fifthTextField.textColor = UIColor.red
+            fifthTextField.textColor = UIColor.blue
             fifthTextField.isUserInteractionEnabled = false
             fifthTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Ana1ViewCoordiantes.isHidden = false
             Ana2ViewCoordinates.isHidden = false
             Ana1ViewPoints.isHidden = false
             Ana2ViewPoints.isHidden = false
             Ana1ViewLine.isHidden = false
-            
             outputField.text = "Distance = √((x₂ - x₁)² + (y₂ - y₁)²)"
-            
         } else if cellLabel == 40 {
             calcViewTitle.text = Ana2.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "x₁ in meters"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.red
             secondTextField.placeholder = "x₂ in meters"
-            secondTextField.textColor = UIColor.blue
+            secondTextField.textColor = UIColor.red
             thirdTextField.placeholder = "y₁ in meters"
-            thirdTextField.textColor = UIColor.blue
+            thirdTextField.textColor = UIColor.red
             fourthTextField.placeholder = "y₂ in meters"
-            fourthTextField.textColor = UIColor.blue
+            fourthTextField.textColor = UIColor.red
             fifthTextField.placeholder = "z₁ in meters"
-            fifthTextField.textColor = UIColor.blue
+            fifthTextField.textColor = UIColor.red
             sixthTextField.placeholder = "z₂ in meters"
-            sixthTextField.textColor = UIColor.blue
+            sixthTextField.textColor = UIColor.red
             seventhTextField.placeholder = "Distance in meters"
-            seventhTextField.textColor = UIColor.red
+            seventhTextField.textColor = UIColor.blue
             seventhTextField.isUserInteractionEnabled = false
             seventhTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
-            
             Ana3ViewCoordinates_X.isHidden = false
             Ana3ViewCoordinates_Y.isHidden = false
             Ana3ViewCoordinates_Z.isHidden = false
             Ana3ViewPoint1.isHidden = false
             Ana3ViewPoint2.isHidden = false
             Ana3ViewLine.isHidden = false
-            
             outputField.text = "Distance = √((x₂ - x₁)² + (y₂ - y₁)² + (z₂ - z₁)²)"
-            
         } else if cellLabel == 41 {
             calcViewTitle.text = Ana3.cellTitle
-            //Creating the TextFields
             firstTextField.placeholder = "x₁ in meters"
-            firstTextField.textColor = UIColor.blue
+            firstTextField.textColor = UIColor.red
             secondTextField.placeholder = "x₂ in meters"
-            secondTextField.textColor = UIColor.blue
+            secondTextField.textColor = UIColor.red
             thirdTextField.placeholder = "y₁ in meters"
-            thirdTextField.textColor = UIColor.blue
+            thirdTextField.textColor = UIColor.red
             fourthTextField.placeholder = "y₂ in meters"
-            fourthTextField.textColor = UIColor.blue
+            fourthTextField.textColor = UIColor.red
             fifthTextField.placeholder = "Slope of a Line"
-            fifthTextField.textColor = UIColor.red
+            fifthTextField.textColor = UIColor.blue
             fifthTextField.isUserInteractionEnabled = false
             fifthTextField.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
             sixthTextField.isHidden = true
             seventhTextField.isHidden = true
-            
             Ana1ViewCoordiantes.isHidden = false
             Ana2ViewCoordinates.isHidden = false
             Ana1ViewPoints.isHidden = false
             Ana2ViewPoints.isHidden = false
             Ana1ViewLine.isHidden = false
-            
             outputField.text = "Slope of a Line = (y₂ - y₁) ÷ (x₂ - x₁)"
         }
     }
@@ -1386,7 +1232,6 @@ class CalculatorVC: UIViewController {
         let d = format(a: fourthTextField)
         let e = format(a: fifthTextField)
         let f = format(a: sixthTextField)
-        let g = format(a: seventhTextField)
         
         //Parallelogram
         if cellLabel == 0 {
@@ -1396,8 +1241,7 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Side B = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Diagonal = \(forTrailingZero(temp: c)) m"
                 animate(a: Par1ViewLine)
-                
-                let calculationOutput = "\n\nDiagonal = √(\(forTrailingZero(temp: a))² + \(forTrailingZero(temp: b))²) \nDiagonal = √(\(forTrailingZero(temp: a*a)) + \(forTrailingZero(temp: b*b))) /nDiagonal = √\((forTrailingZero(temp: a*a)) + (forTrailingZero(temp: b*b))) \nDiagonal = \(forTrailingZero(temp: c)) m"
+                let calculationOutput = "\n\nDiagonal = √(\(forTrailingZero(temp: a))² + \(forTrailingZero(temp: b))²) \nDiagonal = √(\(forTrailingZero(temp: a*a)) + \(forTrailingZero(temp: b*b))) \nDiagonal = √\((forTrailingZero(temp: (a*a)+(b*b)))) \nDiagonal = \(forTrailingZero(temp: c)) m"
                 outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Par1ViewLine)
@@ -1410,7 +1254,6 @@ class CalculatorVC: UIViewController {
                 firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "Diagonal = \(forTrailingZero(temp: b)) m"
                 animate(a: Par2ViewLine)
-                
                 let calculationOutput = "\n\nDiagonal = √2﹒\(forTrailingZero(temp: a)) \nDiagonal = \(forTrailingZero(temp: b)) m"
                 outputField.text.append(calculationOutput)
             } else if secondTextField.text != "" {
@@ -1468,12 +1311,12 @@ class CalculatorVC: UIViewController {
                 firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "Side B = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Perimeter = \(forTrailingZero(temp: c)) m"
-                animate(a: Par3ViewFilling)
+                animate(a: Par3ViewParallelogram)
                 
                 let calculationOutput = "\n\nPerimeter = 2(\(forTrailingZero(temp: a)) + \(forTrailingZero(temp: b))) \nPerimeter = 2﹒\(forTrailingZero(temp: a + b)) \nPerimeter = \(forTrailingZero(temp: c)) m"
                 outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
-                animate(a: Par3ViewFilling)
+                animate(a: Par3ViewParallelogram)
             } else {
                 showAlert()
             }
@@ -1605,12 +1448,12 @@ class CalculatorVC: UIViewController {
                 let b = round(10000 * (2 * Double.pi * a))/10000
                 firstTextField.text = "Radius = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "Perimeter = \(forTrailingZero(temp: b)) m"
-                animate(a: Cir1ViewFilling)
+                animate(a: Cir1ViewCircle)
                 
                 let calculationOutput = "\n\nPerimeter = 2﹒\(round(100 * Double.pi)/100)﹒\(forTrailingZero(temp: a)) \nPerimeter = \(forTrailingZero(temp: b)) m"
                 outputField.text.append(calculationOutput)
             } else if secondTextField.text != "" {
-                animate(a: Cir1ViewFilling)
+                animate(a: Cir1ViewCircle)
             } else {
                 showAlert()
             }
@@ -1979,12 +1822,14 @@ class CalculatorVC: UIViewController {
                 thirdTextField.text = "Radius C = \(forTrailingZero(temp: c)) m"
                 fourthTextField.text = "Volume = \(forTrailingZero(temp: d)) m³"
                 animate(a: Ell3ViewFilling)
+                animate(a: Ell3ViewPerimeter)
                 
                 let calculationOutput = "\n\nVolume = (4 ÷ 3)﹒3.14﹒\(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: b))﹒\(forTrailingZero(temp: c)) \nVolume = 1.3333﹒3.14﹒\(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: b))﹒\(forTrailingZero(temp: c)) \nVolume = 4.1867﹒\(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: b))﹒\(forTrailingZero(temp: c)) \nVolume = \(forTrailingZero(temp: 4.1867*a))﹒\(forTrailingZero(temp: b))﹒\(forTrailingZero(temp: c)) \nVolume = \(forTrailingZero(temp: 4.1867*a*b))﹒\(forTrailingZero(temp: c)) \nVolume = \(forTrailingZero(temp: d)) m³"
                 outputField.text.append(calculationOutput)
 
             } else if fourthTextField.text != "" {
                 animate(a: Ell3ViewFilling)
+                animate(a: Ell3ViewPerimeter)
             } else {
                 showAlert()
             }

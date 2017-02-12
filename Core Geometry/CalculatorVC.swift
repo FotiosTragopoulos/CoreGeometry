@@ -170,7 +170,7 @@ class CalculatorVC: UIViewController {
             Par1ViewFilling.isHidden = false
             Par1ViewLine.isHidden = false
 
-            outputField.text = "Diagonal² = SideA² + SideB² ⇒ \nDiagonal = √(SideA² + SideB²) ⇒"
+            outputField.text = "Diagonal² = SideA² + SideB² \nDiagonal = √(SideA² + SideB²)"
         } else if cellLabel == 1 {
             calcViewTitle.text = Par2.cellTitle
             //Creating the TextFields
@@ -190,7 +190,7 @@ class CalculatorVC: UIViewController {
             Par2ViewFilling.isHidden = false
             Par2ViewLine.isHidden = false
             
-            outputField.text = "Diagonal² = SideA² + SideA² ⇒ \nDiagonal = √(SideA² + SideA²) ⇒ \nDiagonal = √(2﹒SideA²) ⇒ \nDiagonal = √2﹒SideA ⇒"
+            outputField.text = "Diagonal² = SideA² + SideA² \nDiagonal = √(SideA² + SideA²) \nDiagonal = √(2﹒SideA²) \nDiagonal = √2﹒SideA"
             
         } else if cellLabel == 2 {
             calcViewTitle.text = Par3.cellTitle
@@ -212,7 +212,7 @@ class CalculatorVC: UIViewController {
             Par3ViewFilling.isHidden = false
             Par3ViewLine.isHidden = false
             
-            outputField.text = "Surface Area = SideA﹒Height ⇒"
+            outputField.text = "Surface Area = SideA﹒Height"
             
         } else if cellLabel == 3 {
             calcViewTitle.text = Par4.cellTitle
@@ -233,7 +233,7 @@ class CalculatorVC: UIViewController {
             Par1ViewRectangle.isHidden = false
             Par1ViewFilling.isHidden = false
             
-            outputField.text = "Surface Area = SideA﹒SideB ⇒"
+            outputField.text = "Surface Area = SideA﹒SideB"
             
         } else if cellLabel == 4 {
             calcViewTitle.text = Par5.cellTitle
@@ -253,7 +253,7 @@ class CalculatorVC: UIViewController {
             Par2ViewSquare.isHidden = false
             Par2ViewFilling.isHidden = false
             
-            outputField.text = "Surface Area = SideA﹒SideA ⇒"
+            outputField.text = "Surface Area = SideA﹒SideA"
             
         } else if cellLabel == 5 {
             calcViewTitle.text = Par6.cellTitle
@@ -274,7 +274,7 @@ class CalculatorVC: UIViewController {
             Par3ViewParallelogram.isHidden = false
             Par3ViewFilling.isHidden = false
             
-            outputField.text = "Perimeter = 2﹒SideA + 2﹒SideB ⇒ \nPerimeter = 2(SideA + SideB) ⇒"
+            outputField.text = "Perimeter = 2﹒SideA + 2﹒SideB \nPerimeter = 2(SideA + SideB)"
         } else if cellLabel == 6 {
             calcViewTitle.text = Par7.cellTitle
             //Creating the TextFields
@@ -293,7 +293,7 @@ class CalculatorVC: UIViewController {
             Par2ViewSquare.isHidden = false
             Par2ViewFilling.isHidden = false
             
-            outputField.text = "Perimeter = 4﹒SideA ⇒"
+            outputField.text = "Perimeter = 4﹒SideA"
         } else if cellLabel == 7 {
             calcViewTitle.text = Par8.cellTitle
             //Creating the TextFields
@@ -311,7 +311,7 @@ class CalculatorVC: UIViewController {
             
             Par8ViewCube1.isHidden = false
             
-            outputField.text = "Volume = Edge³ ⇒"
+            outputField.text = "Volume = Edge³"
             
         } else if cellLabel == 8 {
             calcViewTitle.text = Tri1.cellTitle
@@ -333,7 +333,7 @@ class CalculatorVC: UIViewController {
             Tri1ViewTriangle.isHidden = false
             Tri1ViewLine.isHidden = false
             
-            outputField.text = "Surface Area = ½﹒SideA﹒Height ⇒"
+            outputField.text = "Surface Area = ½﹒SideA﹒Height"
             
         } else if cellLabel == 9 {
             calcViewTitle.text = Tri2.cellTitle
@@ -355,7 +355,7 @@ class CalculatorVC: UIViewController {
             Tri1ViewFilling.isHidden = false
             Tri1ViewTriangle.isHidden = false
             
-            outputField.text = "Semiperimeter (r) = (SideA + SideB + SideC) ÷ 2 \n\nSurface Area = √(r(r - a)(r - b)(r - c)) ⇒"
+            outputField.text = "Semiperimeter (r) = (SideA + SideB + SideC) ÷ 2 \n\nSurface Area = √(r(r - a)(r - b)(r - c))"
             
         } else if cellLabel == 10 {
             calcViewTitle.text = Tri3.cellTitle
@@ -377,7 +377,7 @@ class CalculatorVC: UIViewController {
             Tri1ViewFilling.isHidden = false
             Tri1ViewTriangle.isHidden = false
             
-            outputField.text = "Perimeter = SideA + SideB + SideC ⇒"
+            outputField.text = "Perimeter = SideA + SideB + SideC"
             
         } else if cellLabel == 11 {
             calcViewTitle.text = Cir1.cellTitle
@@ -398,7 +398,7 @@ class CalculatorVC: UIViewController {
             Cir1ViewCircle.isHidden = false
             Cir1ViewLine.isHidden = false
             
-            outputField.text = "Surface Area = π﹒Radius² ⇒"
+            outputField.text = "Surface Area = π﹒Radius²"
             
         } else if cellLabel == 12 {
             calcViewTitle.text = Cir2.cellTitle
@@ -421,7 +421,7 @@ class CalculatorVC: UIViewController {
             Cir1ViewLine.isHidden = false
             Cir2ViewArc.isHidden = false
             
-            outputField.text = "Sector's Area = (π﹒Radius²﹒Arc Length°) ÷ 360 ⇒"
+            outputField.text = "Sector's Area = (π﹒Radius²﹒Arc Length°) ÷ 360"
             
         } else if cellLabel == 13 {
             calcViewTitle.text = Cir3.cellTitle
@@ -441,7 +441,7 @@ class CalculatorVC: UIViewController {
             Cir3ViewSphere.isHidden = false
             Cir1ViewLine.isHidden = false
             
-            outputField.text = "Curved Surface Area = 4﹒π﹒Radius² ⇒"
+            outputField.text = "Curved Surface Area = 4﹒π﹒Radius²"
             
         } else if cellLabel == 14 {
             calcViewTitle.text = Cir4.cellTitle
@@ -462,7 +462,7 @@ class CalculatorVC: UIViewController {
             Cir1ViewCircle.isHidden = false
             Cir1ViewLine.isHidden = false
             
-            outputField.text = "Perimeter = 2﹒π﹒Radius ⇒"
+            outputField.text = "Perimeter = 2﹒π﹒Radius"
             
         } else if cellLabel == 15 {
             calcViewTitle.text = Cir5.cellTitle
@@ -482,7 +482,7 @@ class CalculatorVC: UIViewController {
             Cir3ViewSphere.isHidden = false
             Cir1ViewLine.isHidden = false
             
-            outputField.text = "Volume = (4 ÷ 3)﹒π﹒Radius³ ⇒"
+            outputField.text = "Volume = (4 ÷ 3)﹒π﹒Radius³"
             
         } else if cellLabel == 16 {
             calcViewTitle.text = Pol1.cellTitle
@@ -504,7 +504,7 @@ class CalculatorVC: UIViewController {
             Pol1ViewPolygon.isHidden = false
             Pol1ViewLine.isHidden = false
             
-            outputField.text = "Surface Area = (Apothem﹒Perimeter) ÷ 2 ⇒"
+            outputField.text = "Surface Area = (Apothem﹒Perimeter) ÷ 2"
             
         } else if cellLabel == 17 {
             calcViewTitle.text = Pol2.cellTitle
@@ -526,7 +526,7 @@ class CalculatorVC: UIViewController {
             Pol1ViewPolygon.isHidden = false
             Pol1ViewLine.isHidden = false
             
-            outputField.text = "Surface Area = Apothem²﹒n﹒tan(π ÷ n) ⇒"
+            outputField.text = "Surface Area = Apothem²﹒n﹒tan(π ÷ n)"
             
         } else if cellLabel == 18 {
             calcViewTitle.text = Pol3.cellTitle
@@ -548,7 +548,7 @@ class CalculatorVC: UIViewController {
             Pol1ViewPolygon.isHidden = false
             Pol1ViewRadius.isHidden = false
             
-            outputField.text = "Surface Area = (Radius²﹒n﹒sin((2﹒π) ÷ n)) ÷ n ⇒"
+            outputField.text = "Surface Area = (Radius²﹒n﹒sin((2﹒π) ÷ n)) ÷ 2"
             
         } else if cellLabel == 19 {
             calcViewTitle.text = Pol4.cellTitle
@@ -569,7 +569,7 @@ class CalculatorVC: UIViewController {
             Pol1ViewFilling.isHidden = false
             Pol1ViewPolygon.isHidden = false
             
-            outputField.text = "Surface Area = (s²﹒n) ÷ (4﹒tan(π ÷ n)) ⇒"
+            outputField.text = "Surface Area = (s²﹒n) ÷ (4﹒tan(π ÷ n))"
             
         } else if cellLabel == 20 {
             calcViewTitle.text = Pol5.cellTitle
@@ -590,7 +590,7 @@ class CalculatorVC: UIViewController {
             Pol1ViewFilling.isHidden = false
             Pol1ViewPolygon.isHidden = false
             
-            outputField.text = "Perimeter = n﹒s ⇒"
+            outputField.text = "Perimeter = n﹒s"
             
         } else if cellLabel == 21 {
             calcViewTitle.text = Tra1.cellTitle
@@ -613,7 +613,7 @@ class CalculatorVC: UIViewController {
             Tra1ViewTrapezium.isHidden = false
             Tra1ViewLine.isHidden = false
             
-            outputField.text = "Surface Area = ((SideA + SideB)﹒Height) ÷ 2 ⇒"
+            outputField.text = "Surface Area = ((SideA + SideB)﹒Height) ÷ 2"
             
         } else if cellLabel == 22 {
             calcViewTitle.text = Tra2.cellTitle
@@ -636,7 +636,7 @@ class CalculatorVC: UIViewController {
             Tra1ViewFilling.isHidden = false
             Tra1ViewTrapezium.isHidden = false
             
-            outputField.text = "Perimeter = SideA + SideB + SideC + SideD ⇒"
+            outputField.text = "Perimeter = SideA + SideB + SideC + SideD"
             
         } else if cellLabel == 23 {
             calcViewTitle.text = Rho1.cellTitle
@@ -658,7 +658,7 @@ class CalculatorVC: UIViewController {
             Rho1ViewRhombus.isHidden = false
             Rho1ViewLine.isHidden = false
             
-            outputField.text = "Surface Area = SideA﹒Height ⇒"
+            outputField.text = "Surface Area = SideA﹒Height"
             
         } else if cellLabel == 24 {
             calcViewTitle.text = Rho2.cellTitle
@@ -680,7 +680,7 @@ class CalculatorVC: UIViewController {
             Rho1ViewRhombus.isHidden = false
             Rho2ViewLine.isHidden = false
             
-            outputField.text = "Surface Area = (Diagonal A﹒Diagonal B) ÷ 2 ⇒"
+            outputField.text = "Surface Area = (Diagonal A﹒Diagonal B) ÷ 2"
             
         } else if cellLabel == 25 {
             calcViewTitle.text = Rho3.cellTitle
@@ -701,7 +701,7 @@ class CalculatorVC: UIViewController {
             Rho1ViewRhombus.isHidden = false
             Rho3ViewLine.isHidden = false
             
-            outputField.text = "Surface Area = â²﹒sin(â) ⇒"
+            outputField.text = "Surface Area = â²﹒sin(â)"
             
         } else if cellLabel == 26 {
             calcViewTitle.text = Rho4.cellTitle
@@ -721,7 +721,7 @@ class CalculatorVC: UIViewController {
             Rho1ViewFilling.isHidden = false
             Rho1ViewRhombus.isHidden = false
             
-            outputField.text = "Perimeter = 4﹒SideA ⇒"
+            outputField.text = "Perimeter = 4﹒SideA"
             
         } else if cellLabel == 27 {
             calcViewTitle.text = Con1.cellTitle
@@ -744,7 +744,7 @@ class CalculatorVC: UIViewController {
             Con1ViewRadius.isHidden = false
             Con1ViewHeight.isHidden = false
             
-            outputField.text = "Slant Height = √(Radius² + Height²) ⇒"
+            outputField.text = "Slant Height = √(Radius² + Height²)"
             
         } else if cellLabel == 28 {
             calcViewTitle.text = Con2.cellTitle
@@ -766,7 +766,7 @@ class CalculatorVC: UIViewController {
             Con1ViewRadius.isHidden = false
             Con1ViewHeight.isHidden = false
             
-            outputField.text = "Surface Area = π﹒Radius﹒(√(Radius² + Height²) + Radius) ⇒"
+            outputField.text = "Surface Area = π﹒Radius﹒(√(Radius² + Height²) + Radius)"
             
         } else if cellLabel == 29 {
             calcViewTitle.text = Con3.cellTitle
@@ -788,7 +788,7 @@ class CalculatorVC: UIViewController {
             Con1ViewSlantHeight.isHidden = false
             Con1ViewRadius.isHidden = false
             
-            outputField.text = "Surface Area = π﹒Radius﹒(l + Radius) ⇒"
+            outputField.text = "Surface Area = π﹒Radius﹒(l + Radius)"
             
         } else if cellLabel == 30 {
             calcViewTitle.text = Con4.cellTitle
@@ -810,7 +810,7 @@ class CalculatorVC: UIViewController {
             Con1ViewSlantHeight.isHidden = false
             Con1ViewRadius.isHidden = false
 
-            outputField.text = "Surface Area = π﹒Radius﹒l ⇒"
+            outputField.text = "Surface Area = π﹒Radius﹒l"
             
         } else if cellLabel == 31 {
             calcViewTitle.text = Con5.cellTitle
@@ -832,7 +832,7 @@ class CalculatorVC: UIViewController {
             Con1ViewRadius.isHidden = false
             Con1ViewHeight.isHidden = false
             
-            outputField.text = "Surface Area = π﹒Radius﹒√(Radius² + Height²) ⇒"
+            outputField.text = "Surface Area = π﹒Radius﹒√(Radius² + Height²)"
             
         } else if cellLabel == 32 {
             calcViewTitle.text = Con6.cellTitle
@@ -854,7 +854,7 @@ class CalculatorVC: UIViewController {
             Con1ViewRadius.isHidden = false
             Con1ViewHeight.isHidden = false
             
-            outputField.text = "Volume = ⅓﹒π﹒Radius²﹒Height² ⇒"
+            outputField.text = "Volume = ⅓﹒π﹒Radius²﹒Height"
             
         } else if cellLabel == 33 {
             calcViewTitle.text = Cyl1.cellTitle
@@ -876,7 +876,7 @@ class CalculatorVC: UIViewController {
             Cyl1ViewRadius.isHidden = false
             Cyl1ViewHeight.isHidden = false
             
-            outputField.text = "Surface Area = 2﹒π﹒Radius﹒Height ⇒"
+            outputField.text = "Surface Area = 2﹒π﹒Radius﹒Height"
             
         } else if cellLabel == 34 {
             calcViewTitle.text = Cyl2.cellTitle
@@ -898,7 +898,7 @@ class CalculatorVC: UIViewController {
             Cyl1ViewRadius.isHidden = false
             Cyl1ViewHeight.isHidden = false
             
-            outputField.text = "Surface Area = 2﹒π﹒Radius﹒(Height + Radius) ⇒"
+            outputField.text = "Surface Area = 2﹒π﹒Radius﹒(Height + Radius)"
             
         } else if cellLabel == 35 {
             calcViewTitle.text = Cyl3.cellTitle
@@ -920,7 +920,7 @@ class CalculatorVC: UIViewController {
             Cyl1ViewRadius.isHidden = false
             Cyl1ViewHeight.isHidden = false
             
-            outputField.text = "Volume = π﹒Radius²﹒Height ⇒"
+            outputField.text = "Volume = π﹒Radius²﹒Height"
             
         } else if cellLabel == 36 {
             calcViewTitle.text = Ell1.cellTitle
@@ -943,7 +943,7 @@ class CalculatorVC: UIViewController {
             Ell1ViewRadius1.isHidden = false
             Ell1ViewRadius2.isHidden = false
             
-            outputField.text = "Surface Area = π﹒RadiusA﹒RadiusB ⇒"
+            outputField.text = "Surface Area = π﹒RadiusA﹒RadiusB"
             
         } else if cellLabel == 37 {
             calcViewTitle.text = Ell2.cellTitle
@@ -966,7 +966,7 @@ class CalculatorVC: UIViewController {
             Ell1ViewRadius1.isHidden = false
             Ell1ViewRadius2.isHidden = false
             
-            outputField.text = "Perimeter = 2﹒π﹒√((RadiusA² + RadiusB²) ÷ 2) ⇒"
+            outputField.text = "Perimeter = 2﹒π﹒√((RadiusA² + RadiusB²) ÷ 2)"
             
         } else if cellLabel == 38 {
             calcViewTitle.text = Ell3.cellTitle
@@ -991,7 +991,7 @@ class CalculatorVC: UIViewController {
             Ell3ViewRadius2.isHidden = false
             Ell3ViewRadius3.isHidden = false
             
-            outputField.text = "Volume = (4 ÷ 3)﹒π﹒RadiusA﹒RadiusB﹒RadiusC ⇒"
+            outputField.text = "Volume = (4 ÷ 3)﹒π﹒RadiusA﹒RadiusB﹒RadiusC"
             
         } else if cellLabel == 39 {
             calcViewTitle.text = Ana1.cellTitle
@@ -1017,7 +1017,7 @@ class CalculatorVC: UIViewController {
             Ana2ViewPoints.isHidden = false
             Ana1ViewLine.isHidden = false
             
-            outputField.text = "Distance = √((x₂ - x₁)² + (y₂ - y₁)²) ⇒"
+            outputField.text = "Distance = √((x₂ - x₁)² + (y₂ - y₁)²)"
             
         } else if cellLabel == 40 {
             calcViewTitle.text = Ana2.cellTitle
@@ -1046,7 +1046,7 @@ class CalculatorVC: UIViewController {
             Ana3ViewPoint2.isHidden = false
             Ana3ViewLine.isHidden = false
             
-            outputField.text = "Distance = √((x₂ - x₁)² + (y₂ - y₁)² + (z₂ - z₁)²) ⇒"
+            outputField.text = "Distance = √((x₂ - x₁)² + (y₂ - y₁)² + (z₂ - z₁)²)"
             
         } else if cellLabel == 41 {
             calcViewTitle.text = Ana3.cellTitle
@@ -1072,7 +1072,7 @@ class CalculatorVC: UIViewController {
             Ana2ViewPoints.isHidden = false
             Ana1ViewLine.isHidden = false
             
-            outputField.text = "Slope of a Line = (y₂ - y₁) ÷ (x₂ - x₁) ⇒"
+            outputField.text = "Slope of a Line = (y₂ - y₁) ÷ (x₂ - x₁)"
         }
     }
     
@@ -1397,7 +1397,7 @@ class CalculatorVC: UIViewController {
                 thirdTextField.text = "Diagonal = \(forTrailingZero(temp: c)) m"
                 animate(a: Par1ViewLine)
                 
-                let calculationOutput = "\n\nDiagonal = √(\(forTrailingZero(temp: a))² + \(forTrailingZero(temp: b))²) ⇒ \nDiagonal = √(\(forTrailingZero(temp: a*a)) + \(forTrailingZero(temp: b*b))) ⇒ \nDiagonal = √\((forTrailingZero(temp: a*a)) + (forTrailingZero(temp: b*b))) ⇒ \nDiagonal = \(forTrailingZero(temp: c)) m"
+                let calculationOutput = "\n\nDiagonal = √(\(forTrailingZero(temp: a))² + \(forTrailingZero(temp: b))²) \nDiagonal = √(\(forTrailingZero(temp: a*a)) + \(forTrailingZero(temp: b*b))) /nDiagonal = √\((forTrailingZero(temp: a*a)) + (forTrailingZero(temp: b*b))) \nDiagonal = \(forTrailingZero(temp: c)) m"
                 outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Par1ViewLine)
@@ -1411,7 +1411,7 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Diagonal = \(forTrailingZero(temp: b)) m"
                 animate(a: Par2ViewLine)
                 
-                let calculationOutput = "\n\nDiagonal = √2﹒\(forTrailingZero(temp: a)) ⇒ \nDiagonal = \(forTrailingZero(temp: b)) m"
+                let calculationOutput = "\n\nDiagonal = √2﹒\(forTrailingZero(temp: a)) \nDiagonal = \(forTrailingZero(temp: b)) m"
                 outputField.text.append(calculationOutput)
             } else if secondTextField.text != "" {
                 animate(a: Par2ViewLine)
@@ -1426,7 +1426,7 @@ class CalculatorVC: UIViewController {
                 thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Par3ViewFilling)
                 
-                let calculationOutput = "\n\nSurface Area = \(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: b)) ⇒ \nSurface Area = \(forTrailingZero(temp: c)) m²"
+                let calculationOutput = "\n\nSurface Area = \(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: b)) \nSurface Area = \(forTrailingZero(temp: c)) m²"
                 outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Par3ViewFilling)
@@ -1441,7 +1441,7 @@ class CalculatorVC: UIViewController {
                 thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Par1ViewFilling)
                 
-                let calculationOutput = "\n\nSurface Area = \(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: b)) ⇒ \nSurface Area = \(forTrailingZero(temp: c)) m²"
+                let calculationOutput = "\n\nSurface Area = \(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: b)) \nSurface Area = \(forTrailingZero(temp: c)) m²"
                 outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Par1ViewFilling)
@@ -1455,7 +1455,7 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Surface Area = \(forTrailingZero(temp: b)) m²"
                 animate(a: Par2ViewFilling)
                 
-                let calculationOutput = "\n\nSurface Area = \(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: a)) ⇒ \nSurface Area = \(forTrailingZero(temp: b)) m²"
+                let calculationOutput = "\n\nSurface Area = \(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: a)) \nSurface Area = \(forTrailingZero(temp: b)) m²"
                 outputField.text.append(calculationOutput)
             } else if secondTextField.text != "" {
                 animate(a: Par2ViewFilling)
@@ -1470,7 +1470,7 @@ class CalculatorVC: UIViewController {
                 thirdTextField.text = "Perimeter = \(forTrailingZero(temp: c)) m"
                 animate(a: Par3ViewFilling)
                 
-                let calculationOutput = "\n\nPerimeter = 2(\(forTrailingZero(temp: a)) + \(forTrailingZero(temp: b))) ⇒ \nPerimeter = 2﹒\(forTrailingZero(temp: a + b)) ⇒ \nPerimeter = \(forTrailingZero(temp: c)) m"
+                let calculationOutput = "\n\nPerimeter = 2(\(forTrailingZero(temp: a)) + \(forTrailingZero(temp: b))) \nPerimeter = 2﹒\(forTrailingZero(temp: a + b)) \nPerimeter = \(forTrailingZero(temp: c)) m"
                 outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Par3ViewFilling)
@@ -1484,7 +1484,7 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Perimeter = \(forTrailingZero(temp: b)) m"
                 animate(a: Par2ViewSquare)
                 
-                let calculationOutput = "\n\nPerimeter = 4﹒\(forTrailingZero(temp: a)) ⇒ \nPerimeter = \(forTrailingZero(temp: b)) m"
+                let calculationOutput = "\n\nPerimeter = 4﹒\(forTrailingZero(temp: a)) \nPerimeter = \(forTrailingZero(temp: b)) m"
                 outputField.text.append(calculationOutput)
             } else if secondTextField.text != "" {
                 animate(a: Par2ViewSquare)
@@ -1498,7 +1498,7 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Volume = \(forTrailingZero(temp: b)) m³"
                 animate(a: Par8ViewCube1)
                 
-                let calculationOutput = "\n\nVolume = \(forTrailingZero(temp: a))³ ⇒ \nVolume = \(forTrailingZero(temp: b)) m³"
+                let calculationOutput = "\n\nVolume = \(forTrailingZero(temp: a))³ \nVolume = \(forTrailingZero(temp: b)) m³"
                 outputField.text.append(calculationOutput)
             } else if secondTextField.text != "" {
                 animate(a: Par8ViewCube1)
@@ -1515,7 +1515,7 @@ class CalculatorVC: UIViewController {
                 thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Tri1ViewFilling)
                 
-                let calculationOutput = "\n\nSurface Area = ½﹒\(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: b)) ⇒ \nSurface Area = \(forTrailingZero(temp: c)) m²"
+                let calculationOutput = "\n\nSurface Area = ½﹒\(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: b)) \nSurface Area = \(forTrailingZero(temp: c)) m²"
                 outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Tri1ViewFilling)
@@ -1532,7 +1532,7 @@ class CalculatorVC: UIViewController {
                 fourthTextField.text = "Surface Area = \(forTrailingZero(temp: d)) m²"
                 animate(a: Tri1ViewFilling)
                 
-                let calculationOutput = "\n\nSemiperimeter (r) = (\(forTrailingZero(temp: a)) + \(forTrailingZero(temp: b)) + \(forTrailingZero(temp: c))) ÷ 2 ⇒ \nSemiperimeter (r) = \(forTrailingZero(temp: a+b+c)) ÷ 2 ⇒ \nSemiperimeter (r) = \(forTrailingZero(temp: (r))) m \n\nSurface Area = √(\(forTrailingZero(temp: r))(\(forTrailingZero(temp: r)) - \(forTrailingZero(temp: a)))(\(forTrailingZero(temp: r)) - \(forTrailingZero(temp: b)))(\(forTrailingZero(temp: r)) - \(forTrailingZero(temp: c)))) ⇒ \nSurface Area = √(\(forTrailingZero(temp: r))(\(forTrailingZero(temp: r-a))﹒\(forTrailingZero(temp: r-b))﹒\(forTrailingZero(temp: r-c))) ⇒ \nSurface Area = √(\(forTrailingZero(temp: r))﹒\(forTrailingZero(temp: ((r-a)*(r-b)*(r-c))))) ⇒ \nSurface Area = √\(forTrailingZero(temp: (r*(r-a)*(r-b)*(r-c)))) ⇒ \nSurface Area = \(forTrailingZero(temp: d)) m²"
+                let calculationOutput = "\n\nSemiperimeter (r) = (\(forTrailingZero(temp: a)) + \(forTrailingZero(temp: b)) + \(forTrailingZero(temp: c))) ÷ 2 ⇒ \nSemiperimeter (r) = \(forTrailingZero(temp: a+b+c)) ÷ 2 \nSemiperimeter (r) = \(forTrailingZero(temp: (r))) m \n\nSurface Area = √(\(forTrailingZero(temp: r))(\(forTrailingZero(temp: r)) - \(forTrailingZero(temp: a)))(\(forTrailingZero(temp: r)) - \(forTrailingZero(temp: b)))(\(forTrailingZero(temp: r)) - \(forTrailingZero(temp: c)))) \nSurface Area = √(\(forTrailingZero(temp: r))(\(forTrailingZero(temp: r-a))﹒\(forTrailingZero(temp: r-b))﹒\(forTrailingZero(temp: r-c))) \nSurface Area = √(\(forTrailingZero(temp: r))﹒\(forTrailingZero(temp: ((r-a)*(r-b)*(r-c))))) \nSurface Area = √\(forTrailingZero(temp: (r*(r-a)*(r-b)*(r-c)))) \nSurface Area = \(forTrailingZero(temp: d)) m²"
                 outputField.text.append(calculationOutput)
             } else if fourthTextField.text != "" {
                 animate(a: Tri1ViewFilling)
@@ -1548,7 +1548,7 @@ class CalculatorVC: UIViewController {
                 fourthTextField.text = "Perimeter = \(forTrailingZero(temp: d)) m"
                 animate(a: Tri1ViewTriangle)
                 
-                let calculationOutput = "\n\nPerimeter = \(forTrailingZero(temp: a)) + \(forTrailingZero(temp: b)) + \(forTrailingZero(temp: c)) ⇒ \nPerimeter = \(forTrailingZero(temp: d)) m"
+                let calculationOutput = "\n\nPerimeter = \(forTrailingZero(temp: a)) + \(forTrailingZero(temp: b)) + \(forTrailingZero(temp: c)) \nPerimeter = \(forTrailingZero(temp: d)) m"
                 outputField.text.append(calculationOutput)
             } else if fourthTextField.text != "" {
                 animate(a: Tri1ViewTriangle)
@@ -1564,7 +1564,7 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Surface Area = \(forTrailingZero(temp: b)) m²"
                 animate(a: Cir1ViewFilling)
                 
-                let calculationOutput = "\n\nSurface Area = \(round(100 * Double.pi)/100)﹒\(forTrailingZero(temp: a))² ⇒ \nSurface Area = \(forTrailingZero(temp: b)) m²"
+                let calculationOutput = "\n\nSurface Area = \(round(100 * Double.pi)/100)﹒\(forTrailingZero(temp: a))² \nSurface Area = \(forTrailingZero(temp: b)) m²"
                 outputField.text.append(calculationOutput)
             } else if secondTextField.text != "" {
                 animate(a: Cir1ViewFilling)
@@ -1579,7 +1579,7 @@ class CalculatorVC: UIViewController {
                 thirdTextField.text = "Sector's Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Cir2ViewArc)
                 
-                let calculationOutput = "\n\nSector's Area = (\(round(100 * Double.pi)/100)﹒\(forTrailingZero(temp: b))²﹒\(forTrailingZero(temp: a))) ÷ 360 ⇒ \nSector's Area = (\(round(100 * Double.pi)/100)﹒\(forTrailingZero(temp: b*b))﹒\(forTrailingZero(temp: a))) ÷ 360 ⇒ \nSector's Area = \(forTrailingZero(temp: (round(100 * Double.pi)/100)*(b*b)*a)) ÷ 360 ⇒ \nSector's Area = \(forTrailingZero(temp: c)) m²"
+                let calculationOutput = "\n\nSector's Area = (\(round(100 * Double.pi)/100)﹒\(forTrailingZero(temp: b))²﹒\(forTrailingZero(temp: a))) ÷ 360 \nSector's Area = (\(round(100 * Double.pi)/100)﹒\(forTrailingZero(temp: b*b))﹒\(forTrailingZero(temp: a))) ÷ 360 \nSector's Area = \(forTrailingZero(temp: (round(100 * Double.pi)/100)*(b*b)*a)) ÷ 360 \nSector's Area = \(forTrailingZero(temp: c)) m²"
                 outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Cir2ViewArc)
@@ -1593,7 +1593,7 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Surface Area = \(forTrailingZero(temp: b)) m²"
                 animate(a: Cir3ViewSphere)
                 
-                let calculationOutput = "\n\nCurved Surface Area = 4﹒\(round(100 * Double.pi)/100)﹒\(forTrailingZero(temp: a))² ⇒ \nCurved Surface Area = 4﹒\(round(100 * Double.pi)/100)﹒\(forTrailingZero(temp: a*a)) ⇒ \nCurved Surface Area = \(forTrailingZero(temp: b)) m²"
+                let calculationOutput = "\n\nCurved Surface Area = 4﹒\(round(100 * Double.pi)/100)﹒\(forTrailingZero(temp: a))² \nCurved Surface Area = 4﹒\(round(100 * Double.pi)/100)﹒\(forTrailingZero(temp: a*a)) \nCurved Surface Area = \(forTrailingZero(temp: b)) m²"
                 outputField.text.append(calculationOutput)
             } else if secondTextField.text != "" {
                 animate(a: Cir3ViewSphere)
@@ -1607,7 +1607,7 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Perimeter = \(forTrailingZero(temp: b)) m"
                 animate(a: Cir1ViewFilling)
                 
-                let calculationOutput = "\n\nPerimeter = 2﹒\(round(100 * Double.pi)/100)﹒\(forTrailingZero(temp: a)) ⇒ \nPerimeter = \(forTrailingZero(temp: b)) m"
+                let calculationOutput = "\n\nPerimeter = 2﹒\(round(100 * Double.pi)/100)﹒\(forTrailingZero(temp: a)) \nPerimeter = \(forTrailingZero(temp: b)) m"
                 outputField.text.append(calculationOutput)
             } else if secondTextField.text != "" {
                 animate(a: Cir1ViewFilling)
@@ -1637,6 +1637,9 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Apothem = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Pol1ViewFilling)
+                
+                let calculationOutput = "\n\nSurface Area = (\(forTrailingZero(temp: b))﹒\(forTrailingZero(temp: a))) ÷ 2 \nSurface Area = \(forTrailingZero(temp: b*a)) ÷ 2 \nSurface Area = \(forTrailingZero(temp: c)) m²"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Pol1ViewFilling)
             } else {
@@ -1649,6 +1652,9 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Apothem = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Pol1ViewFilling)
+                
+                let calculationOutput = "\n\nSurface Area = \(forTrailingZero(temp: b))²﹒\(forTrailingZero(temp: a))﹒tan(3.14 ÷ \(forTrailingZero(temp: a))) \nSurface Area = \(forTrailingZero(temp: b*b))﹒\(forTrailingZero(temp: a))﹒tan(\(forTrailingZero(temp: 3.14/a))) \nSurface Area = \(forTrailingZero(temp: b*b))﹒\(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: tan(3.14 / a))) \nSurface Area = \(forTrailingZero(temp: c)) m²"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Pol1ViewFilling)
             } else {
@@ -1661,6 +1667,9 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Pol1ViewFilling)
+                
+                let calculationOutput = "\n\nSurface Area = (\(forTrailingZero(temp: b))²﹒\(forTrailingZero(temp: a))﹒sin((2﹒3.14) ÷ \(forTrailingZero(temp: a)))) ÷ 2 \nSurface Area = (\(forTrailingZero(temp: b*b))﹒\(forTrailingZero(temp: a))﹒sin(6.28 ÷ \(forTrailingZero(temp: a)))) ÷ 2 \nSurface Area = (\(forTrailingZero(temp: b*b))﹒\(forTrailingZero(temp: a))﹒sin(\(forTrailingZero(temp: 6.28/a)))) ÷ 2 \nSurface Area = (\(forTrailingZero(temp: b*b))﹒\(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: sin(6.28 / a)))) ÷ 2 \nSurface Area = (\(forTrailingZero(temp: b*b*a))﹒\(forTrailingZero(temp: sin(6.28 / a)))) ÷ 2 \nSurface Area = \(forTrailingZero(temp: ((b * b) * a * sin((2 * Double.pi) / a)))) ÷ 2 \nSurface Area = \(forTrailingZero(temp: c)) m²"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Pol1ViewFilling)
             } else {
@@ -1673,6 +1682,9 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Length of Side = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Pol1ViewFilling)
+                
+                let calculationOutput = "\n\nSurface Area = (\(forTrailingZero(temp: b))²﹒\(forTrailingZero(temp: a))) ÷ (4﹒tan(3.14 ÷ \(forTrailingZero(temp: a)))) \nSurface Area = (\(forTrailingZero(temp: b*b))﹒\(forTrailingZero(temp: a))) ÷ (4﹒tan(\(forTrailingZero(temp: 3.14/a)))) \nSurface Area = \(forTrailingZero(temp: b*b*a)) ÷ (4﹒\(forTrailingZero(temp: tan(3.14/a)))) \nSurface Area = \(forTrailingZero(temp: b*b*a)) ÷ \(forTrailingZero(temp: (4 * tan(3.14/a)))) \nSurface Area = \(forTrailingZero(temp: c)) m²"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Pol1ViewFilling)
             } else {
@@ -1685,6 +1697,9 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Length of a Side = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Perimeter = \(forTrailingZero(temp: c)) m"
                 animate(a: Pol1ViewPolygon)
+                
+                let calculationOutput = "\n\nPerimeter = \(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: b)) \nPerimeter = \(forTrailingZero(temp: c)) m"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Pol1ViewPolygon)
             } else {
@@ -1700,6 +1715,9 @@ class CalculatorVC: UIViewController {
                 thirdTextField.text = "Height = \(forTrailingZero(temp: c)) m"
                 fourthTextField.text = "Surface Area = \(forTrailingZero(temp: d)) m²"
                 animate(a: Tra1ViewFilling)
+                
+                let calculationOutput = "\n\nSurface Area = ((\(forTrailingZero(temp: a)) + \(forTrailingZero(temp: b)))﹒\(forTrailingZero(temp: c))) ÷ 2 \nSurface Area = (\(forTrailingZero(temp: a+b))﹒\(forTrailingZero(temp: c))) ÷ 2 \nSurface Area = \(forTrailingZero(temp: (a+b)*c)) ÷ 2 \nSurface Area = \(forTrailingZero(temp: d)) m²"
+                outputField.text.append(calculationOutput)
             } else if fourthTextField.text != "" {
                 animate(a: Tra1ViewFilling)
             } else {
@@ -1714,6 +1732,9 @@ class CalculatorVC: UIViewController {
                 fourthTextField.text = "Side D = \(forTrailingZero(temp: d)) m"
                 fifthTextField.text = "Perimeter = \(forTrailingZero(temp: e)) m"
                 animate(a: Tra1ViewTrapezium)
+                
+                let calculationOutput = "\n\nPerimeter = \(forTrailingZero(temp: a)) + \(forTrailingZero(temp: b)) + \(forTrailingZero(temp: c)) + \(forTrailingZero(temp: d)) \nPerimeter = \(forTrailingZero(temp: e)) m"
+                outputField.text.append(calculationOutput)
             } else if fifthTextField.text != "" {
                 animate(a: Tra1ViewTrapezium)
             } else {
@@ -1728,6 +1749,9 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Slant Height = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Rho1ViewFilling)
+                
+                let calculationOutput = "\n\nSurface Area = \(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: b)) \nSurface Area = \(forTrailingZero(temp: c)) m²"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Rho1ViewFilling)
             } else {
@@ -1740,6 +1764,9 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Diagonal B = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Rho1ViewFilling)
+                
+                let calculationOutput = "\n\nSurface Area = (\(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: b))) ÷ 2 \nSurface Area = \(forTrailingZero(temp: a*b)) ÷ 2 \nSurface Area = \(forTrailingZero(temp: c)) m²"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Rho1ViewFilling)
             } else {
@@ -1751,6 +1778,9 @@ class CalculatorVC: UIViewController {
                 firstTextField.text = "Angle A = \(forTrailingZero(temp: a))˚"
                 secondTextField.text = "Surface Area = \(forTrailingZero(temp: b)) m²"
                 animate(a: Rho1ViewFilling)
+                
+                let calculationOutput = "\n\nSurface Area = \(forTrailingZero(temp: a))²﹒sin(\(forTrailingZero(temp: a))) \nSurface Area = \(forTrailingZero(temp: a*a))﹒\(forTrailingZero(temp: sin(a))) \nSurface Area = \(forTrailingZero(temp: b)) m²"
+                outputField.text.append(calculationOutput)
             } else if secondTextField.text != "" {
                 animate(a: Rho1ViewFilling)
             } else {
@@ -1762,6 +1792,9 @@ class CalculatorVC: UIViewController {
                 firstTextField.text = "Side A = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "Perimeter = \(forTrailingZero(temp: b)) m"
                 animate(a: Rho1ViewRhombus)
+                
+                let calculationOutput = "\n\nPerimeter = 4﹒\(forTrailingZero(temp: a)) \nPerimeter = \(forTrailingZero(temp: 4*a)) m"
+                outputField.text.append(calculationOutput)
             } else if secondTextField.text != "" {
                 animate(a: Rho1ViewRhombus)
             } else {
@@ -1776,6 +1809,9 @@ class CalculatorVC: UIViewController {
                 secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Slant Height = \(forTrailingZero(temp: c)) m"
                 animate(a: Con1ViewSlantHeight)
+                
+                let calculationOutput = "\n\nSlant Height = √(\(forTrailingZero(temp: b))² + \(forTrailingZero(temp: a))²) \nSlant Height = √(\(forTrailingZero(temp: b*b)) + \(forTrailingZero(temp: a*a))) \nSlant Height = √\(forTrailingZero(temp: (a*a)+(b*b))) \nSlant Height = \(forTrailingZero(temp: c)) m"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Con1ViewSlantHeight)
             } else {
@@ -1783,11 +1819,14 @@ class CalculatorVC: UIViewController {
             }
         } else if cellLabel == 28 {
             if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
-                let c = round(10000 * (Double.pi * b * (sqrt((b * b) + (a * a) + b))))/10000
+                let c = round(10000 * (3.14 * b * ((sqrt((b * b) + (a * a))) + b)))/10000
                 firstTextField.text = "Height = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Con1ViewFilling)
+                
+                let calculationOutput = "\n\nSurface Area = 3.14﹒\(forTrailingZero(temp: b))﹒(√(\(forTrailingZero(temp: b))² + \(forTrailingZero(temp: a))²) + \(forTrailingZero(temp: b))) \nSurface Area = 3.14﹒\(forTrailingZero(temp: b))﹒(√(\(forTrailingZero(temp: b*b)) + \(forTrailingZero(temp: a*a))) + \(forTrailingZero(temp: b))) \nSurface Area = 3.14﹒\(forTrailingZero(temp: b))﹒(√\(forTrailingZero(temp: (b*b)+(a*a))) + \(forTrailingZero(temp: b))) \nSurface Area = 3.14﹒\(forTrailingZero(temp: b))﹒(\(forTrailingZero(temp: (sqrt((b * b) + (a * a))))) + \(forTrailingZero(temp: b))) \nSurface Area = 3.14﹒\(forTrailingZero(temp: b))﹒\(forTrailingZero(temp: (sqrt((b * b) + (a * a))+b))) \nSurface Area = \(forTrailingZero(temp: 3.14*b))﹒\(forTrailingZero(temp: (sqrt((b * b) + (a * a)))+b)) \nSurface Area = \(forTrailingZero(temp: c)) m²"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Con1ViewFilling)
             } else {
@@ -1795,11 +1834,14 @@ class CalculatorVC: UIViewController {
             }
         } else if cellLabel == 29 {
             if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
-                let c = round(10000 * (Double.pi * b * (a + b)))/10000
+                let c = round(10000 * (3.14 * b * (a + b)))/10000
                 firstTextField.text = "Slant Height = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Con1ViewFilling)
+                
+                let calculationOutput = "\n\nSurface Area = 3.14﹒\(forTrailingZero(temp: b))﹒(\(forTrailingZero(temp: a)) + \(forTrailingZero(temp: b))) \nSurface Area = \(forTrailingZero(temp: 3.14*b))﹒\(forTrailingZero(temp: a+b)) \nSurface Area = \(forTrailingZero(temp: c)) m²"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Con1ViewFilling)
             } else {
@@ -1807,11 +1849,14 @@ class CalculatorVC: UIViewController {
             }
         } else if cellLabel == 30 {
             if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
-                let c = round(10000 * (Double.pi * b * a))/10000
+                let c = round(10000 * (3.14 * b * a))/10000
                 firstTextField.text = "Slant Height = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Con1ViewFilling)
+                
+                let calculationOutput = "\n\nSurface Area = 3.14﹒\(forTrailingZero(temp: b))﹒\(forTrailingZero(temp: a)) \nSurface Area = \(forTrailingZero(temp: 3.14*b))﹒\(forTrailingZero(temp: a)) \nSurface Area = \(forTrailingZero(temp: c)) m²"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Con1ViewFilling)
             } else {
@@ -1819,11 +1864,14 @@ class CalculatorVC: UIViewController {
             }
         } else if cellLabel == 31 {
             if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
-                let c = round(10000 * (Double.pi * b * sqrt((b * b) + (a * a))))/10000
+                let c = round(10000 * (3.14 * b * sqrt((b * b) + (a * a))))/10000
                 firstTextField.text = "Height = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Con1ViewFilling)
+                
+                let calculationOutput = "\n\nSurface Area = 3.14﹒\(forTrailingZero(temp: b))﹒√(\(forTrailingZero(temp: a))² + \(forTrailingZero(temp: b))²) \nSurface Area = \(forTrailingZero(temp: b*3.14))﹒√(\(forTrailingZero(temp: a*a)) + \(forTrailingZero(temp: b*b))) \nSurface Area = \(forTrailingZero(temp: b*3.14))﹒√\(forTrailingZero(temp: (a*a)+(b*b))) \nSurface Area = \(forTrailingZero(temp: b*3.14))﹒\(forTrailingZero(temp: sqrt((b * b) + (a * a)))) \nSurface Area = \(forTrailingZero(temp: c)) m²"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Con1ViewFilling)
             } else {
@@ -1831,11 +1879,14 @@ class CalculatorVC: UIViewController {
             }
         } else if cellLabel == 32 {
             if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
-                let c = round(10000 * ((1 / 3) * Double.pi * (b * b) * a))/10000
+                let c = round(10000 * ((1 / 3) * 3.14 * (b * b) * a))/10000
                 firstTextField.text = "Height = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Volume = \(forTrailingZero(temp: c)) m³"
                 animate(a: Con1ViewFilling)
+                
+                let calculationOutput = "\n\nVolume = ⅓﹒3.14﹒\(forTrailingZero(temp: b))²﹒\(forTrailingZero(temp: a)) \nVolume = ⅓﹒3.14﹒\(forTrailingZero(temp: b*b))﹒\(forTrailingZero(temp: a)) \nVolume = 1.04667﹒\(forTrailingZero(temp: b*b))﹒\(forTrailingZero(temp: a)) \nVolume = \(forTrailingZero(temp: 1.04667*(b*b)))﹒\(forTrailingZero(temp: a)) \nVolume = \(forTrailingZero(temp: c)) m³"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Con1ViewFilling)
             } else {
@@ -1845,11 +1896,14 @@ class CalculatorVC: UIViewController {
         //Cylinder
         } else if cellLabel == 33 {
             if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
-                let c = round(10000 * (2 * Double.pi * b * a))/10000
+                let c = round(10000 * (2 * 3.14 * b * a))/10000
                 firstTextField.text = "Height = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Cyl1ViewFilling)
+                
+                let calculationOutput = "\n\nSurface Area = 2﹒3.14﹒\(forTrailingZero(temp: b))﹒\(forTrailingZero(temp: a)) \nSurface Area = 6.28﹒\(forTrailingZero(temp: b))﹒\(forTrailingZero(temp: a)) \nSurface Area = \(forTrailingZero(temp: 6.28*b))﹒\(forTrailingZero(temp: a)) \nSurface Area = \(forTrailingZero(temp: c)) m²"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Cyl1ViewFilling)
             } else {
@@ -1857,11 +1911,14 @@ class CalculatorVC: UIViewController {
             }
         } else if cellLabel == 34 {
             if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
-                let c = round(10000 * (2 * Double.pi * b * (a + b)))/10000
+                let c = round(10000 * (2 * 3.14 * b * (a + b)))/10000
                 firstTextField.text = "Height = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Cyl1ViewFilling)
+                
+                let calculationOutput = "\n\nSurface Area = 2﹒3.14﹒\(forTrailingZero(temp: b))﹒(\(forTrailingZero(temp: a)) + \(forTrailingZero(temp: b))) \nSurface Area = 6.28﹒\(forTrailingZero(temp: b))﹒\(forTrailingZero(temp: a+b)) \nSurface Area = \(forTrailingZero(temp: 6.28*b))﹒\(forTrailingZero(temp: a+b)) \nSurface Area = \(forTrailingZero(temp: c)) m²"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Cyl1ViewFilling)
             } else {
@@ -1869,11 +1926,14 @@ class CalculatorVC: UIViewController {
             }
         } else if cellLabel == 35 {
             if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
-                let c = round(10000 * (Double.pi * (b * b) * a))/10000
+                let c = round(10000 * (3.14 * (b * b) * a))/10000
                 firstTextField.text = "Height = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "Radius = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Volume = \(forTrailingZero(temp: c)) m³"
                 animate(a: Cyl1ViewFilling)
+                
+                let calculationOutput = "\n\nVolume = 3.14﹒\(forTrailingZero(temp: b))²﹒\(forTrailingZero(temp: a)) \nVolume = 3.14﹒\(forTrailingZero(temp: b*b))﹒\(forTrailingZero(temp: a)) \nVolume = \(forTrailingZero(temp: 3.14*(b*b)))﹒\(forTrailingZero(temp: a)) \nVolume = \(forTrailingZero(temp: c)) m³"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Cyl1ViewFilling)
             } else {
@@ -1883,11 +1943,14 @@ class CalculatorVC: UIViewController {
         //Ellipse
         } else if cellLabel == 36 {
             if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
-                let c = round(10000 * (Double.pi * a * b))/10000
+                let c = round(10000 * (3.14 * a * b))/10000
                 firstTextField.text = "Radius A = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "Radius B = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Surface Area = \(forTrailingZero(temp: c)) m²"
                 animate(a: Ell1ViewFilling)
+                
+                let calculationOutput = "\n\nSurface Area = 3.14﹒\(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: b)) \nSurface Area = \(forTrailingZero(temp: 3.14*a))﹒\(forTrailingZero(temp: b)) \nSurface Area = \(forTrailingZero(temp: c)) m²"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Ell1ViewFilling)
             } else {
@@ -1895,11 +1958,14 @@ class CalculatorVC: UIViewController {
             }
         } else if cellLabel == 37 {
             if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text == "" {
-                let c = round(10000 * (2 * Double.pi * (sqrt(((a * a) + (b * b))/2))))/10000
+                let c = round(10000 * (2 * 3.14 * (sqrt(((a * a) + (b * b))/2))))/10000
                 firstTextField.text = "Radius A = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "Radius B = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Perimeter = \(forTrailingZero(temp: c)) m"
                 animate(a: Ell1ViewPerimeter)
+                
+                let calculationOutput = "\n\nPerimeter = 2﹒3.14﹒√((\(forTrailingZero(temp: a))² + \(forTrailingZero(temp: b))²) ÷ 2) \nPerimeter = 6.28﹒√((\(forTrailingZero(temp: a*a)) + \(forTrailingZero(temp: b*b))) ÷ 2) \nPerimeter = 6.28﹒√(\(forTrailingZero(temp: (a*a)+(b*b))) ÷ 2) \nPerimeter = 6.28﹒√\(forTrailingZero(temp: ((a*a)+(b*b))/2)) \nPerimeter = 6.28﹒\(forTrailingZero(temp: (sqrt(((a * a) + (b * b))/2)))) \nPerimeter = \(forTrailingZero(temp: c)) m"
+                outputField.text.append(calculationOutput)
             } else if thirdTextField.text != "" {
                 animate(a: Ell1ViewPerimeter)
             } else {
@@ -1907,12 +1973,16 @@ class CalculatorVC: UIViewController {
             }
         } else if cellLabel == 38 {
             if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text != "" && fourthTextField.text == "" {
-                let d = round(10000 * ((4 / 3) * Double.pi * a * b * c))/10000
+                let d = round(10000 * ((4 / 3) * 3.14 * a * b * c))/10000
                 firstTextField.text = "Radius A = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "Radius B = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "Radius C = \(forTrailingZero(temp: c)) m"
                 fourthTextField.text = "Volume = \(forTrailingZero(temp: d)) m³"
                 animate(a: Ell3ViewFilling)
+                
+                let calculationOutput = "\n\nVolume = (4 ÷ 3)﹒3.14﹒\(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: b))﹒\(forTrailingZero(temp: c)) \nVolume = 1.3333﹒3.14﹒\(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: b))﹒\(forTrailingZero(temp: c)) \nVolume = 4.1867﹒\(forTrailingZero(temp: a))﹒\(forTrailingZero(temp: b))﹒\(forTrailingZero(temp: c)) \nVolume = \(forTrailingZero(temp: 4.1867*a))﹒\(forTrailingZero(temp: b))﹒\(forTrailingZero(temp: c)) \nVolume = \(forTrailingZero(temp: 4.1867*a*b))﹒\(forTrailingZero(temp: c)) \nVolume = \(forTrailingZero(temp: d)) m³"
+                outputField.text.append(calculationOutput)
+
             } else if fourthTextField.text != "" {
                 animate(a: Ell3ViewFilling)
             } else {
@@ -1931,6 +2001,9 @@ class CalculatorVC: UIViewController {
                 animate(a: Ana1ViewLine)
                 animate(a: Ana1ViewPoints)
                 animate(a: Ana2ViewPoints)
+                
+                let calculationOutput = "\n\nDistance = √((\(forTrailingZero(temp: b)) - \(forTrailingZero(temp: a)))² + (\(forTrailingZero(temp: d)) - \(forTrailingZero(temp: c)))²) \nDistance = √(\(forTrailingZero(temp: b-a))² + \(forTrailingZero(temp: d-c))²) \nDistance = √(\(forTrailingZero(temp: (b-a)*(b-a))) + \(forTrailingZero(temp: (d-c)*(d-c)))) \nDistance = √\(forTrailingZero(temp: ((b-a)*(b-a))+((d-c)*(d-c)))) \nDistance = \(forTrailingZero(temp: e)) m"
+                outputField.text.append(calculationOutput)
             } else if fifthTextField.text != "" {
                 animate(a: Ana1ViewLine)
                 animate(a: Ana1ViewPoints)
@@ -1940,7 +2013,7 @@ class CalculatorVC: UIViewController {
             }
         } else if cellLabel == 40 {
             if firstTextField.text != "" && secondTextField.text != "" && thirdTextField.text != "" && fourthTextField.text != "" && fifthTextField.text != "" && sixthTextField.text != "" && seventhTextField.text == "" {
-                let f = round(10000 * sqrt(((b - a) * (b - a)) + ((d - c) * (d - c)) + ((f - e) * (f - e))))/10000
+                let g = round(10000 * sqrt(((b - a) * (b - a)) + ((d - c) * (d - c)) + ((f - e) * (f - e))))/10000
                 firstTextField.text = "x₁ = \(forTrailingZero(temp: a)) m"
                 secondTextField.text = "x₂ = \(forTrailingZero(temp: b)) m"
                 thirdTextField.text = "y₁ = \(forTrailingZero(temp: c)) m"
@@ -1951,6 +2024,9 @@ class CalculatorVC: UIViewController {
                 animate(a: Ana3ViewLine)
                 animate(a: Ana3ViewPoint1)
                 animate(a: Ana3ViewPoint2)
+                
+                let calculationOutput = "\n\nDistance = √((\(forTrailingZero(temp: b)) - \(forTrailingZero(temp: a)))² + (\(forTrailingZero(temp: d)) - \(forTrailingZero(temp: c)))² + (\(forTrailingZero(temp: f)) - \(forTrailingZero(temp: e)))²) \nDistance = √(\(forTrailingZero(temp: b-a))² + \(forTrailingZero(temp: d-c))² + \(forTrailingZero(temp: f-e))²) \nDistance = √(\(forTrailingZero(temp: (b-a)*(b-a))) + \(forTrailingZero(temp: (d-c)*(d-c))) + \(forTrailingZero(temp: (f-e)*(f-e)))) \nDistance = √\(forTrailingZero(temp: ((b-a)*(b-a))+((d-c)*(d-c))+((f-e)*(f-e)))) \nDistance = \(forTrailingZero(temp: g)) m"
+                outputField.text.append(calculationOutput)
             } else if seventhTextField.text != "" {
                 animate(a: Ana3ViewLine)
                 animate(a: Ana3ViewPoint1)
@@ -1969,6 +2045,9 @@ class CalculatorVC: UIViewController {
                 animate(a: Ana1ViewLine)
                 animate(a: Ana1ViewPoints)
                 animate(a: Ana2ViewPoints)
+                
+                let calculationOutput = "\n\nSlope of a Line = ((\(forTrailingZero(temp: b)) - \(forTrailingZero(temp: a))) ÷ (\(forTrailingZero(temp: d)) - \(forTrailingZero(temp: c)))) \nSlope of a Line = \(forTrailingZero(temp: b-a)) ÷ \(forTrailingZero(temp: d-c)) \nSlope of a Line = \(forTrailingZero(temp: e))"
+                outputField.text.append(calculationOutput)
             } else if fifthTextField.text != "" {
                 animate(a: Ana1ViewLine)
                 animate(a: Ana1ViewPoints)

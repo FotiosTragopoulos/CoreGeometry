@@ -3709,8 +3709,8 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K00-f2-jH5">
-                                        <rect key="frame" x="380" y="0.0" width="40" height="40"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="K00-f2-jH5">
+                                        <rect key="frame" x="361" y="0.0" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="KDQ-81-gLh"/>
                                             <constraint firstAttribute="height" constant="40" id="fP2-yc-wKR"/>
@@ -3720,25 +3720,25 @@
                                             <action selector="emailSend:" destination="XSO-cR-8G7" eventType="touchUpInside" id="8GD-bf-b5t"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7n-Qb-emB">
-                                        <rect key="frame" x="329" y="0.0" width="40" height="40"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iA-dW-B5h">
+                                        <rect key="frame" x="20" y="0.0" width="60" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="WTM-k1-hzs"/>
-                                            <constraint firstAttribute="height" constant="40" id="tHh-0p-5lt"/>
+                                            <constraint firstAttribute="width" constant="60" id="afP-Cl-sku"/>
+                                            <constraint firstAttribute="height" constant="40" id="jfs-Dp-Njb"/>
                                         </constraints>
-                                        <state key="normal" image="Save QuickAction"/>
+                                        <state key="normal" title="Clear"/>
                                         <connections>
-                                            <action selector="savePDF:" destination="XSO-cR-8G7" eventType="touchUpInside" id="6yT-wr-pe0"/>
+                                            <action selector="clearAction:" destination="XSO-cR-8G7" eventType="touchUpInside" id="VpS-jC-oYg"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="lfx-A2-djZ" firstAttribute="centerY" secondItem="wOj-2h-wZ5" secondAttribute="centerY" id="6co-IK-IaS"/>
-                                    <constraint firstItem="K00-f2-jH5" firstAttribute="leading" secondItem="r7n-Qb-emB" secondAttribute="trailing" constant="11" id="8oL-vR-TKL"/>
-                                    <constraint firstAttribute="trailing" secondItem="K00-f2-jH5" secondAttribute="trailing" id="9TS-Hz-WtI"/>
+                                    <constraint firstAttribute="bottom" secondItem="3iA-dW-B5h" secondAttribute="bottom" constant="514" id="86b-8a-xxM"/>
+                                    <constraint firstAttribute="trailing" secondItem="3iA-dW-B5h" secondAttribute="trailing" constant="340" id="93m-j7-y6B"/>
+                                    <constraint firstAttribute="trailing" secondItem="K00-f2-jH5" secondAttribute="trailing" constant="19" id="9TS-Hz-WtI"/>
                                     <constraint firstAttribute="height" constant="554" id="Hkf-Pl-Q5x"/>
-                                    <constraint firstItem="r7n-Qb-emB" firstAttribute="top" secondItem="wOj-2h-wZ5" secondAttribute="top" id="LJq-mX-IwY"/>
                                     <constraint firstItem="lfx-A2-djZ" firstAttribute="centerX" secondItem="wOj-2h-wZ5" secondAttribute="centerX" id="XPX-tJ-hB9"/>
                                     <constraint firstItem="K00-f2-jH5" firstAttribute="top" secondItem="wOj-2h-wZ5" secondAttribute="top" id="aac-KV-c5L"/>
                                     <constraint firstItem="lfx-A2-djZ" firstAttribute="top" secondItem="wOj-2h-wZ5" secondAttribute="top" constant="39" id="xJO-hL-Z4F"/>
@@ -3747,13 +3747,13 @@
                                 <variation key="default">
                                     <mask key="subviews">
                                         <exclude reference="K00-f2-jH5"/>
-                                        <exclude reference="r7n-Qb-emB"/>
+                                        <exclude reference="3iA-dW-B5h"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="subviews">
                                         <include reference="K00-f2-jH5"/>
-                                        <include reference="r7n-Qb-emB"/>
+                                        <include reference="3iA-dW-B5h"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -5872,8 +5872,7 @@
         <image name="Cone" width="375" height="375"/>
         <image name="Cylinder" width="375" height="375"/>
         <image name="Ellipsoid" width="375" height="375"/>
-        <image name="Email QuickAction" width="29" height="22"/>
-        <image name="Save QuickAction" width="29" height="29"/>
+        <image name="Email QuickAction" width="64" height="64"/>
         <image name="gitButtoniPad" width="342" height="80"/>
         <image name="gitButtoniPhone" width="60" height="257"/>
         <image name="portfolioButtoniPad" width="342" height="80"/>

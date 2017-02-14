@@ -8,7 +8,6 @@
 
 import UIKit
 import MessageUI
-import CoreText
 
 class CalculatorVC: UIViewController, MFMailComposeViewControllerDelegate {
 
@@ -1935,8 +1934,8 @@ class CalculatorVC: UIViewController, MFMailComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
     }
-    
-    @IBAction func savePDF(_ sender: UIButton) {
-        
+
+    @IBAction func clearAction(_ sender: UIButton) {
+        viewDidLoad()
     }
 }

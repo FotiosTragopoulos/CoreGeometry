@@ -54,10 +54,10 @@
                                         <variation key="heightClass=compact-widthClass=regular" axis="vertical"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lJz-ky-ZMd">
-                                        <rect key="frame" x="141.5" y="202" width="390" height="186.5"/>
+                                        <rect key="frame" x="142" y="202" width="389" height="186.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xk-Tz-6To">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="186.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="186.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="3Xk-Tz-6To" secondAttribute="height" multiplier="1:1" id="eNJ-RV-kkj"/>
                                                 </constraints>
@@ -67,7 +67,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q74-2g-V1i">
-                                                <rect key="frame" x="202.5" y="0.0" width="187.5" height="186.5"/>
+                                                <rect key="frame" x="202" y="0.0" width="187" height="186.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Q74-2g-V1i" secondAttribute="height" multiplier="1:1" id="cx9-43-nGA"/>
                                                 </constraints>
@@ -108,10 +108,10 @@
                                         <variation key="heightClass=compact-widthClass=regular" axis="vertical"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2ZQ-Ik-utZ">
-                                        <rect key="frame" x="141.5" y="605.5" width="390" height="186.5"/>
+                                        <rect key="frame" x="142" y="605.5" width="389" height="186.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="211-hY-Lh5">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="186.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="186.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="211-hY-Lh5" secondAttribute="height" multiplier="1:1" id="kYV-TY-LD5"/>
                                                 </constraints>
@@ -121,7 +121,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgx-wp-BGo">
-                                                <rect key="frame" x="202.5" y="0.0" width="187.5" height="186.5"/>
+                                                <rect key="frame" x="202" y="0.0" width="187" height="186.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Fgx-wp-BGo" secondAttribute="height" multiplier="1:1" id="af5-Jd-Nf1"/>
                                                 </constraints>
@@ -3709,15 +3709,53 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K00-f2-jH5">
+                                        <rect key="frame" x="380" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="KDQ-81-gLh"/>
+                                            <constraint firstAttribute="height" constant="40" id="fP2-yc-wKR"/>
+                                        </constraints>
+                                        <state key="normal" image="Email QuickAction"/>
+                                        <connections>
+                                            <action selector="emailSend:" destination="XSO-cR-8G7" eventType="touchUpInside" id="8GD-bf-b5t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7n-Qb-emB">
+                                        <rect key="frame" x="329" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="WTM-k1-hzs"/>
+                                            <constraint firstAttribute="height" constant="40" id="tHh-0p-5lt"/>
+                                        </constraints>
+                                        <state key="normal" image="Save QuickAction"/>
+                                        <connections>
+                                            <action selector="savePDF:" destination="XSO-cR-8G7" eventType="touchUpInside" id="6yT-wr-pe0"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="lfx-A2-djZ" firstAttribute="centerY" secondItem="wOj-2h-wZ5" secondAttribute="centerY" id="6co-IK-IaS"/>
+                                    <constraint firstItem="K00-f2-jH5" firstAttribute="leading" secondItem="r7n-Qb-emB" secondAttribute="trailing" constant="11" id="8oL-vR-TKL"/>
+                                    <constraint firstAttribute="trailing" secondItem="K00-f2-jH5" secondAttribute="trailing" id="9TS-Hz-WtI"/>
                                     <constraint firstAttribute="height" constant="554" id="Hkf-Pl-Q5x"/>
+                                    <constraint firstItem="r7n-Qb-emB" firstAttribute="top" secondItem="wOj-2h-wZ5" secondAttribute="top" id="LJq-mX-IwY"/>
                                     <constraint firstItem="lfx-A2-djZ" firstAttribute="centerX" secondItem="wOj-2h-wZ5" secondAttribute="centerX" id="XPX-tJ-hB9"/>
+                                    <constraint firstItem="K00-f2-jH5" firstAttribute="top" secondItem="wOj-2h-wZ5" secondAttribute="top" id="aac-KV-c5L"/>
                                     <constraint firstItem="lfx-A2-djZ" firstAttribute="top" secondItem="wOj-2h-wZ5" secondAttribute="top" constant="39" id="xJO-hL-Z4F"/>
                                     <constraint firstItem="lfx-A2-djZ" firstAttribute="leading" secondItem="wOj-2h-wZ5" secondAttribute="leading" constant="20" id="xvc-qK-rIF"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="K00-f2-jH5"/>
+                                        <exclude reference="r7n-Qb-emB"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="K00-f2-jH5"/>
+                                        <include reference="r7n-Qb-emB"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.87058823529411766" green="0.8666666666666667" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
@@ -5834,6 +5872,8 @@
         <image name="Cone" width="375" height="375"/>
         <image name="Cylinder" width="375" height="375"/>
         <image name="Ellipsoid" width="375" height="375"/>
+        <image name="Email QuickAction" width="29" height="22"/>
+        <image name="Save QuickAction" width="29" height="29"/>
         <image name="gitButtoniPad" width="342" height="80"/>
         <image name="gitButtoniPhone" width="60" height="257"/>
         <image name="portfolioButtoniPad" width="342" height="80"/>

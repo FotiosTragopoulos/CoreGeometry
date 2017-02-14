@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import MessageUI
+import CoreText
 
-class CalculatorVC: UIViewController {
+class CalculatorVC: UIViewController, MFMailComposeViewControllerDelegate {
 
     @IBOutlet weak var calcViewTitle: UILabel!
     @IBOutlet weak var outputField: UITextView!
@@ -1912,5 +1914,29 @@ class CalculatorVC: UIViewController {
         fifthTextField.text = ""
         sixthTextField.text = ""
         seventhTextField.text = ""
+    }
+    
+    @IBAction func emailSend(_ sender: UIButton) {
+        if !MFMailComposeViewController.canSendMail() {
+            let alertController = UIAlertController(title: "", message: "Mail services are not available", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in})
+            alertController.addAction(ok)
+            present(alertController, animated: true, completion: nil)
+        } else {
+            let composeVC = MFMailComposeViewController()
+            composeVC.mailComposeDelegate = self
+            composeVC.setToRecipients([""])
+            composeVC.setSubject("\(calcViewTitle.text!) - Core Geometry")
+            composeVC.setMessageBody("\(outputField.text!)", isHTML: false)
+            self.present(composeVC, animated: true, completion: nil)
+            }
+        }
+    //Dismiss the Mail View Controller
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func savePDF(_ sender: UIButton) {
+        
     }
 }

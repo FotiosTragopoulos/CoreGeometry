@@ -54,10 +54,10 @@
                                         <variation key="heightClass=compact-widthClass=regular" axis="vertical"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lJz-ky-ZMd">
-                                        <rect key="frame" x="142" y="202" width="389" height="186.5"/>
+                                        <rect key="frame" x="141.5" y="202" width="390" height="186.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xk-Tz-6To">
-                                                <rect key="frame" x="0.0" y="0.0" width="187" height="186.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="186.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="3Xk-Tz-6To" secondAttribute="height" multiplier="1:1" id="eNJ-RV-kkj"/>
                                                 </constraints>
@@ -67,7 +67,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q74-2g-V1i">
-                                                <rect key="frame" x="202" y="0.0" width="187" height="186.5"/>
+                                                <rect key="frame" x="202.5" y="0.0" width="187.5" height="186.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Q74-2g-V1i" secondAttribute="height" multiplier="1:1" id="cx9-43-nGA"/>
                                                 </constraints>
@@ -108,10 +108,10 @@
                                         <variation key="heightClass=compact-widthClass=regular" axis="vertical"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2ZQ-Ik-utZ">
-                                        <rect key="frame" x="142" y="605.5" width="389" height="186.5"/>
+                                        <rect key="frame" x="141.5" y="605.5" width="390" height="186.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="211-hY-Lh5">
-                                                <rect key="frame" x="0.0" y="0.0" width="187" height="186.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="186.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="211-hY-Lh5" secondAttribute="height" multiplier="1:1" id="kYV-TY-LD5"/>
                                                 </constraints>
@@ -121,7 +121,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgx-wp-BGo">
-                                                <rect key="frame" x="202" y="0.0" width="187" height="186.5"/>
+                                                <rect key="frame" x="202.5" y="0.0" width="187.5" height="186.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Fgx-wp-BGo" secondAttribute="height" multiplier="1:1" id="af5-Jd-Nf1"/>
                                                 </constraints>
@@ -3723,8 +3723,8 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iA-dW-B5h">
                                         <rect key="frame" x="20" y="0.0" width="60" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="afP-Cl-sku"/>
-                                            <constraint firstAttribute="height" constant="40" id="jfs-Dp-Njb"/>
+                                            <constraint firstAttribute="height" constant="40" id="cBk-NT-AP7"/>
+                                            <constraint firstAttribute="width" constant="60" id="sFN-6a-cV9"/>
                                         </constraints>
                                         <state key="normal" title="Clear"/>
                                         <connections>
@@ -3735,14 +3735,14 @@
                                 <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="lfx-A2-djZ" firstAttribute="centerY" secondItem="wOj-2h-wZ5" secondAttribute="centerY" id="6co-IK-IaS"/>
-                                    <constraint firstAttribute="bottom" secondItem="3iA-dW-B5h" secondAttribute="bottom" constant="514" id="86b-8a-xxM"/>
-                                    <constraint firstAttribute="trailing" secondItem="3iA-dW-B5h" secondAttribute="trailing" constant="340" id="93m-j7-y6B"/>
                                     <constraint firstAttribute="trailing" secondItem="K00-f2-jH5" secondAttribute="trailing" constant="19" id="9TS-Hz-WtI"/>
                                     <constraint firstAttribute="height" constant="554" id="Hkf-Pl-Q5x"/>
                                     <constraint firstItem="lfx-A2-djZ" firstAttribute="centerX" secondItem="wOj-2h-wZ5" secondAttribute="centerX" id="XPX-tJ-hB9"/>
                                     <constraint firstItem="K00-f2-jH5" firstAttribute="top" secondItem="wOj-2h-wZ5" secondAttribute="top" id="aac-KV-c5L"/>
+                                    <constraint firstItem="3iA-dW-B5h" firstAttribute="top" secondItem="wOj-2h-wZ5" secondAttribute="top" id="auV-VI-b97"/>
                                     <constraint firstItem="lfx-A2-djZ" firstAttribute="top" secondItem="wOj-2h-wZ5" secondAttribute="top" constant="39" id="xJO-hL-Z4F"/>
                                     <constraint firstItem="lfx-A2-djZ" firstAttribute="leading" secondItem="wOj-2h-wZ5" secondAttribute="leading" constant="20" id="xvc-qK-rIF"/>
+                                    <constraint firstItem="3iA-dW-B5h" firstAttribute="leading" secondItem="wOj-2h-wZ5" secondAttribute="leading" constant="20" id="yPZ-GN-Yul"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">

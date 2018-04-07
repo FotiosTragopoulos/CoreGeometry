@@ -97,7 +97,7 @@ Analytic geometry is the study of geometry using a coordinate system. It is freq
 * Distance Between 2 points (x,y,z)
 * Slope of a Line
 
-![Core Geometry Box](http://macdown.uranusjr.com/static/images/logo-160.png)
+![Core Geometry Box](https://github.com/FotiosTragopoulos/CoreGeometry/blob/master/Graphics/CGTerms.png)
 
 
 ## Terms & Conditions

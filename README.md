@@ -1,11 +1,11 @@
 # Core Geometry
-***[http://fotiostragopoulos.myds.me/iGeometry.html](Core Geometry)***
+***[http://fotiostragopoulos.myds.me/iGeometry.html]()***
 
-![Core Geometry Box](http://macdown.uranusjr.com/static/images/logo-160.png)
+![Core Geometry Box](CoreGeometry/Graphics/CGPort.png)
 
-##Content
+## Content
 
-###1. Parallelogram
+### 1. Parallelogram
 
 A parallelogram is a quadrilateral with two pairs of parallel sides. The opposite sides of a parallelogram are of equal length and the opposite angles are of equal measure.
 
@@ -18,7 +18,7 @@ A parallelogram is a quadrilateral with two pairs of parallel sides. The opposit
 * Perimeter of a Square
 * Volume of a Cube
 
-###2. Triangle
+### 2. Triangle
 
 Any three points, when non-collinear, determine a unique triangle and a unique plane. A triangle has three sides and three angles. The three angles always add to 180°.
 
@@ -26,7 +26,7 @@ Any three points, when non-collinear, determine a unique triangle and a unique p
 * Surface Area - Heron's Formula
 * Perimeter of a Triangle
 
-###3. Circle
+### 3. Circle
 
 A circle is the set of all points in a plane that are at a given distance from a given point. It is the curve traced out by a point that moves so that its distance from a given point is constant.
 
@@ -36,7 +36,7 @@ A circle is the set of all points in a plane that are at a given distance from a
 * Perimeter of a Circle
 * Volume of a Sphere
 
-###4. Polygon
+### 4. Polygon
 
 A polygon is a plane 2D shape that is bounded by a finite chain of straight line segments closing in a loop to form a closed chain. These segments are called its sides.
 
@@ -46,14 +46,14 @@ A polygon is a plane 2D shape that is bounded by a finite chain of straight line
 * Surface Area (Length of a Side - Number of Sides)
 * Perimeterof a Canonical Polygon
 
-###5. Trapezium
+### 5. Trapezium
 
 A convex quadrilateral with at least one pair of parallel sides is referred to as a trapezoid in American and Canadian English but as a trapezium in English outside North America.
 
 * Surface Area of a Trapezium
 * Perimeter of a Trapezium
 
-###6. Rhombus
+### 6. Rhombus
 
 A rhombus is a simple quadrilateral whose four sides all have the same length. Another name is equilateral quadrilateral, since equilateral means that all of its sides are equal in length.
 
@@ -62,7 +62,7 @@ A rhombus is a simple quadrilateral whose four sides all have the same length. A
 * Surface Area (Angle)
 * Perimeter of Rhombus
 
-###7. Cone
+### 7. Cone
 
 A cone is a three-dimensional geometric shape that tapers smoothly from a flat base (frequently, though not necessarily, circular) to a point called the apex or vertex.
 
@@ -73,7 +73,7 @@ A cone is a three-dimensional geometric shape that tapers smoothly from a flat b
 * Curved Surface Area (Radius - Height)
 * Volume of a Cone
 
-###8. Cylinder
+### 8. Cylinder
 
 A cylinder is one of the most basic curvilinear geometric shapes whose surface is formed by the points at a fixed distance from a given straight line, the axis of the cylinder.
 
@@ -81,7 +81,7 @@ A cylinder is one of the most basic curvilinear geometric shapes whose surface i
 * Total Surface Area of a Cylinder
 * Volume of a Cylinder
 
-###9. Ellipse
+### 9. Ellipse
 
 An ellipse is a curve on a plane that surrounds two focal points such that the sum of the distances to the two focal points is constant for every point on the curve.
 
@@ -89,7 +89,7 @@ An ellipse is a curve on a plane that surrounds two focal points such that the s
 * Perimeter of Ellipse
 * Volume of Ellipsoid
 
-###10. Analytical Geometry
+### 10. Analytical Geometry
 
 Analytic geometry is the study of geometry using a coordinate system. It is frequently used in physics and engineering, and is the foundation of most modern fields of geometry.
 
@@ -100,7 +100,7 @@ Analytic geometry is the study of geometry using a coordinate system. It is freq
 ![Core Geometry Box](http://macdown.uranusjr.com/static/images/logo-160.png)
 
 
-##Terms & Conditions
+## Terms & Conditions
 
 
 Thank you for downloading Core Geometry (the “App”). This App is published by Tragopoulos Fotios. Please read the Terms and Conditions carefully before using the App. By downloading or otherwise accessing the App you agree to be bound by the following terms and conditions and our privacy policy. If you have any queries about the App or these Terms, you can contact me via email or social networking. If you do not agree to these Terms, you should stop using the App immediately.

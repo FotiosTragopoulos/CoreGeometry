@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Core Geometry.xcodeproj">
+      location = "group:/Users/home/ProjectsXcode/CoreGeometry/Core Geometry/DetailModel.swift">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

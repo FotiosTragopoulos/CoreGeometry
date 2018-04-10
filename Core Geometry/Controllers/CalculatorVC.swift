@@ -1917,7 +1917,7 @@ class CalculatorVC: UIViewController, MFMailComposeViewControllerDelegate {
     
     @IBAction func emailSend(_ sender: UIButton) {
         if !MFMailComposeViewController.canSendMail() {
-            let alertController = UIAlertController(title: "", message: "Mail services are not available", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "", message: "Mail services are not enabled in this device", preferredStyle: .alert)
             let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in})
             alertController.addAction(ok)
             present(alertController, animated: true, completion: nil)

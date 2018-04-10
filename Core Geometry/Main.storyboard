@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,17 +18,17 @@
             <objects>
                 <viewController autoresizesArchivedViewToFullSize="NO" id="BYZ-38-t0r" customClass="MainVC" customModule="Core_Geometry" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8aC-tS-dqa">
-                                <rect key="frame" x="60" y="40" width="245" height="498"/>
+                                <rect key="frame" x="80" y="15" width="673" height="994"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cCb-fd-G4r">
-                                        <rect key="frame" x="27.5" y="0.0" width="190" height="87.5"/>
+                                        <rect key="frame" x="142" y="0.0" width="389" height="187"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRM-Eo-dIV">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="87.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="187"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="GRM-Eo-dIV" secondAttribute="height" multiplier="1:1" id="X96-60-fT6"/>
                                                 </constraints>
@@ -38,7 +38,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuC-dR-zET">
-                                                <rect key="frame" x="102.5" y="0.0" width="87.5" height="87.5"/>
+                                                <rect key="frame" x="202" y="0.0" width="187" height="187"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="uuC-dR-zET" secondAttribute="height" multiplier="1:1" id="MPU-2k-1Af"/>
                                                 </constraints>
@@ -52,10 +52,10 @@
                                         <variation key="heightClass=compact-widthClass=regular" axis="vertical"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lJz-ky-ZMd">
-                                        <rect key="frame" x="27.5" y="102.5" width="190" height="87.5"/>
+                                        <rect key="frame" x="141.5" y="202" width="390" height="186.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xk-Tz-6To">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="87.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="186.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="3Xk-Tz-6To" secondAttribute="height" multiplier="1:1" id="eNJ-RV-kkj"/>
                                                 </constraints>
@@ -65,7 +65,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q74-2g-V1i">
-                                                <rect key="frame" x="102.5" y="0.5" width="87.5" height="87"/>
+                                                <rect key="frame" x="202.5" y="0.0" width="187.5" height="186.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Q74-2g-V1i" secondAttribute="height" multiplier="1:1" id="cx9-43-nGA"/>
                                                 </constraints>
@@ -79,10 +79,10 @@
                                         <variation key="heightClass=compact-widthClass=regular" axis="vertical"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="KA0-8e-kYD">
-                                        <rect key="frame" x="28" y="205" width="189" height="88"/>
+                                        <rect key="frame" x="142.5" y="403.5" width="388" height="187"/>
                                         <subviews>
                                             <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yC7-ni-M0y">
-                                                <rect key="frame" x="0.0" y="0.0" width="87" height="88"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="187"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="yC7-ni-M0y" secondAttribute="height" multiplier="1:1" id="qOq-Jv-WUU"/>
                                                 </constraints>
@@ -92,7 +92,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q47-Vw-uuQ">
-                                                <rect key="frame" x="102" y="0.0" width="87" height="88"/>
+                                                <rect key="frame" x="201.5" y="0.0" width="186.5" height="187"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="q47-Vw-uuQ" secondAttribute="height" multiplier="1:1" id="jTE-Ob-JNI"/>
                                                 </constraints>
@@ -106,10 +106,10 @@
                                         <variation key="heightClass=compact-widthClass=regular" axis="vertical"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2ZQ-Ik-utZ">
-                                        <rect key="frame" x="27.5" y="308" width="190" height="87.5"/>
+                                        <rect key="frame" x="141.5" y="605.5" width="390" height="186.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="211-hY-Lh5">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="87.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="186.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="211-hY-Lh5" secondAttribute="height" multiplier="1:1" id="kYV-TY-LD5"/>
                                                 </constraints>
@@ -119,7 +119,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgx-wp-BGo">
-                                                <rect key="frame" x="102.5" y="0.0" width="87.5" height="87"/>
+                                                <rect key="frame" x="202.5" y="0.0" width="187.5" height="186.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Fgx-wp-BGo" secondAttribute="height" multiplier="1:1" id="af5-Jd-Nf1"/>
                                                 </constraints>
@@ -133,10 +133,10 @@
                                         <variation key="heightClass=compact-widthClass=regular" axis="vertical"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wKI-U9-oBS">
-                                        <rect key="frame" x="28" y="410.5" width="189" height="87.5"/>
+                                        <rect key="frame" x="142.5" y="807" width="388" height="187"/>
                                         <subviews>
                                             <button opaque="NO" tag="9" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yf-0j-HIm">
-                                                <rect key="frame" x="0.0" y="0.0" width="87" height="87.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="187"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="1Yf-0j-HIm" secondAttribute="height" multiplier="1:1" id="3vw-eF-05O"/>
                                                 </constraints>
@@ -146,7 +146,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="10" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0u-IH-9rg">
-                                                <rect key="frame" x="102" y="0.0" width="87" height="87.5"/>
+                                                <rect key="frame" x="201.5" y="0.0" width="186.5" height="187"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="S0u-IH-9rg" secondAttribute="height" multiplier="1:1" id="8gy-DW-WVV"/>
                                                 </constraints>
@@ -211,13 +211,13 @@
                                 </variation>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vb7-Ah-asT">
-                                <rect key="frame" x="5" y="44" width="50" height="480"/>
+                                <rect key="frame" x="5" y="262" width="70" height="500"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3ot-I5-Afa">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="240"/>
+                                        <rect key="frame" x="5" y="0.0" width="60" height="245"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjN-Eq-et0">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="240"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="245"/>
                                                 <state key="normal" image="gitButtoniPhone"/>
                                                 <connections>
                                                     <action selector="gitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WC2-24-8d9"/>
@@ -231,10 +231,10 @@
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7RH-TJ-56h">
-                                        <rect key="frame" x="0.0" y="240" width="50" height="240"/>
+                                        <rect key="frame" x="5" y="255" width="60" height="245"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eI-L8-XIv">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="240"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="245"/>
                                                 <state key="normal" image="portfolioButtoniPhone"/>
                                                 <connections>
                                                     <action selector="portfolioAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Dc-J3-IlV"/>
@@ -348,17 +348,17 @@
             <objects>
                 <viewController title="DetailView" id="6Vy-hk-M5P" customClass="DetailVC" customModule="Core_Geometry" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u9f-wh-iDc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3as-al-gIf">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MK0-B7-ZIO">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="150"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eD9-zv-jDn">
-                                                <rect key="frame" x="8" y="52" width="100" height="98"/>
+                                                <rect key="frame" x="8" y="64" width="100" height="86"/>
                                                 <color key="backgroundColor" red="0.87058823529411766" green="0.8666666666666667" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="280" id="Urn-5L-Kx5">
@@ -389,13 +389,13 @@
                                                 </variation>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HY-8f-SKT">
-                                                <rect key="frame" x="116" y="50" width="196" height="100"/>
+                                                <rect key="frame" x="116" y="50" width="644" height="100"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtQ-b8-HZX">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="24"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="EjP-GZ-eF9">
                                                         <variation key="heightClass=compact-widthClass=compact" constant="150"/>
@@ -519,19 +519,19 @@
                                         </variation>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3e1-7P-Xow">
-                                        <rect key="frame" x="0.0" y="150" width="320" height="398"/>
+                                        <rect key="frame" x="0.0" y="150" width="768" height="854"/>
                                         <color key="backgroundColor" red="0.87058823529411766" green="0.8666666666666667" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FunctionCells" id="XQw-c4-dLK" customClass="DetailCell" customModule="Core_Geometry" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="320" height="100"/>
+                                                <rect key="frame" x="0.0" y="28" width="768" height="100"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XQw-c4-dLK" id="9cf-YB-qQM">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="100"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label label label label label label label label label label label label label label label label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSn-eE-BdP">
-                                                            <rect key="frame" x="116" y="8" width="251" height="60"/>
+                                                            <rect key="frame" x="116" y="8" width="900" height="60"/>
                                                             <accessibility key="accessibilityConfiguration" identifier="labelTitle" label="cellLabel"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="60" id="5tB-mx-0YU"/>
@@ -596,11 +596,11 @@
             <objects>
                 <viewController id="XSO-cR-8G7" customClass="CalculatorVC" customModule="Core_Geometry" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HGi-1o-XRI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JqN-GD-gYX">
-                                <rect key="frame" x="16" y="52" width="288" height="30"/>
+                                <rect key="frame" x="460" y="106" width="288" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="4EO-m4-EML"/>
                                     <constraint firstAttribute="height" constant="30" id="4zz-Zz-fGt"/>
@@ -655,7 +655,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYO-kH-mfh">
-                                <rect key="frame" x="16" y="90" width="288" height="30"/>
+                                <rect key="frame" x="460" y="144" width="288" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6iQ-oQ-jmS"/>
                                     <constraint firstAttribute="height" constant="30" id="7Es-Ko-9SS"/>
@@ -710,7 +710,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XVX-6b-Zvm">
-                                <rect key="frame" x="16" y="128" width="288" height="30"/>
+                                <rect key="frame" x="460" y="182" width="288" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="9KD-Js-mCU"/>
                                     <constraint firstAttribute="height" constant="30" id="Acm-oh-IQ4"/>
@@ -765,7 +765,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g24-A1-z2j">
-                                <rect key="frame" x="16" y="166" width="288" height="30"/>
+                                <rect key="frame" x="460" y="220" width="288" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="OBS-1v-PUH"/>
                                     <constraint firstAttribute="height" constant="30" id="PLs-4m-cfh"/>
@@ -820,7 +820,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rlg-yB-4Cg">
-                                <rect key="frame" x="16" y="204" width="288" height="30"/>
+                                <rect key="frame" x="460" y="258" width="288" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="0fj-fF-Y41"/>
                                     <constraint firstAttribute="width" constant="288" id="34q-wT-wby"/>
@@ -875,7 +875,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pY0-6s-jKM">
-                                <rect key="frame" x="16" y="242" width="288" height="30"/>
+                                <rect key="frame" x="460" y="296" width="288" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="269-eR-7QB"/>
                                     <constraint firstAttribute="height" constant="30" id="7qW-Es-UxM"/>
@@ -930,7 +930,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uS7-rc-xFY">
-                                <rect key="frame" x="16" y="280" width="288" height="30"/>
+                                <rect key="frame" x="460" y="334" width="288" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="2xk-Ul-iVZ"/>
                                     <constraint firstAttribute="height" constant="30" id="3xy-K1-cpG"/>
@@ -982,7 +982,7 @@
                                 </variation>
                             </textField>
                             <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DSc-aL-TWP" customClass="Par1ViewFilling" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" red="0.89411764709999997" green="0.89019607840000003" blue="0.86274509799999999" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="DSc-aL-TWP" secondAttribute="height" multiplier="1:1" id="F7F-AR-Chr"/>
@@ -1026,7 +1026,7 @@
                                 </variation>
                             </view>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ie-eH-ifm" customClass="Par1ViewRectangle" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" red="0.89411764709999997" green="0.89019607840000003" blue="0.86274509799999999" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="4na-qK-ShL"/>
@@ -1070,7 +1070,7 @@
                                 </variation>
                             </view>
                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92H-ZR-hJF" customClass="Par1ViewLine" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="AEn-Qy-Aks"/>
@@ -1114,7 +1114,7 @@
                                 </variation>
                             </view>
                             <view tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dmy-JL-FTs" customClass="Par2ViewFilling" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" red="0.89411764709999997" green="0.89019607840000003" blue="0.86274509799999999" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="MqA-LA-JNS"/>
@@ -1158,7 +1158,7 @@
                                 </variation>
                             </view>
                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0f-u4-Ze7" customClass="Par2ViewSquare" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" red="0.89411764709999997" green="0.89019607840000003" blue="0.86274509799999999" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="3pI-1v-3Qx"/>
@@ -1202,7 +1202,7 @@
                                 </variation>
                             </view>
                             <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQp-ez-XTu" customClass="Par2ViewLine" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FQp-ez-XTu" secondAttribute="height" multiplier="1:1" id="3FU-hy-HEA"/>
@@ -1246,7 +1246,7 @@
                                 </variation>
                             </view>
                             <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIS-nf-U33" customClass="Par3ViewFilling" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" red="0.89411764709999997" green="0.89019607840000003" blue="0.86274509799999999" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="vIS-nf-U33" secondAttribute="height" multiplier="1:1" id="APr-7I-aaI"/>
@@ -1290,7 +1290,7 @@
                                 </variation>
                             </view>
                             <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDL-fg-mEA" customClass="Par3ViewParallelogram" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" red="0.89411764709999997" green="0.89019607840000003" blue="0.86274509799999999" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="AYY-nO-PTz"/>
@@ -1334,7 +1334,7 @@
                                 </variation>
                             </view>
                             <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CLd-cz-7k9" customClass="Par3ViewLine" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="FDH-eu-xhN"/>
@@ -1378,7 +1378,7 @@
                                 </variation>
                             </view>
                             <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wul-8u-Upd" customClass="Par8ViewCube1" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" red="0.89411764709999997" green="0.89019607840000003" blue="0.86274509799999999" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="3y9-hM-1Q7"/>
@@ -1422,7 +1422,7 @@
                                 </variation>
                             </view>
                             <view tag="11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zht-mc-kWr" customClass="Tri1ViewFilling" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="M8Q-Ua-dkT"/>
@@ -1466,7 +1466,7 @@
                                 </variation>
                             </view>
                             <view tag="12" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tgi-kF-gaT" customClass="Tri1ViewTriangle" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="9QI-bt-2QG"/>
@@ -1510,7 +1510,7 @@
                                 </variation>
                             </view>
                             <view tag="13" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uNe-6e-zai" customClass="Tri1ViewLine" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="uNe-6e-zai" secondAttribute="height" multiplier="1:1" id="3uW-HY-39k"/>
@@ -1554,7 +1554,7 @@
                                 </variation>
                             </view>
                             <view tag="14" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Syo-V0-gFM" customClass="Cir1ViewFilling" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Syo-V0-gFM" secondAttribute="height" multiplier="1:1" id="4ru-qV-HZy"/>
@@ -1598,7 +1598,7 @@
                                 </variation>
                             </view>
                             <view tag="15" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYx-Un-q5A" customClass="Cir1ViewCircle" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="4P5-zg-Smw"/>
@@ -1642,7 +1642,7 @@
                                 </variation>
                             </view>
                             <view tag="18" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qij-Wp-z0h" customClass="Cir3ViewSphere" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="BuQ-wM-R65"/>
@@ -1686,7 +1686,7 @@
                                 </variation>
                             </view>
                             <view tag="16" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1X1-Vq-Vyq" customClass="Cir1ViewLine" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1X1-Vq-Vyq" secondAttribute="height" multiplier="1:1" id="A39-3Z-ojM"/>
@@ -1730,7 +1730,7 @@
                                 </variation>
                             </view>
                             <view tag="17" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ecu-vf-btb" customClass="Cir2ViewArc" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" red="0.43577997545300406" green="0.42952409948024445" blue="0.0027522115388061695" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ecu-vf-btb" secondAttribute="height" multiplier="1:1" id="DLn-U0-ib1"/>
@@ -1774,7 +1774,7 @@
                                 </variation>
                             </view>
                             <view tag="18" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HrG-f8-BLr" customClass="Pol1ViewFilling" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="05T-lI-Mft"/>
@@ -1818,7 +1818,7 @@
                                 </variation>
                             </view>
                             <view tag="19" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CYu-MV-PeZ" customClass="Pol1ViewPolygon" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="B4h-CR-Sf7"/>
@@ -1862,7 +1862,7 @@
                                 </variation>
                             </view>
                             <view tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="srn-k0-MMH" customClass="Pol1ViewLine" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="8M9-Z9-b43"/>
@@ -1906,7 +1906,7 @@
                                 </variation>
                             </view>
                             <view tag="21" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Yw-t5-tFR" customClass="Pol1ViewRadius" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="HDh-1i-mk2"/>
@@ -1950,7 +1950,7 @@
                                 </variation>
                             </view>
                             <view tag="22" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOn-TU-esm" customClass="Tra1ViewFilling" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="TOn-TU-esm" secondAttribute="height" multiplier="1:1" id="IRG-Yc-Jdk"/>
@@ -1994,7 +1994,7 @@
                                 </variation>
                             </view>
                             <view tag="23" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GH1-Ud-U58" customClass="Tra1ViewTrapezium" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="1Be-5t-Gap"/>
@@ -2038,7 +2038,7 @@
                                 </variation>
                             </view>
                             <view tag="24" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDA-dv-tmk" customClass="Tra1ViewLine" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="JbI-RQ-73w"/>
@@ -2082,7 +2082,7 @@
                                 </variation>
                             </view>
                             <view tag="25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2B-qR-GQx" customClass="Rho1ViewFilling" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="2fs-l0-kVS"/>
@@ -2126,7 +2126,7 @@
                                 </variation>
                             </view>
                             <view tag="26" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z7J-Rf-gew" customClass="Rho1ViewRhombus" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="33h-WH-lqy"/>
@@ -2170,7 +2170,7 @@
                                 </variation>
                             </view>
                             <view tag="27" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IfU-mB-1jZ" customClass="Rho1ViewLine" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IfU-mB-1jZ" secondAttribute="height" multiplier="1:1" id="3Hs-eB-oAe"/>
@@ -2214,7 +2214,7 @@
                                 </variation>
                             </view>
                             <view tag="28" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9E-Rg-yth" customClass="Rho2ViewLine" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="MIB-8x-4vJ"/>
@@ -2258,7 +2258,7 @@
                                 </variation>
                             </view>
                             <view tag="29" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akd-do-Rjc" customClass="Rho3ViewLine" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="akd-do-Rjc" secondAttribute="height" multiplier="1:1" id="CQI-EL-cf7"/>
@@ -2302,10 +2302,10 @@
                                 </variation>
                             </view>
                             <view tag="30" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sQU-k5-Eaz" customClass="Con1ViewFilling" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cone" translatesAutoresizingMaskIntoConstraints="NO" id="yzf-v9-FIU">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2355,7 +2355,7 @@
                                 </variation>
                             </view>
                             <view tag="31" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpN-wD-wfw" customClass="Con1ViewSlantHeight" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="F40-3i-cDy"/>
@@ -2399,7 +2399,7 @@
                                 </variation>
                             </view>
                             <view tag="32" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4f-SB-Cqz" customClass="Con1ViewRadius" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="T4f-SB-Cqz" secondAttribute="height" multiplier="1:1" id="7vo-vd-QiP"/>
@@ -2443,7 +2443,7 @@
                                 </variation>
                             </view>
                             <view tag="33" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrQ-8y-MR1" customClass="Con1ViewHeight" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jrQ-8y-MR1" secondAttribute="height" multiplier="1:1" id="4MP-XX-Xxj"/>
@@ -2487,10 +2487,10 @@
                                 </variation>
                             </view>
                             <view tag="34" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xt4-nZ-7cg" customClass="Cyl1ViewFilling" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cylinder" translatesAutoresizingMaskIntoConstraints="NO" id="gau-RG-kuu">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2540,7 +2540,7 @@
                                 </variation>
                             </view>
                             <view tag="35" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7sL-0h-cVN" customClass="Cyl1ViewRadius" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="3Se-4h-aQJ"/>
@@ -2584,7 +2584,7 @@
                                 </variation>
                             </view>
                             <view tag="36" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvH-Rl-Lns" customClass="Cyl1ViewHeight" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gvH-Rl-Lns" secondAttribute="height" multiplier="1:1" id="D33-fJ-J2N"/>
@@ -2628,7 +2628,7 @@
                                 </variation>
                             </view>
                             <view tag="37" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zY-ry-lLt" customClass="Ell1ViewFilling" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1zY-ry-lLt" secondAttribute="height" multiplier="1:1" id="0nN-DI-gDf"/>
@@ -2672,7 +2672,7 @@
                                 </variation>
                             </view>
                             <view tag="38" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldg-I7-GEU" customClass="Ell1ViewPerimeter" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="5mx-Nd-cf7"/>
@@ -2716,7 +2716,7 @@
                                 </variation>
                             </view>
                             <view tag="39" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f21-SM-o6k" customClass="Ell1ViewRadius1" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="9TV-9V-C09"/>
@@ -2760,7 +2760,7 @@
                                 </variation>
                             </view>
                             <view tag="40" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mv4-SV-SH8" customClass="Ell1ViewRadius2" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mv4-SV-SH8" secondAttribute="height" multiplier="1:1" id="7MQ-1i-red"/>
@@ -2804,10 +2804,10 @@
                                 </variation>
                             </view>
                             <view tag="41" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khb-st-gy3" customClass="Ell3ViewFilling" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipsoid" translatesAutoresizingMaskIntoConstraints="NO" id="YJv-q5-Nro">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2857,7 +2857,7 @@
                                 </variation>
                             </view>
                             <view tag="42" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJr-AN-6r3" customClass="Ell3ViewPerimeter" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="xJr-AN-6r3" secondAttribute="height" multiplier="1:1" id="2iS-S4-P9C"/>
@@ -2901,7 +2901,7 @@
                                 </variation>
                             </view>
                             <view tag="43" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EXC-eK-rXk" customClass="Ell3ViewRadius1" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="EXC-eK-rXk" secondAttribute="height" multiplier="1:1" id="GhZ-9H-Fh3"/>
@@ -2945,7 +2945,7 @@
                                 </variation>
                             </view>
                             <view tag="44" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OoX-AA-wRW" customClass="Ell3ViewRadius2" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="18B-f4-v37"/>
@@ -2989,7 +2989,7 @@
                                 </variation>
                             </view>
                             <view tag="45" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a5b-iE-5aP" customClass="Ell3ViewRadius3" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="FZ2-po-Orp"/>
@@ -3033,7 +3033,7 @@
                                 </variation>
                             </view>
                             <view tag="46" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Fk-xg-Btr" customClass="Ana1ViewCoordinates" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="0ap-su-htD"/>
@@ -3077,7 +3077,7 @@
                                 </variation>
                             </view>
                             <view tag="49" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfM-NM-U5S" customClass="Ana2ViewCoordinates" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="vfM-NM-U5S" secondAttribute="height" multiplier="1:1" id="0EZ-vb-Zuf"/>
@@ -3121,7 +3121,7 @@
                                 </variation>
                             </view>
                             <view tag="48" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6R-kA-kkL" customClass="Ana1ViewLine" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="3rQ-jm-NEN"/>
@@ -3165,7 +3165,7 @@
                                 </variation>
                             </view>
                             <view tag="47" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Sq-Z7-KFv" customClass="Ana1ViewPoints" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0Sq-Z7-KFv" secondAttribute="height" multiplier="1:1" id="22B-VG-jVI"/>
@@ -3209,7 +3209,7 @@
                                 </variation>
                             </view>
                             <view tag="50" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZqJ-pc-Hk0" customClass="Ana2ViewPoints" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="K4z-P3-U53"/>
@@ -3253,7 +3253,7 @@
                                 </variation>
                             </view>
                             <view tag="51" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3i-Iv-JsH" customClass="Ana3ViewCoordinates_X" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="K3i-Iv-JsH" secondAttribute="height" multiplier="1:1" id="F3A-j1-Qny"/>
@@ -3297,7 +3297,7 @@
                                 </variation>
                             </view>
                             <view tag="52" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ect-Pm-hcA" customClass="Ana3ViewCoordinates_Y" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="3Zs-ch-NRV"/>
@@ -3341,7 +3341,7 @@
                                 </variation>
                             </view>
                             <view tag="56" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uiV-vV-1gv" customClass="Ana3ViewLine" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="1S2-G3-gkK"/>
@@ -3385,7 +3385,7 @@
                                 </variation>
                             </view>
                             <view tag="53" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wb-0g-sJt" customClass="Ana3ViewCoordinates_Z" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="Bkw-Uq-idv"/>
@@ -3432,7 +3432,7 @@
                                 </variation>
                             </view>
                             <view tag="54" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2J-iu-GbI" customClass="Ana3ViewPoint1" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="z2J-iu-GbI" secondAttribute="height" multiplier="1:1" id="2JP-WR-H89"/>
@@ -3480,7 +3480,7 @@
                                 </variation>
                             </view>
                             <view tag="55" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BdL-VT-GP4" customClass="Ana3ViewPoint2" customModule="Core_Geometry" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <rect key="frame" x="460" y="372" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="BdL-VT-GP4" secondAttribute="height" multiplier="1:1" id="5FR-6U-SLY"/>
@@ -3526,8 +3526,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOj-2h-wZ5">
                                 <rect key="frame" x="20" y="106" width="420" height="554"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blackboard" translatesAutoresizingMaskIntoConstraints="NO" id="jNh-59-JUL">
+                                        <rect key="frame" x="-10" y="-15" width="440" height="589"/>
+                                    </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfx-A2-djZ">
-                                        <rect key="frame" x="20" y="39" width="381" height="476"/>
+                                        <rect key="frame" x="15" y="35" width="391" height="484"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -3557,16 +3560,19 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="jNh-59-JUL" firstAttribute="leading" secondItem="wOj-2h-wZ5" secondAttribute="leading" constant="-10" id="4Hs-oy-5ES"/>
                                     <constraint firstItem="lfx-A2-djZ" firstAttribute="centerY" secondItem="wOj-2h-wZ5" secondAttribute="centerY" id="6co-IK-IaS"/>
                                     <constraint firstAttribute="trailing" secondItem="K00-f2-jH5" secondAttribute="trailing" constant="19" id="9TS-Hz-WtI"/>
+                                    <constraint firstAttribute="bottom" secondItem="jNh-59-JUL" secondAttribute="bottom" constant="-20" id="BvY-jm-PTT"/>
                                     <constraint firstAttribute="height" constant="554" id="Hkf-Pl-Q5x"/>
+                                    <constraint firstAttribute="trailing" secondItem="jNh-59-JUL" secondAttribute="trailing" constant="-10" id="Ltj-lB-DQR"/>
                                     <constraint firstItem="lfx-A2-djZ" firstAttribute="centerX" secondItem="wOj-2h-wZ5" secondAttribute="centerX" id="XPX-tJ-hB9"/>
                                     <constraint firstItem="K00-f2-jH5" firstAttribute="top" secondItem="wOj-2h-wZ5" secondAttribute="top" id="aac-KV-c5L"/>
                                     <constraint firstItem="3iA-dW-B5h" firstAttribute="top" secondItem="wOj-2h-wZ5" secondAttribute="top" id="auV-VI-b97"/>
-                                    <constraint firstItem="lfx-A2-djZ" firstAttribute="top" secondItem="wOj-2h-wZ5" secondAttribute="top" constant="39" id="xJO-hL-Z4F"/>
-                                    <constraint firstItem="lfx-A2-djZ" firstAttribute="leading" secondItem="wOj-2h-wZ5" secondAttribute="leading" constant="20" id="xvc-qK-rIF"/>
+                                    <constraint firstItem="jNh-59-JUL" firstAttribute="top" secondItem="wOj-2h-wZ5" secondAttribute="top" constant="-15" id="gTV-cX-s2A"/>
+                                    <constraint firstItem="lfx-A2-djZ" firstAttribute="top" secondItem="wOj-2h-wZ5" secondAttribute="top" constant="35" id="xJO-hL-Z4F"/>
+                                    <constraint firstItem="lfx-A2-djZ" firstAttribute="leading" secondItem="wOj-2h-wZ5" secondAttribute="leading" constant="15" id="xvc-qK-rIF"/>
                                     <constraint firstItem="3iA-dW-B5h" firstAttribute="leading" secondItem="wOj-2h-wZ5" secondAttribute="leading" constant="20" id="yPZ-GN-Yul"/>
                                 </constraints>
                                 <variation key="default">
@@ -3583,7 +3589,7 @@
                                 </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4m9-ti-CW8" customClass="FaveButton" customModule="FaveButton">
-                                <rect key="frame" x="220" y="20" width="100" height="24"/>
+                                <rect key="frame" x="598" y="62" width="150" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="18p-yj-mEo"/>
                                     <constraint firstAttribute="height" constant="42" id="6U8-FN-eIt">
@@ -3662,7 +3668,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smx-EW-CQi" customClass="FaveButton" customModule="FaveButton">
-                                <rect key="frame" x="110" y="20" width="100" height="24"/>
+                                <rect key="frame" x="309" y="62" width="150" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="5SM-h2-JrC">
                                         <variation key="heightClass=compact-widthClass=compact" constant="36"/>
@@ -3734,7 +3740,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label Label Label Label Label Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkL-10-ULg">
-                                <rect key="frame" x="158" y="0.0" width="242" height="42"/>
+                                <rect key="frame" x="0.0" y="8" width="768" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="NGo-vG-6wG"/>
                                     <constraint firstAttribute="height" constant="42" id="QH1-Se-S1r"/>
@@ -3767,7 +3773,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksH-F0-C7i">
-                                <rect key="frame" x="0.0" y="20" width="100" height="24"/>
+                                <rect key="frame" x="20" y="62" width="150" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="8cU-IX-vd9"/>
                                     <constraint firstAttribute="width" constant="80" id="R1B-qP-b5m">
@@ -4531,15 +4537,6 @@
                                 <exclude reference="wOj-2h-wZ5"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="3q9-Ds-NOK"/>
-                                <exclude reference="Fro-xu-BSK"/>
-                                <exclude reference="KxZ-bB-e5S"/>
-                                <exclude reference="N1j-vd-f2w"/>
-                                <exclude reference="OtG-Oe-lv2"/>
-                                <exclude reference="Pns-6H-dUU"/>
-                                <exclude reference="S9w-a1-SDr"/>
-                                <exclude reference="agJ-Ws-hrt"/>
-                                <exclude reference="dEc-KK-qcI"/>
                                 <exclude reference="0JF-LB-Mf9"/>
                                 <exclude reference="0QS-ff-OIr"/>
                                 <exclude reference="1HE-me-1mU"/>
@@ -4777,18 +4774,6 @@
                                 <exclude reference="qF2-6A-zdK"/>
                                 <exclude reference="t5E-tg-9Yh"/>
                                 <exclude reference="uax-Tx-ot9"/>
-                                <exclude reference="mc3-qp-HCs"/>
-                                <exclude reference="0VN-w8-yPt"/>
-                                <exclude reference="6BY-si-STv"/>
-                                <exclude reference="GNa-Yt-YnZ"/>
-                                <exclude reference="HRJ-5e-mWx"/>
-                                <exclude reference="ahx-ne-BsU"/>
-                                <exclude reference="bLI-En-DPJ"/>
-                                <exclude reference="gM5-NS-SPI"/>
-                                <exclude reference="iFT-iz-BGh"/>
-                                <exclude reference="jW2-Eg-Zzb"/>
-                                <exclude reference="uCk-CR-SCl"/>
-                                <exclude reference="ztX-fu-kz7"/>
                                 <exclude reference="7J3-Oz-kls"/>
                                 <exclude reference="7UC-2y-UBG"/>
                                 <exclude reference="9oT-nh-pWf"/>
@@ -4806,6 +4791,17 @@
                                 <exclude reference="lXQ-XC-pFC"/>
                                 <exclude reference="tME-Mf-ZDk"/>
                                 <exclude reference="xD2-cB-0V1"/>
+                                <exclude reference="0VN-w8-yPt"/>
+                                <exclude reference="6BY-si-STv"/>
+                                <exclude reference="GNa-Yt-YnZ"/>
+                                <exclude reference="HRJ-5e-mWx"/>
+                                <exclude reference="ahx-ne-BsU"/>
+                                <exclude reference="bLI-En-DPJ"/>
+                                <exclude reference="gM5-NS-SPI"/>
+                                <exclude reference="iFT-iz-BGh"/>
+                                <exclude reference="jW2-Eg-Zzb"/>
+                                <exclude reference="uCk-CR-SCl"/>
+                                <exclude reference="ztX-fu-kz7"/>
                                 <exclude reference="NcO-jy-O89"/>
                                 <exclude reference="Q4C-CB-oZ3"/>
                                 <exclude reference="QzK-Tw-6ol"/>
@@ -4814,6 +4810,15 @@
                                 <exclude reference="rbN-al-hUr"/>
                                 <exclude reference="wKG-le-Vsw"/>
                                 <exclude reference="y5v-SG-wci"/>
+                                <exclude reference="3q9-Ds-NOK"/>
+                                <exclude reference="Fro-xu-BSK"/>
+                                <exclude reference="KxZ-bB-e5S"/>
+                                <exclude reference="N1j-vd-f2w"/>
+                                <exclude reference="OtG-Oe-lv2"/>
+                                <exclude reference="Pns-6H-dUU"/>
+                                <exclude reference="S9w-a1-SDr"/>
+                                <exclude reference="agJ-Ws-hrt"/>
+                                <exclude reference="dEc-KK-qcI"/>
                                 <exclude reference="ANb-lj-p24"/>
                                 <exclude reference="CLh-gR-BZt"/>
                                 <exclude reference="TTU-wE-LOs"/>
@@ -4830,6 +4835,12 @@
                                 <exclude reference="dxk-XR-t9C"/>
                                 <exclude reference="gWG-fL-7zu"/>
                                 <exclude reference="oxY-cD-hwg"/>
+                                <exclude reference="3eG-Q2-BYp"/>
+                                <exclude reference="OBH-85-GWr"/>
+                                <exclude reference="U7Y-zn-B1R"/>
+                                <exclude reference="hpB-9d-hqy"/>
+                                <exclude reference="jw0-Tr-aBE"/>
+                                <exclude reference="vZK-QA-cW7"/>
                                 <exclude reference="EFa-bk-Sne"/>
                                 <exclude reference="Hlv-LV-jF1"/>
                                 <exclude reference="IbD-EO-Bhq"/>
@@ -4838,14 +4849,6 @@
                                 <exclude reference="k3L-So-8qN"/>
                                 <exclude reference="lwj-P3-eyl"/>
                                 <exclude reference="yu8-D8-rT3"/>
-                                <exclude reference="3Ii-zi-Lh7"/>
-                                <exclude reference="4Bc-yt-NkT"/>
-                                <exclude reference="UOL-hN-WXc"/>
-                                <exclude reference="eOj-aM-e0G"/>
-                                <exclude reference="jQh-4q-osM"/>
-                                <exclude reference="kby-RO-1N4"/>
-                                <exclude reference="lw4-Xx-NSf"/>
-                                <exclude reference="tUc-Ub-qra"/>
                                 <exclude reference="1eN-t9-bAP"/>
                                 <exclude reference="M1l-D7-F38"/>
                                 <exclude reference="de8-Kg-FHp"/>
@@ -5186,12 +5189,15 @@
                                 <exclude reference="Pmh-su-Pcb"/>
                                 <exclude reference="aHP-CA-lHF"/>
                                 <exclude reference="hVY-g5-U7w"/>
-                                <exclude reference="3eG-Q2-BYp"/>
-                                <exclude reference="OBH-85-GWr"/>
-                                <exclude reference="U7Y-zn-B1R"/>
-                                <exclude reference="hpB-9d-hqy"/>
-                                <exclude reference="jw0-Tr-aBE"/>
-                                <exclude reference="vZK-QA-cW7"/>
+                                <exclude reference="3Ii-zi-Lh7"/>
+                                <exclude reference="4Bc-yt-NkT"/>
+                                <exclude reference="UOL-hN-WXc"/>
+                                <exclude reference="eOj-aM-e0G"/>
+                                <exclude reference="jQh-4q-osM"/>
+                                <exclude reference="kby-RO-1N4"/>
+                                <exclude reference="lw4-Xx-NSf"/>
+                                <exclude reference="tUc-Ub-qra"/>
+                                <exclude reference="mc3-qp-HCs"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -5199,8 +5205,6 @@
                                 <include reference="pkL-10-ULg"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Fro-xu-BSK"/>
-                                <include reference="S9w-a1-SDr"/>
                                 <include reference="26n-ji-83N"/>
                                 <include reference="4Jx-w6-1Pg"/>
                                 <include reference="4Ty-CL-cG3"/>
@@ -5260,23 +5264,24 @@
                                 <include reference="zBE-sj-qSP"/>
                                 <include reference="Nvx-pT-d3w"/>
                                 <include reference="qF2-6A-zdK"/>
-                                <include reference="iFT-iz-BGh"/>
-                                <include reference="uCk-CR-SCl"/>
                                 <include reference="7J3-Oz-kls"/>
                                 <include reference="pLV-4n-NV1"/>
                                 <include reference="Sx0-6a-AvA"/>
                                 <include reference="cAp-Pk-rCk"/>
                                 <include reference="lXQ-XC-pFC"/>
+                                <include reference="iFT-iz-BGh"/>
+                                <include reference="uCk-CR-SCl"/>
                                 <include reference="hti-Bq-sot"/>
                                 <include reference="wKG-le-Vsw"/>
+                                <include reference="Fro-xu-BSK"/>
+                                <include reference="S9w-a1-SDr"/>
                                 <include reference="ANb-lj-p24"/>
                                 <include reference="xRE-RJ-RpT"/>
                                 <include reference="Eu1-0c-gYu"/>
                                 <include reference="dxk-XR-t9C"/>
+                                <include reference="jw0-Tr-aBE"/>
                                 <include reference="Qiz-wN-sd9"/>
                                 <include reference="yu8-D8-rT3"/>
-                                <include reference="jQh-4q-osM"/>
-                                <include reference="lw4-Xx-NSf"/>
                                 <include reference="1eN-t9-bAP"/>
                                 <include reference="M1l-D7-F38"/>
                                 <include reference="Nda-Dm-SXu"/>
@@ -5389,14 +5394,12 @@
                                 <include reference="iEu-47-mW8"/>
                                 <include reference="Bt5-KA-8lM"/>
                                 <include reference="EAt-Qf-Qmx"/>
-                                <include reference="jw0-Tr-aBE"/>
+                                <include reference="jQh-4q-osM"/>
+                                <include reference="lw4-Xx-NSf"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
                             <mask key="constraints">
-                                <include reference="KxZ-bB-e5S"/>
-                                <exclude reference="OtG-Oe-lv2"/>
-                                <include reference="dEc-KK-qcI"/>
                                 <include reference="0QS-ff-OIr"/>
                                 <include reference="2vi-lp-jjG"/>
                                 <include reference="3DV-aS-eAF"/>
@@ -5456,25 +5459,29 @@
                                 <include reference="zVO-Q8-v9H"/>
                                 <include reference="t5E-tg-9Yh"/>
                                 <include reference="uax-Tx-ot9"/>
-                                <include reference="6BY-si-STv"/>
-                                <include reference="HRJ-5e-mWx"/>
-                                <exclude reference="bLI-En-DPJ"/>
-                                <exclude reference="ztX-fu-kz7"/>
                                 <include reference="MOq-Fn-Aij"/>
                                 <include reference="RxR-Aa-GeK"/>
                                 <include reference="Qcg-63-ymX"/>
                                 <include reference="fYB-uA-qF8"/>
+                                <include reference="6BY-si-STv"/>
+                                <include reference="HRJ-5e-mWx"/>
+                                <exclude reference="bLI-En-DPJ"/>
+                                <exclude reference="ztX-fu-kz7"/>
                                 <include reference="NcO-jy-O89"/>
                                 <include reference="QzK-Tw-6ol"/>
+                                <include reference="KxZ-bB-e5S"/>
+                                <exclude reference="OtG-Oe-lv2"/>
+                                <include reference="dEc-KK-qcI"/>
                                 <include reference="TTU-wE-LOs"/>
                                 <include reference="oh0-hz-V6T"/>
                                 <include reference="Daq-lE-AwM"/>
                                 <include reference="oxY-cD-hwg"/>
+                                <exclude reference="3eG-Q2-BYp"/>
+                                <include reference="OBH-85-GWr"/>
+                                <include reference="hpB-9d-hqy"/>
+                                <include reference="vZK-QA-cW7"/>
                                 <include reference="EFa-bk-Sne"/>
                                 <include reference="k3L-So-8qN"/>
-                                <exclude reference="Eof-zF-Zh9"/>
-                                <include reference="UOL-hN-WXc"/>
-                                <include reference="tUc-Ub-qra"/>
                                 <include reference="ptG-i1-AGc"/>
                                 <include reference="1nF-a1-gyG"/>
                                 <include reference="xfb-iM-qOF"/>
@@ -5534,10 +5541,9 @@
                                 <exclude reference="ZaQ-VJ-AEL"/>
                                 <exclude reference="tkK-oa-Qzb"/>
                                 <include reference="I4D-ZA-OUc"/>
-                                <exclude reference="3eG-Q2-BYp"/>
-                                <include reference="OBH-85-GWr"/>
-                                <include reference="hpB-9d-hqy"/>
-                                <include reference="vZK-QA-cW7"/>
+                                <exclude reference="Eof-zF-Zh9"/>
+                                <include reference="UOL-hN-WXc"/>
+                                <include reference="tUc-Ub-qra"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -5664,13 +5670,13 @@
                                 <include reference="y4Z-Wj-JJy"/>
                                 <include reference="ybb-B0-kJs"/>
                                 <include reference="HXh-IG-4Bu"/>
-                                <exclude reference="0VN-w8-yPt"/>
-                                <include reference="GNa-Yt-YnZ"/>
-                                <include reference="gM5-NS-SPI"/>
                                 <include reference="7UC-2y-UBG"/>
                                 <include reference="9oT-nh-pWf"/>
                                 <include reference="Flc-kU-AR7"/>
                                 <include reference="tME-Mf-ZDk"/>
+                                <exclude reference="0VN-w8-yPt"/>
+                                <include reference="GNa-Yt-YnZ"/>
+                                <include reference="gM5-NS-SPI"/>
                                 <include reference="Q4C-CB-oZ3"/>
                                 <include reference="byA-gg-u3V"/>
                                 <include reference="CLh-gR-BZt"/>
@@ -5679,9 +5685,6 @@
                                 <include reference="gWG-fL-7zu"/>
                                 <include reference="WB3-H5-1QQ"/>
                                 <include reference="lwj-P3-eyl"/>
-                                <include reference="4Bc-yt-NkT"/>
-                                <exclude reference="Eof-zF-Zh9"/>
-                                <include reference="kby-RO-1N4"/>
                                 <include reference="vdv-jj-tdR"/>
                                 <include reference="gYr-i0-ZH4"/>
                                 <include reference="YlM-0A-xD5"/>
@@ -5741,6 +5744,9 @@
                                 <include reference="oRe-eF-SaZ"/>
                                 <exclude reference="tkK-oa-Qzb"/>
                                 <include reference="aHP-CA-lHF"/>
+                                <include reference="4Bc-yt-NkT"/>
+                                <exclude reference="Eof-zF-Zh9"/>
+                                <include reference="kby-RO-1N4"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -5748,33 +5754,30 @@
                                 <include reference="wOj-2h-wZ5"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="3q9-Ds-NOK"/>
-                                <include reference="N1j-vd-f2w"/>
-                                <include reference="Pns-6H-dUU"/>
-                                <include reference="agJ-Ws-hrt"/>
                                 <include reference="6KP-aO-gEG"/>
                                 <include reference="C4R-VS-mMa"/>
                                 <exclude reference="V2f-qg-1gT"/>
                                 <include reference="eCB-7M-xKq"/>
-                                <exclude reference="mFh-8g-VDg"/>
-                                <include reference="mc3-qp-HCs"/>
-                                <include reference="ahx-ne-BsU"/>
-                                <include reference="jW2-Eg-Zzb"/>
                                 <include reference="REF-xj-q9a"/>
                                 <include reference="XyZ-Ab-K1E"/>
                                 <include reference="aP2-Fx-Vwk"/>
                                 <include reference="xD2-cB-0V1"/>
+                                <include reference="ahx-ne-BsU"/>
+                                <include reference="jW2-Eg-Zzb"/>
                                 <include reference="rbN-al-hUr"/>
                                 <include reference="y5v-SG-wci"/>
+                                <include reference="3q9-Ds-NOK"/>
+                                <include reference="N1j-vd-f2w"/>
+                                <include reference="Pns-6H-dUU"/>
+                                <include reference="agJ-Ws-hrt"/>
                                 <include reference="e3D-rk-ex4"/>
                                 <include reference="f5y-Bg-SOJ"/>
                                 <include reference="9dc-8j-rey"/>
                                 <include reference="Bh3-zQ-jsx"/>
+                                <include reference="U7Y-zn-B1R"/>
+                                <exclude reference="a1y-D3-I6t"/>
                                 <include reference="Hlv-LV-jF1"/>
                                 <include reference="IbD-EO-Bhq"/>
-                                <include reference="3Ii-zi-Lh7"/>
-                                <exclude reference="Eof-zF-Zh9"/>
-                                <include reference="eOj-aM-e0G"/>
                                 <include reference="de8-Kg-FHp"/>
                                 <include reference="qpZ-j3-QG4"/>
                                 <include reference="Yl2-oW-afF"/>
@@ -5891,8 +5894,11 @@
                                 <include reference="uAk-q1-0MP"/>
                                 <include reference="Pmh-su-Pcb"/>
                                 <include reference="hVY-g5-U7w"/>
-                                <include reference="U7Y-zn-B1R"/>
-                                <exclude reference="a1y-D3-I6t"/>
+                                <include reference="3Ii-zi-Lh7"/>
+                                <exclude reference="Eof-zF-Zh9"/>
+                                <include reference="eOj-aM-e0G"/>
+                                <exclude reference="mFh-8g-VDg"/>
+                                <include reference="mc3-qp-HCs"/>
                             </mask>
                         </variation>
                     </view>
@@ -5968,11 +5974,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6z7-p1-wO0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1720.9239130434785" y="130.43478260869566"/>
+            <point key="canvasLocation" x="1720.3125" y="130.078125"/>
         </scene>
     </scenes>
     <resources>
         <image name="Back" width="150" height="36"/>
+        <image name="Blackboard" width="800" height="518"/>
         <image name="Button Analytical" width="256" height="256"/>
         <image name="Button Circle" width="256" height="256"/>
         <image name="Button Cone" width="256" height="256"/>

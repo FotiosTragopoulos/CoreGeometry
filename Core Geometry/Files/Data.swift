@@ -85,15 +85,3 @@ let Ell3 = DetailModel(cellImage: #imageLiteral(resourceName: "Ellipsoid_Volume"
 let Ana1 = DetailModel(cellImage: #imageLiteral(resourceName: "Distance_XY"), cellTitle: "Distance Between 2 Points (x,y)")
 let Ana2 = DetailModel(cellImage: #imageLiteral(resourceName: "Distance_XYZ"), cellTitle: "Distance Between 2 Points (x,y,z)")
 let Ana3 = DetailModel(cellImage: #imageLiteral(resourceName: "LineSlope"), cellTitle: "Slope of a Line")
-
-
-
-
-
-
-
-
-
-
-
-
